@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>PHILADELPHIA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <style media="screen">
+    html, body {  height: 100%;  width: 100%;}
+    .logo{max-width: 360px;}
+    .container{  min-height: 100%;  background: url('soon.jpg') center no-repeat;  background-size: cover; box-sizing: border-box; padding-bottom: 30px;}
+    .content_soon{ max-width: 1000px; margin: 0 auto;}
+    .soon_form{text-align: center; text-align: -webkit-center; margin: 30px auto 0;}
+    .soon_form input {width: 31%;  margin: 0 1% 20px;  height: 42px;  background-color: rgba(0,0,0,0.3);  border: 1px solid #656565;  outline: none;  color: white;  text-indent: 10px;}
+    .soon_form input:focus, .soon_form input:active{box-shadow: 0px 0px 11px -4px white}
+    .link_soon{  display: block;  width: 31%;  height: 42px;  max-width: 309px;  letter-spacing: 3pt;  color: white;  background-color: #000;  border: 0;  outline: none;  margin: 20px auto 0;  cursor: pointer;}
+    ::-webkit-input-placeholder {color:#ffffff; font-size: 14px; font-style: italic; letter-spacing: 1; text-indent: 10px;}
+    ::-moz-placeholder          {color:#ffffff; font-size: 14px; font-style: italic; letter-spacing: 1; text-indent: 10px;}/* Firefox 19+ */
+    :-moz-placeholder           {color:#ffffff; font-size: 14px; font-style: italic; letter-spacing: 1; text-indent: 10px;}/* Firefox 18- */
+    :-ms-input-placeholder      {color:#ffffff; font-size: 14px; font-style: italic; letter-spacing: 1; text-indent: 10px;}
+    @media only screen and (max-width: 820px) {
+      .soon_form input {display: block;width: 50%; max-width: 300px;}
+      .link_soon{width: 50%;max-width: 300px;}
+    }
+    @media only screen and (max-width: 500px) {
+      .soon_form input {display: block;width: 80%; max-width: 300px;}
+      .link_soon{width: 80%;max-width: 300px;}
+    }
+    @media only screen and (min-height: 650px) {
+      .container{
+        padding-top: 13vh;
+      }
+    }
+  </style>
+    <div class="container">
+      <div class="content_soon">
+        <div class="logo">
+          <img src="img/logo_romb.svg" alt="PHILADELPHIA concept house">
+        </div>
+        <form class="soon_form" action="" method="post">
+          <input type="text" name="name" value="" placeholder="Ім&prime;я *">
+          <input type="tel" name="tel" value="" placeholder="Телефон *">
+          <input type="email" name="email" value="" placeholder="E-mail *">
+          <button class="link_soon" type="submit" name="button">ДІЗНАТИСЬ БІЛЬШЕ <i class="icon-long-arrow-right"></i></button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

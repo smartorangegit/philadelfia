@@ -1,0 +1,155 @@
+// @font-face{	font-family: "CynthoPro-Regular"; src: url("../fonts/CynthoPro - Regular.otf") format("opentype");	font-style: normal;	font-weight: normal;}
+// @font-face{	font-family: "CynthoPro-SemiBold"; src: url("../fonts/CynthoPro - SemiBold.otf") format("opentype");	font-style: normal;	font-weight: normal;}
+// @font-face{	font-family: "CynthoPro-Light"; src: url("../fonts/CynthoPro - Light.otf") format("opentype");	font-style: normal;	font-weight: normal;}
+// @font-face{	font-family: "CynthoPro-Black"; src: url("../fonts/CynthoPro - Black.otf") format("opentype");	font-style: normal;	font-weight: normal;}
+// @font-face{	font-family: "CynthoPro-Italic"; src: url("../fonts/CynthoPro - Italic.otf") format("opentype");	font-style: normal;	font-weight: normal;}
+// @font-face{	font-family: "SCHLBKI"; src: url("../fonts/SCHLBKI.TTF") format("truetype");}
+@font-face{	font-family: "HE"; src: url("../fonts/HE.ttf") format("truetype");}
+@font-face{	font-family: "HE_CN"; src: url("../fonts/HE_CN.ttf") format("truetype");}
+@font-face{	font-family: "HE_CH"; src: url("../fonts/HE_CH.ttf") format("truetype");}
+@font-face{	font-family: "HE_L"; src: url("../fonts/helioslightc.otf") format("opentype"); font-style: normal;	font-weight: normal;}
+@font-face{	font-family: "HE_EX"; src: url("../fonts/HeliosExt.ttf") format("opentype"); font-style: normal;	font-weight: normal;}
+@font-face {
+    font-family: 'heliosregular';
+    src: url('../fonts/he-webfont.eot');
+    src: url('../fonts/he-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/he-webfont.woff2') format('woff2'),
+         url('../fonts/he-webfont.woff') format('woff'),
+         url('../fonts/he-webfont.svg#heliosregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../fonts/icomoon.eot?qrmlui');
+  src:  url('../fonts/icomoon.eot?qrmlui#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?qrmlui') format('truetype'),
+    url('../fonts/icomoon.woff?qrmlui') format('woff'),
+    url('../fonts/icomoon.svg?qrmlui#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+$cyntho: "CynthoPro-Regular";
+$cynthoSB: "CynthoPro-SemiBold";
+$cynthoL: "CynthoPro-Light";
+$cynthoB: "CynthoPro-Black";
+$cynthoI: "CynthoPro-Italic";
+$school: "SCHLBKI";
+// $he: "HE_EX";
+
+$he: "HE_L";
+// $he: 'heliosregular';
+$he_cn: "HE_CN";
+$he_ch: "HE_CH";
+// $he_l:  "HE_L";
+
+
+
+[class^="icon-"], [class*=" icon-"],
+.bx-prev:before, .bx-next:before  {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  padding: 0 3px;
+  // font-size: 12px;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+// .poster__deco{
+//   font-family: $school;
+// }
+
+.icon-Kyiv_Metro_logo:before {
+  content: "\e904";
+}
+.icon-zoom:before {
+  content: "\e915";
+}
+.icon-close:before {
+  content: "\e916";
+}
+.icon-menu:before {
+  content: "\e90b";
+}
+.icon-mail:before {
+  content: "\e917";
+}
+.icon-compass:before {
+  content: "\e911";
+}
+.icon-location2:before {
+  content: "\e90f";
+}
+.icon-mail2:before {
+  content: "\e910";
+}
+.icon-chevron-left:before {
+  content: "\e901";
+}
+.icon-chevron-right:before {
+  content: "\e902";
+}
+.icon-chevron-down:before {
+  content: "\e900";
+}
+.icon-chevron-up:before {
+  content: "\e903";
+}
+.icon-map-pin:before {
+  content: "\e905";
+}
+.icon-zoom-in:before {
+  content: "\e906";
+}
+.icon-arrow-right:before {
+  content: "\e907";
+}
+.icon-arrow-left:before {
+  content: "\e908";
+}
+.icon-keyboard_backspace:before {
+  content: "\e317";
+}
+.icon-keyboard_arrow_up:before {
+  content: "\e909";
+}
+.icon-long-arrow-right:before {
+  content: "\e90d";
+}
+.icon-long-arrow-left:before {
+  content: "\e90e";
+}
+.icon-phone:before {
+  content: "\e942";
+}
+.icon-location:before {
+  content: "\e947";
+}
+.icon-equalizer:before {
+  content: "\e992";
+}
+.icon-facebook:before {
+  content: "\ea90";
+}
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+.icon-pinterest2:before {
+  content: "\ead2";
+}
+.icon-file-pdf:before {
+  content: "\eadf";
+}

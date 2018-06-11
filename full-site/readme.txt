@@ -1,0 +1,8 @@
+V 0.3
+Форми - 		  	/modules/inc/form/
+footer, header  - 	/modules/inc/
+Переклад - 			/modules/language/
+Структура сторінок -/templates/ 
+---------------------------------------
+	Статична сторінка - flats.php
+	Динамічна сторінка - /modules/pages/flats-list.php
