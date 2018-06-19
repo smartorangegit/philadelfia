@@ -1,8 +1,9 @@
 <?php  HeadAdd(array('pageType'=>'class="mainpage"','head'=>true));?>
   	<?php// HeaderInclude(array('pageTypeMobileAll'=>2));?>
 
+     <? include('preloader_saga.php'); ?>
 
-    <?php include ($_SERVER['DOCUMENT_ROOT'].'modules/inc/preloader.php')?>
+    <?/*php include ($_SERVER['DOCUMENT_ROOT'].'modules/inc/preloader.php')*/?>
     <div id="perspective" class="perspective effect-laydown">
 <?//if (!$detectMob) :?>
 <!-- pop-up with map   -->
