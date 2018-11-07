@@ -2479,8 +2479,9 @@ a.op_ajax {
 
 /* line 823, ../sass/_allstyle.scss */
 a.select_level p {
-  margin-left: -6px;
+  margin-left: -1px;
   letter-spacing: normal;
+  font-size: 12px;
 }
 
 /* line 827, ../sass/_allstyle.scss */

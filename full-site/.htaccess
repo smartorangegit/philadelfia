@@ -26,3 +26,5 @@ RewriteRule ^(.*)$ index.php?%{REQUEST_URI} [QSA,L]
 
 
 
+
+

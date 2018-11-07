@@ -16,13 +16,19 @@
             <div class="content_name develop_name"><h1><?H1page()?></h1></div>
           <div class="developer_box wow fadeInUp" data-wow-duration="1.6s">
             <div class="riverside">
-              <a class="river_link" href="http://saga-development.com.ua/">
-                <img src="/img/Saga_white.svg" alt="Saga">
-              </a>
-              <p>Девелопер  PHILADELPHIA Concept House – компанія SAGA Development,</p>
-              <p>відома такими знаковими проектами:</p>
+              <div class="proj_deveopers">
+                <a class="river_link" href="http://saga-development.com.ua/">
+                  <img width="200" src="/img/saga-development-logo.svg" alt="Saga">
+                </a>
+                <a class="river_link" href="https://perfect-group.ua/">
+                  <img src="/img/perfect-logo.png" alt="Лого девелопера проекту Perfect Group" title="Лого девелопера проекту Perfect Group" >
+                </a>
+              </div>
+              
+              <p><?=$mes['Девелопери  PHILADELPHIA Concept House – SAGA Development та Perfect Group']?></p>
             </div>
             <!-- <div class="projects"> -->
+              <h3 class="proj_owner"><?=$mes['Проекти <span>SAGA Development</span>']?></h3>
               <ul class="proj_slider">
   							<li class="logo_proj">
   								<a href="https://rybalsky.com.ua/" target="_blank">
@@ -65,12 +71,55 @@
                   </a>
                 </li>
   						</ul>
+
+                <h3 class="proj_owner"><?=$mes['Проекти <span>Perfect Group</span>']?></h3>
+                <ul class="proj_slider">
+                  <li class="logo_proj">
+                    <a href="https://woodstoria.com.ua/" target="_blank">
+                        <img src="/img/other-projects-logos/Woodstoriya_logo_refurbished_white.svg" alt="Woodstoriya" title="Woodstoriya" />
+                    </a>
+                  </li>
+                  <li class="logo_proj">
+                    <a href="https://perfect-group.ua/ru/projects/v-kvartal/" target="_blank">
+                      <img src="/img/other-projects-logos/5_kvartal_white.svg" alt="5_kvartal" title="5_kvartal" />
+                    </a>
+                  </li>
+                  <li class="logo_proj">
+                    <a href="https://lebedinyiy.com.ua/" target="_blank">
+                      <img src="/img/other-projects-logos/Lebediniy_Dark logo_for_site_white.svg" alt="Lebediniy" title="Lebediniy" />
+                    </a>
+                  </li>
+                  <li class="logo_proj">
+                    <a href="https://perfect-group.ua/ru/projects/bereginya/" target="_blank">
+                      <img src="/img/other-projects-logos/Logo_vect_white.svg" alt="Beregynya" title="Beregynya" />
+                    </a>
+                  </li>
+                  <li class="logo_proj">
+                    <a href="https://www.the-garden.com.ua/" target="_blank">
+                      <img src="/img/other-projects-logos/Logotype_Final_text_gold_white.svg" alt="EINSTEIN Concept House" title="EINSTEIN Concept House" />
+                    </a>
+                  </li>
+                </ul>
+
             <!-- </div> -->
           </div>
         </div>
       </div>
 
       <style media="screen">
+      .proj_deveopers {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+      .proj_owner {
+        font-size: 30px;
+        text-align: center;
+        margin-top: 20px;
+      }
+      .proj_owner span {
+        font-weight: 600;
+      }
       .main_values{
         min-height: calc(100vh - 82px);
       }

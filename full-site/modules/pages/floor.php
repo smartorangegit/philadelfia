@@ -47,7 +47,7 @@ WHERE buld=$plan AND `sec`=$sec AND (`floor`=$floor[0] $pov1) ORDER BY sorts ASC
 	 if($s['level']>1 AND $s['floor']!=$floor[0]){$t=".".($floor[0]-$s['floor']);}else{$t='';}
 	 if ($s['sales']) 	{
 		 
-		 $URLP[$key]=UrlAdd('section'.$sec.'/floor'.($s['floor']+$floor[0]-$s['floor']).'/flat'.$s['number'].'_'.$s['id'].$t, TRUE);
+		 $URLP[$key]=UrlAdd('section'.$sec.'/floor'.($s['floor']+$floor[0]-$s['floor']).'/flat'.$s['number'].'-'.$s['id'].$t, TRUE);
 		 /*.'" data-title="'.$s['kim'].'-к≥мнатна квартира '.$s['all_room'].' м2" onmouseout="hideApartmentDiv()" onmouseover="showApartmentDiv()" 
 		 onmousemove="showApartmentInfo(`'.$s['kim'].'|'.$s['all_room'].'|'.$s['life_room'].'|'.$s['floor'].'`)';*/
 	 }

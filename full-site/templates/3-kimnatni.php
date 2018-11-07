@@ -15,17 +15,23 @@
         <div class="wrapper">
           <section class="kimnatni">
             <div class="kim__left">
-              <h1 class="main_name">3 кімнатні</h1>
-              <p class="main_text wow fadeInUp">
-                Різниця у вартості 3-кімнатних та 2-кімнатних квартир незначна. Саме тому трикімнатна квартира в PHILADELPHIA Concept House − це розумний та вигідний вибір.
-  						</p>
-  							<p class="main_text wow fadeInUp">
-                Трикімнатні квартири PHILADELPHIA Concept House мають лоджії й тераси. Однією з додаткових переваг є вільне планування такого житла. Тільки вам вирішувати, де розміститься спальня, а де кухня з вітальнею.
-  						</p>
-  						<p class="main_text wow fadeInUp">
-                Якщо у вас велика сім′я і ви хочете жити комфортно, PHILADELPHIA Concept House є що вам запропонувати. 3-кімнатна квартира в новому комплексі − це передусім зручне житло, яке може стати вашим уже сьогодні.
-  						</p>
-              <a id="call_price" href="0" class="button20">Дізнатися ціну</a>
+              <h1 class="main_name"><?H1page()?></h1>
+					<?=$mes['Різниця у вартості 3-кімнатних та 2-кімнатних квартир незначна']?>
+				<div class="list_appart">		
+				<ul class="select__list">
+					<li><a href="/1-kimnatni/"><?=$mes['1-кімнатні квартири']?></a></li>
+					<li><a href="/2-kimnatni/"><?=$mes['2-кімнатні квартири']?></a></li>
+					<li><?=$mes['3-кімнатні квартири']?></a></li>
+                </ul>
+				<style>
+				.list_appart .select__list li {
+					display: block;
+					max-width: 166px;
+				}
+			
+				</style>
+				</div>
+              <div id="call_price" href="0" class="button20"><h2><?=$mes['Дізнатися ціну_1-kimnatni']?></h2></div>
             </div>
             <div class="kim__center kim__center__3">
             </div>

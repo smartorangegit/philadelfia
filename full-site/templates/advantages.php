@@ -16,51 +16,51 @@
 
         <div class="main_advant">
           <div class="name_wrap" data-wow-duration="2s">
-            <div class="content_name wow fadeInUp">Переваги</div>
+            <div class="content_name wow fadeInUp"><?=$mes['Переваги']?></div>
             <div class="content_subname wow fadeInUp"><h1><?H1page()?></h1></div>
           </div>
             <ul class="advant_box">
               <li class="advant_item wow fadeInUp animatia">
-                <img src="/img/advant/1.jpg" alt="advantages">
-                <div class="figcaption"><span class="bold">Вдале розташування</span> у престижній частині центру міста</div>
+                <img src="/img/advant/1.jpg" alt="Вдале розташування у престижній частині центру міста" title="Вдале розташування у престижній частині центру міста" >
+                <div class="figcaption"><span class="bold"><?=$mes['Вдале розташування</span> у престижній частині центру міста']?></div>
               </li>
               <li class="advant_item wow fadeInUp" >
-                <img src="/img/advant/4.jpg" alt="advantages">
-                <div class="figcaption"><span class="bold">Затишні парки та сквери</span> у безпосередній <span class="italic">близькості</span> від будинку</div>
+                <img src="/img/advant/4.jpg" alt="Затишні парки та сквери у безпосередній близькості від будинку" title="Затишні парки та сквери у безпосередній близькості від будинку" >
+                <div class="figcaption"><span class="bold"><?=$mes['Затишні парки та сквери_advantages']?></div>
               </li>
               <li class="advant_item wow fadeInUp">
-                <img src="/img/advant/8.jpg" alt="advantages">
-                <div class="figcaption"><span class="italic">Невелика</span> кількість сусідів – лише <span class="bold">65 квартир</span> у будинку</div>
+                <img src="/img/advant/8.jpg" alt="Невелика кількість сусідів – лише 65 квартир у будинку" title="Невелика кількість сусідів – лише 65 квартир у будинку" >
+                <div class="figcaption"><span class="italic"><?=$mes['Невелика кількість сусідів_advantages']?></div>
               </li>
               <li class="advant_item wow fadeInUp">
-                <img src="/img/advant/7.jpg" alt="advantages">
-                <div class="figcaption"><span class="italic">Унікальні</span> <span class="bold">панорамні вікна</span> у кожній квартирі</div>
+                <img src="/img/advant/7.jpg" alt="Унікальні панорамні вікна у кожній квартирі" title="Унікальні панорамні вікна у кожній квартирі" >
+                <div class="figcaption"><span class="italic"><?=$mes['Унікальні панорамні вікна_advantages']?></div>
               </li>
               <li class="advant_item wow fadeInUp" >
-                <img src="/img/advant/5.jpg" alt="advantages">
-                <div class="figcaption"><span class="bold">Супер-сучасне</span><span class="italic"> архітектурне</span> рішення</div>
+                <img src="/img/advant/5.jpg" alt="Супер-сучасне архітектурне рішення" title="Супер-сучасне архітектурне рішення" >
+                <div class="figcaption"><span class="bold"><?=$mes['Супер-сучасне архітектурне рішення_advantages']?></div>
               </li>
               <li class="advant_item wow fadeInUp" >
-                <img src="/img/advant/6.jpg" alt="advantages">
-                <div class="figcaption"><span class="bold">Продумана</span> <span class="italic">ергономіка</span> суспільних просторів</div>
+                <img src="/img/advant/6.jpg" alt="Продумана ергономіка суспільних просторів" title="Продумана ергономіка суспільних просторів" >
+                <div class="figcaption"><span class="bold"><?=$mes['Продумана ергономіка_advantages']?></div>
               </li>
               <li class="advant_item wow fadeInUp animatia">
-                <img src="/img/advant/2.jpg" alt="advantages">
-                <div class="figcaption"><span class="italic">Близькість</span> до багатьох <span class="bold">архітектурних пам’яток</span>, головна з яких – <span class="italic"> Києво-Печерська лавра</span></div>
+                <img src="/img/advant/2.jpg" alt="Близькість до багатьох архітектурних пам’яток, головна з яких – Києво-Печерська лавра" title="Близькість до багатьох архітектурних пам’яток, головна з яких – Києво-Печерська лавра" >
+                <div class="figcaption"><span class="italic"><?=$mes['Близькість до багатьох архітектурних_advantages']?></div>
               </li>
               <li class="advant_item wow fadeInUp">
-                <img src="/img/advant/9.jpg" alt="advantages">
-                <div class="figcaption">Застосування системи <span class="bold">«розумний будинок»</span>, яка підвищує комфорт мешканців та <span class="bold">зменшує витрату</span> енергії</div>
+                <img src="/img/advant/9.jpg" alt="Застосування системи «розумний будинок», яка підвищує комфорт мешканців та зменшує витрату енергії" title="Застосування системи «розумний будинок», яка підвищує комфорт мешканців та зменшує витрату енергі" >
+                <div class="figcaption"><?=$mes['Застосування системи_advantages']?></div>
               </li>
               <li class="advant_item wow fadeInUp" >
-                <img src="/img/advant/3.jpg" alt="advantages">
-                <a href="/location">
-                  <div class="figcaption"><span class="italic">Насичена</span> високоякісна <span class="bold">інфраструктура</span> навколо будинку</div>
+                <img src="/img/advant/3.jpg" alt="Насичена високоякісна інфраструктура навколо будинку" title="Насичена високоякісна інфраструктура навколо будинку" >
+                <a href="/location/">
+                  <div class="figcaption"><span class="italic"><?=$mes['Насичена високоякісна інфраструктура навколо будинку_advantages']?></div>
                 </a>
               </li>
               <li class="advant_item wow fadeInUp">
-                <img src="/img/advant/10.jpg" alt="advantages">
-                <div class="figcaption"><span class="bold">Club Lounge</span>, призначений лише <span class="italic">для мешканців будинку</span> та їх гостей</div>
+                <img src="/img/advant/10.jpg" alt="Club Lounge, призначений лише для мешканців будинку та їх гостей" title="Club Lounge, призначений лише для мешканців будинку та їх гостей">
+                <div class="figcaption"><span class="bold"><?=$mes['Club Lounge призначений лише для мешканців_advantages']?></div>
               </li>
             </ul>
         </div>

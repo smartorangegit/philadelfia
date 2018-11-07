@@ -18,23 +18,23 @@
             <div class="main_two_left"></div>
             <div class="main_two_right">
               <h1 class="main_name wow fadeIn">
-                Будинок
+                <?=$mes['house-h1']?>
               </h1>
               <div class="main_text">
                 <p class="wow fadeIn">
-                  У серці Києва, у центрі Печерська ми зводимо будинок, не схожий на інші.
+                  <?=$mes['У серці Києва_house']?>
                 </p>
                 <p class="wow fadeIn">
-                  Смілива сучасна архітектура, продумана ергономіка суспільних просторів, затишна прибудинкова територія. І всього 65 квартир, що розташовані на 16 поверхах.
+					<?=$mes['Смілива сучасна архітектура_house']?>
+				</p>
+                <p class="wow fadeIn">
+                  <?=$mes['Цей будинок ми створюємо для тих_house']?>
                 </p>
                 <p class="wow fadeIn">
-                  Цей будинок ми створюємо для тих, хто прагне жити в оточенні однодумців. Для тих, хто цінує естетику, приватність та безпеку. Для тих, хто не готовий до компромісів, коли мова йде про стиль життя. Для тих, кому комфортно у колі самодостатніх та прогресивних сусідів.
-                </p>
-                <p class="wow fadeIn">
-                  Створюючи PHILADELPHIA Concept House, ми також створюємо клуб однодумців. Приєднуйтесь!
+                  <?=$mes['Створюючи PHILADELPHIA Concept House']?>
                 </p>
               </div>
-              <a href="<?UrlAdd('floor-bselect/')?>" class="button20">Обрати квартиру</a>
+              <a href="<?UrlAdd('floor-bselect')?>" class="button20" title="Купити квартиру в ЖК PHILADELPHIA Concept House" ><?=$mes['Обрати квартиру']?></a>
 
             </div>
           </section>

@@ -27,7 +27,7 @@ require_once('function.php');   LangAdd(); global 	 $mes;
 		}
 		else
 		{
-			$utms[]='';
+			$utms[]='no_utm';
 		}			
 	}
 

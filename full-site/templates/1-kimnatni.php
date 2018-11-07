@@ -15,18 +15,23 @@
         <div class="wrapper">
           <section class="kimnatni">
             <div class="kim__left">
-              <h1 class="main_name">1 кімнатні</h1>
-              <p class="main_text wow fadeInUp">
-  							Однокімнатні квартири в PHILADELPHIA Concept House відповідають всім ключовим характеристикам комфортного житла і при цьому мають прийнятну ціну.
-  							Якщо ж додати сюди вдале розташування комплексу, можна впевнено стверджувати, що 1-кімнатні квартири є максимально вигідною пропозицією.
-  						</p>
-  							<p class="main_text wow fadeInUp">
-  							Між іншим, придбання такої нерухомості є ідеальним варіантом для однієї людини або пари без дітей.
-  						</p>
-  						<p class="main_text wow fadeInUp">
-  							Купівля нерухомості в новобудові на ранніх стадіях будівництва та її подальший продаж дуже вигідний: квадратні метри щороку дорожчають, або таке житло можна здавати в оренду й отримувати непоганий прибуток.
-  						</p>
-              <a id="call_price" href="0" class="button20">Дізнатися ціну</a>
+              <h1 class="main_name"><?H1page()?></h1>
+					<?=$mes['Однокімнатні квартири в PHILADELPHIA Concept House відповідають всім ключовим характеристикам']?>
+				<div class="list_appart">		
+				<ul class="select__list">
+					<li><?=$mes['1-кімнатні квартири']?></li>
+					<li><a href="/2-kimnatni/"><?=$mes['2-кімнатні квартири']?></a></li>
+					<li><a href="/3-kimnatni/"><?=$mes['3-кімнатні квартири']?></a></li>
+                </ul>
+				<style>
+				.list_appart .select__list li {
+					display: block;
+					max-width: 166px;
+				}
+			
+				</style>
+				</div>
+              <div id="call_price" href="0" class="button20"><h2><?=$mes['Дізнатися ціну_1-kimnatni']?></h2></div>
 
 
             </div>

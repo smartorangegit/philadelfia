@@ -22,7 +22,7 @@ global $section_floor_url;	$section_floor_url='section/floor2';
 
 
 $len_default='ua';
-$len=array();
+$len=array('ru','en');
 $OPTIONS=array('MINFLOOR'=>2,'MAXFLOOR'=>21);
 
 define(Cash, true);            
@@ -37,7 +37,8 @@ define(NotCashlFile, array('templates/news.php',
 						  'templates/architecture.php',
 						  'templates/architecture/choose-apartments.php',
 						  'templates/architecture/house.php',
-						  'templates/architecture/location.php'						  
+						  'templates/architecture/location.php'		,
+						  'templates/pdf.php'							  
 						  )); 
 
 /**

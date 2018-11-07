@@ -88,7 +88,7 @@
       <div class="bigmap_box">
         <div class="bigmap__close"><i class="icon-close"></i></div>
         <a class="bigmap__null" target="_blank" title="Розташування PHILADELPHIA Concept House" href="https://www.google.ru/maps/place/%D0%9A%D0%BB%D0%BE%D0%B2%D1%81%D1%8C%D0%BA%D0%B8%D0%B9+%D1%83%D0%B7%D0%B2%D1%96%D0%B7,+19,+%D0%9A%D0%B8%D1%97%D0%B2,+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0/@50.4370409,30.5400974,17.75z/data=!4m5!3m4!1s0x40d4cfa8024b4ed5:0xfe7c681a83644e2c!8m2!3d50.437021!4d30.541358"></a>
-        <img src="/img/bigmap.jpg" alt="Розташування">
+    <img src="/img/philadelphia-map.jpg" alt="Карта розташування та проїзду до ЖК PHILADELPHIA Concept House - Київ, Кловський узвіз, 19" title="Карта розташування та проїзду до ЖК PHILADELPHIA Concept House - Київ, Кловський узвіз, 19" >
       </div>
     </div>
     <script src="/js/jquery.js"></script>

@@ -2,7 +2,7 @@
   <div class="menu clearfix">
   <div class="left_nav">
     <div class="mini-logo">
-      <a href="<?UrlAdd()?>"><img src="/img/logo_Phila.svg" alt="PHILADELPHIA - CONCEPT HOUSE"></a>
+              <img src="/img/philadelphia-concept-house-logo.svg" alt="Лого житлового комплексу PHILADELPHIA Concept House місто Київ" title="Лого житлового комплексу PHILADELPHIA Concept House місто Київ" >
     </div>
     <a href="tel:<?=$mes['tel']?>" class="only_mobile"><i class="icon-phone"></i></a>
     <span class="no_mobile main_call"><i class="icon-phone"></i><span class="phone_number"><a href="tel:<?=$mes['tel']?>"><?=$mes['tel']?></a></span></span>

@@ -1,4 +1,4 @@
-<?php  HeadAdd(array('pageType'=>'class="otherpages appages"','head'=>true));?>
+<?php  HeadAdd(array('pageType'=>'class="otherpages appages"','head'=>true, 'title'=>"План $floor[0] $sec секції》 ЖК PHILADELPHIA Concept House", 'description'=>"【План $floor[0] $sec секції】✅ PHILADELPHIA Concept House - унікальний будинок для тих, хто цінує високу естетику, приватність та безпеку ✅【ЖК PHILADELPHIA】 адреса: Київ, Кловський узвіз, 19"));?>
 
 <?php include ($_SERVER['DOCUMENT_ROOT'].'modules/inc/all_preloader.php')?>
 
@@ -18,9 +18,9 @@
             <!-- <a href="/appartments/" class="params"> <i class="icon-equalizer"></i>Підбір за параметрами</a> -->
             <ul class="wow fadeInLeft">
               <li><span class="round round_1"></span><span class="content_text">Куплено</span></li>
-              <li><span class="round round_2"></span><span class="content_text">1 кімната</span></li>
-              <li><span class="round round_3"></span><span class="content_text">2 кімнати</span></li>
-              <li><span class="round round_4"></span><span class="content_text">3 кімнати</span></li>
+              <li><a href="<?UrlAdd('1-kimnatni')?>" class="li-link"><span class="round round_2"></span><span class="content_text">1 кімната</span></a></li>
+              <li><a href="<?UrlAdd('2-kimnatni')?>" class="li-link"><span class="round round_3"></span><span class="content_text">2 кімнати</span></a></li>
+              <li><a href="<?UrlAdd('3-kimnatni')?>" class="li-link"><span class="round round_4"></span><span class="content_text">3 кімнати</span></a></li>
             </ul>
             <img class="compas" src="/img/plan/compas.png"  alt="compas">
             <?
@@ -29,7 +29,7 @@
           </div>
 
             <div class="level_plan">
-              <div class="content_name name_appart"><?H1page()?></div>
+              <h1 class="content_name name_appart"><?/* H1page() */?>План <?=$floor[0]?> поверху</h1>
               <!-- <img src="/img/plan/1.png" alt="plan"> -->
 		            <?include(svg_plan($svg=$si['img']));?>
             </div>
@@ -150,3 +150,9 @@ $('.lin_<?=$i?>').css('display', 'none');
     };
     </script>
 	'));	?>
+<style>
+.fadeInLeft .li-link {
+	margin: 0;
+	font-size: 100%;
+}
+</style>

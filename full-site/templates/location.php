@@ -17,57 +17,21 @@
           <section class="section_location">
             <div class="location_left">
               <h1 class="main_name wow fadeIn">
-                Розташування
+                <?=$mes['location-h1']?>
               </h1>
               <div class="main_text">
                 <p class="wow fadeIn">
-                  PHILADELPHIA Concept House розташований у центрі Печерську, за адресою: Кловський узвіз, 19.
+                  <?=$mes['PHILADELPHIA Concept House розташований у центрі Печерську, за адресою_location']?>
                 </p>
                 <p class="wow fadeIn">
-                  Ця частина міста відрізняється якісною та насиченою інфраструктурою. Найближчі магазини, кафе та ресторани знаходяться на відстані у декілька хвилин пішки.
+                  <?=$mes['Ця частина міста відрізняється якісною та насиченою інфраструктурою_location']?>
                 </p>
                 <p class="wow fadeIn">
-                  А коли ви відправитесь на прогулянку, ваш маршрут охопить найгарніші київські парки та історичні пам’ятки, головна з яких, безперечно, Києво-Печерська лавра.
+                  <?=$mes['А коли ви відправитесь на прогулянку_location']?>
                 </p>
               </div>
               <div class="table_time">
-                <table>
-                  <tr><td class="minute">1</td><td><span class="">хвилина </span><br>пішки</td><td>
-                    <ul>
-                      <li>до найближчих кафе та ресторанів</li>
-                      <!-- <li>до найближчого продуктового магазину</li> -->
-                    </ul></td>
-                  </tr>
-                  <tr><td class="minute">5</td><td><span class="">хвилин </span><br>пішки</td><td>
-                    <ul>
-                      <li>до найближчого супермаркету</li>
-                      <li>до найближчого парку</li>
-                    </ul></td>
-                  </tr>
-                  <tr><td class="minute">7</td><td><span class="">хвилин </span><br>пішки</td><td>
-                    <ul>
-                      <li>до найближчої станції метро</li>
-                    </ul></td>
-                  </tr>
-                </table>
-                <table>
-
-                  <tr><td class="minute">10</td><td><span class="">хвилин </span><br>пішки</td><td>
-                    <ul>
-                      <li>до Києво-Печерської Лаври</li>
-                    </ul></td>
-                  </tr>
-                  <tr><td class="minute">15</td><td><span class="">хвилин </span><br>пішки</td><td>
-                    <ul>
-                      <li>до Верховної Ради</li>
-                    </ul></td>
-                  </tr>
-                  <tr><td class="minute" >5</td><td style="white-space: nowrap;"><span class="">хвилин </span><br>на авто</td><td>
-                    <ul>
-                      <li>до Хрещатика</li>
-                    </ul></td>
-                  </tr>
-                </table>
+				<?=$mes['table_time_location']?>
               </div>
               <!-- <a href="<?UrlAdd('floor-bselect/')?>" class="button20">Обрати квартиру</a> -->
             </div>

@@ -15,17 +15,23 @@
         <div class="wrapper">
           <section class="kimnatni">
             <div class="kim__left">
-              <h1 class="main_name">2 кімнатні</h1>
-              <p class="main_text wow fadeInUp">
-                Площа 2-к квартир в PHILADELPHIA Concept House стартує з 63 м2. Відчуття простору посилюють панорамні вікна, які покращують освітлення.
-  						</p>
-  							<p class="main_text wow fadeInUp">
-                  Чудово підійде 2-кімнатна квартира молодятам та невеликим сім’ям. Таке житло стане райським куточком для спокійного й щасливого життя. До того ж у житловому комплексі чудова звукоізоляція завдяки використанню високоякісних матеріалів.
-  						</p>
-  						<p class="main_text wow fadeInUp">
-                Якщо ви шукаєте краще житло в Києві, сміливо обирайте PHILADELPHIA Concept House. Квартира тут стане вашою фортецею, творчим простором, а також місцем для відпочинку, приємних зустрічей і щасливого сімейного життя.
-  						</p>
-              <a id="call_price" href="0" class="button20">Дізнатися ціну</a>
+              <h1 class="main_name"><?H1page()?></h1>
+				<?=$mes['Площа 2-к квартир в PHILADELPHIA Concept House стартує з 63 м2']?>
+				<div class="list_appart">		
+				<ul class="select__list">
+					<li><a href="/1-kimnatni/"><?=$mes['1-кімнатні квартири']?></a></li>
+					<li><?=$mes['2-кімнатні квартири']?></li>
+					<li><a href="/3-kimnatni/"><?=$mes['3-кімнатні квартири']?></a></li>
+                </ul>
+				<style>
+				.list_appart .select__list li {
+					display: block;
+					max-width: 166px;
+				}
+			
+				</style>
+				</div>
+              <div id="call_price" href="0" class="button20"><h2><?=$mes['Дізнатися ціну_1-kimnatni']?></h2></div>
             </div>
             <div class="kim__center kim__center__2">
             </div>

@@ -16,50 +16,50 @@
   </div>
     <?/*  <div class="menu_block_wrap clearfix"> */?>
     <div class="nav_logo">
-      <img src="/img/logo_Phila.svg" alt="PHILADELPHIA - CONCEPT HOUSE">
+              <img src="/img/philadelphia-concept-house-logo.svg" alt="Лого житлового комплексу PHILADELPHIA Concept House місто Київ" title="Лого житлового комплексу PHILADELPHIA Concept House місто Київ" >
     </div>
     <div class="menu_block">
-    <span class="h3">ПРО ПРОЕКТ:</span>
+    <span class="h3"><?=$mes['ПРО ПРОЕКТ']?></span>
     <ul>
-      <li><a href="<?UrlAdd()?>">Головна</a></li>
-      <li><a href="<?UrlAdd('house')?>">Будинок</a></li>
-      <li><a href="<?UrlAdd('architecture')?>">Архітектура</a></li>
-      <li><a href="<?UrlAdd('advantages')?>">Переваги</a></li>
+      <li><a href="<?UrlAdd()?>"><?=$mes['Головна']?></a></li>
+      <li><a href="<?UrlAdd('house')?>"><?=$mes['Будинок']?></a></li>
+      <li><a href="<?UrlAdd('architecture')?>"><?=$mes['Архітектура']?></a></li>
+      <li><a href="<?UrlAdd('advantages')?>"><?=$mes['Переваги']?></a></li>
       <li><a href="<?UrlAdd('atmosphere')?>">Sfera Living System</a></li>
-      <li><a href="<?UrlAdd('location')?>">Розташування</a></li>
-      <li><a href="<?UrlAdd('values')?>">Цінності</a></li>
-      <li><a href="<?UrlAdd('contacts')?>">Контакти</a></li>
+      <li><a href="<?UrlAdd('location')?>"><?=$mes['Розташування']?></a></li>
+      <li><a href="<?UrlAdd('values')?>"><?=$mes['Цінності']?></a></li>
+      <li><a href="<?UrlAdd('contacts')?>"><?=$mes['Контакти']?></a></li>
     </ul>
   </div>
   <div class="menu_block">
-    <span class="h3">ОБРАТИ КВАРТИРУ:</span>
+    <span class="h3"><?=$mes['ОБРАТИ КВАРТИРУ']?></span>
     <ul>
-      <li><a href="<?UrlAdd('floor-bselect')?>">За поверхом</a></li>
+      <li><a href="<?UrlAdd('floor-bselect')?>"><?=$mes['За поверхом']?></a></li>
       <!-- <li><a href="<?UrlAdd('appartments')?>">За параметрами</a></li> -->
-      <li><a href="<?UrlAdd('1-kimnatni')?>">1-кімнатні</a></li>
-      <li><a href="<?UrlAdd('2-kimnatni')?>" >2-кімнатні</a></li>
-      <li><a href="<?UrlAdd('3-kimnatni')?>">3-кімнатні</a></li>
+      <li><a href="<?UrlAdd('1-kimnatni')?>"><?=$mes['1-кімнатні']?></a></li>
+      <li><a href="<?UrlAdd('2-kimnatni')?>" ><?=$mes['2-кімнатні']?></a></li>
+      <li><a href="<?UrlAdd('3-kimnatni')?>"><?=$mes['3-кімнатні']?></a></li>
         <?/*  <li><a href="#">Розстрочка</a></li> */?>
         <?/*  <li><a href="#">Комерційна нерухомість</a></li> */?>
         <?/*  <li><a href="#">Юридична інформація</a></li> */?>
     </ul>
   </div>
   <div class="menu_block">
-    <span class="h3">ХІД ПРОЕКТУ:</span>
+    <span class="h3"><?=$mes['ХІД ПРОЕКТУ']?></span>
     <ul>
-      <li><a href="<?UrlAdd('developer')?>">Забудовник</a></li>
-      <li><a href="<?UrlAdd('news')?>">Новини</a></li>
-      <li><a href="<?UrlAdd('building')?>">Будівництво</a></li>
- <?/*  <li><a href="<?UrlAdd('webcam')?>">Веб-камера</a></li> */?>
+      <li><a href="<?UrlAdd('developer')?>"><?=$mes['Забудовник']?></a></li>
+      <li><a href="<?UrlAdd('news')?>"><?=$mes['Новини']?></a></li>
+      <li><a href="<?UrlAdd('building')?>"><?=$mes['Будівництво']?></a></li>
+ <?/*  <li><a href="<?UrlAdd('webcam')?>"><?=$mes['Веб-камера']?></a></li> */?>
     </ul>
   </div>
   <div class="menu_block">
-    <span class="h3">ВІДДІЛ ПРОДАЖУ:</span>
+    <span class="h3"><?=$mes['ВІДДІЛ ПРОДАЖУ']?></span>
     <ul>
       <li><i class="icon-map-pin"></i><?=$mes['adres-sales']?></li>
-      <li><i class="icon-Kyiv_Metro_logo"></i>М. Печерська</li>
+      <li><i class="icon-Kyiv_Metro_logo"></i><?=$mes['М. Печерська']?></li>
       <li><i class="icon-phone"></i><a href="tel:<?=$mes['tel']?>"><?=$mes['tel']?></a></li>
-      <li style="list-style:none;"><a id="call_back" class="button" href="#">Замовити зворотній зв&prime;язок</a></li>
+      <li style="list-style:none;"><a id="call_back" class="button" href="#"><?=$mes['Замовити зворотній']?></a></li>
     </ul>
   </div>
 

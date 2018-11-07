@@ -9,7 +9,7 @@ $flat=str_replace("flat", "",$flat);
 $flat=str_replace("/", "",$flat);
 
  $flat_level=1;
- $flat_mas = explode("_", $flat);
+ $flat_mas = explode("-", $flat);
  $flat=$flat_mas[0];
 
  $flat_mas = explode(".", $flat_mas[1]);
@@ -150,7 +150,7 @@ WHERE buld=$plan AND `sec`=$sec AND (`floor`=$floor[0]-$flat_level_p $pov1) ORDE
 	 if($flat_level_p>0){$t=".".$flat_level_p;}else{$t='';}
  if ($s['sales']) 	{
 	 
-					$URLP[$key]=UrlAdd('section'.$sec.'/floor'.($s['floor']+$flat_level_p).'/flat'.$s['number'].'_'.$s['id'].$t, TRUE);
+					$URLP[$key]=UrlAdd('section'.$sec.'/floor'.($s['floor']+$flat_level_p).'/flat'.$s['number'].'-'.$s['id'].$t, TRUE);
  }
 					
  else {$URLP[$key]=UrlAdd('section'.$sec.'/floor'.($s['floor']+$flat_level_p), TRUE);}
@@ -191,10 +191,9 @@ ob_start();
 require($DIR."pdf/html.php");
 $html= ob_get_clean();
 
-//echo '<pre>'; print_r($svg_2); echo '</pre>'; 
 
 $_SESSION['svg_min_plan']=$html;
 
 $NOIMG=0;
-$kv=$site_url.UrlAdd('section'.$sec.'/floor'.$floor[0].'/flat'.$number.'_'.$id, 1, true);
+$kv=$site_url.UrlAdd('section'.$sec.'/floor'.$floor[0].'/flat'.$number.'-'.$id.'/', 1, true);
 

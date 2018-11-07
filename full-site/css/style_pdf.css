@@ -432,3 +432,10 @@ height:	1px;
     text-align: center;
 }
 
+.st-on {
+    fill: #2a5c6c !important;
+    opacity: 0.8 !important;
+}
+.st0 {
+	   fill: #2a5c6c !important;
+}

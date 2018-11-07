@@ -1,6 +1,6 @@
 <?php  HeadAdd($html=['title'=>$ReaNews['title'],
 					'description'=>$ReaNews['description'],
-					'html'=>$facebook.'<link rel="canonical" href="'.servername().$_SERVER['REQUEST_URI'].'"/>'.$rel]);?>
+					'html'=>$facebook.$rel]);?>
   	<?php //HeaderInclude(array('pageTypeMobileAll'=>true));?>
 
 		<?php include ($_SERVER['DOCUMENT_ROOT'].'modules/inc/all_preloader.php')?>
@@ -22,7 +22,7 @@
           <div class="news_text">
             <?=$ReaNews['text']?>
           </div>
-          <a class="allnews_link button20" href="javascript:history.go(-1)" mce_href="javascript:history.go(-1)"><i class="icon-long-arrow-left"></i>ПОВЕРНУТИСЯ ДО НОВИН</a>
+          <a class="allnews_link button20" href="<?UrlAdd('news')?>" ><i class="icon-long-arrow-left"></i>ПОВЕРНУТИСЯ ДО НОВИН</a>
 
 
 

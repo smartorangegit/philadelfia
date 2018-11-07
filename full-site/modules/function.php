@@ -37,7 +37,11 @@ function HeadAdd($html=['html'=>'', 'head'=>true]){ GLOBAL $mes,$SETPAGE, $SLIDE
 
 	<head>
 		<meta charset="UTF-8">
+		<?if(strpos($_SERVER['REQUEST_URI'], 'building/?page=') || strpos($_SERVER['REQUEST_URI'], 'news/?page=')):?>
+		<meta name="robots" content="noindex, follow">
+		<?else:?>
 		<meta name="robots" content="<?=$html['robots']?>">
+		<?endif;?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
@@ -50,7 +54,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=false;j.src=
 <!-- End Google Tag Manager-->
 
 		<?if(strpos($_SERVER['REQUEST_URI'], 'floor') || strpos($_SERVER['REQUEST_URI'], 'section')):?>
-		<link rel="canonical" href="<?='http://'.$_SERVER['SERVER_NAME'].'/appartments/';?>"/>
+		<link rel="canonical" href="<?='http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>"/>
+		<?elseif(strpos($_SERVER['REQUEST_URI'], 'building/?page=')):?>
+		<link rel="canonical" href="<?='http://'.$_SERVER['SERVER_NAME'].'/building/';?>"/>
+		<?elseif(strpos($_SERVER['REQUEST_URI'], 'news/?page=')):?>
+		<link rel="canonical" href="<?='http://'.$_SERVER['SERVER_NAME'].'/news/';?>"/>
 		<?else:?>
 		<link rel="canonical" href="<?='http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>"/>
 		<?endif;?>
@@ -69,7 +77,11 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=false;j.src=
 		<meta property="og:title" content="<?=$html['title']?>" />
 		<meta property="og:description" content="<?=$html['description']?>" />
 		<meta property="og:image" content="<?=$_SERVER['SERVER_NAME'].$html['mata_img']?>"/>
-		<?}?>
+		<?} else {?>
+		<meta property="og:title" content="<?=$html['title']?>" />
+		<meta property="og:description" content="<?=$html['description']?>" />
+		<meta property="og:image" content="http://<?=$_SERVER['SERVER_NAME'].'/img/phil_1.jpg'?>"/>
+		<? } ?>
 		<?/*Виводиться на всіх сторінках*/?>
 
 	<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
@@ -186,6 +198,8 @@ function FooterMobileAdd($html=['html'=>'','head'=>true]){ GLOBAL $mes;
 	if ($html['head']!==false){	$html['head']=true;	}
 
 	include_once(__DIR__.'/inc/mobile_footer.php');	?>
+	
+
 <!-- Footer end-->
     <?php include (__DIR__.'/inc/mobile_nav.php') ?>
 
@@ -204,7 +218,7 @@ if($html['head']!=false){ echo  '</body></html>';}
 
 function AltImgAdd($text=''){
 	$t='alt="'.$text.'"';
-	echo $t;
+	/* echo $t; */
 }
 
 function UrlAdd($text='', $return='', $a=''){

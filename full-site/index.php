@@ -7,12 +7,10 @@ $detectMob=$detect->isMobile();
 //if ($_SESSION['screenWidth']<=768 AND !$detectMob) {$detectMob=1;}
 /*All function*/ require_once('modules/function.php');  
 $file_link='';
-$correct_link=$_SERVER['REQUEST_URI']; global $site,$SETPAGE, $mes;
+$count=0;
+$correct_link = preg_replace('/\/\/+/', '/', $_SERVER['REQUEST_URI'], -1,$count); 	 global $site,$SETPAGE, $mes,$LANG;
 $pos      = strripos($correct_link, "?");
 $php='.php';
-$LANGS=$len;
-$LANGS[]=$len_default;
-
 /*Utm 01.02.2018*/
  if ($_GET)
  {
@@ -33,19 +31,55 @@ $LANGS[]=$len_default;
 	 }
  }
 /*Utm End*/
+$redirect='';
 
-//
-if (strripos($correct_link, '/?/')!==false) {
-	$string_link = explode("/?/", $correct_link);	
-	header("Location:".$string_link[0]."/");
+if (array_key_exists($correct_link, $redirectUrl))
+{
+	$redirect=$redirectUrl[$correct_link];
+	header("Location:".$site_url.$redirect, TRUE,301);
+	exit;
+}
+/* Переадресація з /NEWS	/news
+if (mb_strtolower($correct_link)!==$correct_link)
+{	
+	$correct_link=mb_strtolower($correct_link);
+	
+	$redirect=$correct_link;
+}
+*/
+if ($count)
+{	
+	$redirect=$correct_link;
 }
 
-$correct_mas=explode("/", $correct_link);
+if (strripos($correct_link, '/?/')!==false) 
+{
+	$string_link = explode("/?/", $correct_link);	
+	//header("Location:".$string_link[0]."/", TRUE,301);
+	$redirect=$string_link[0]."/";
+}
 
-if(strpos($correct_link, 'admin/')!== false){ enterAdminka($correct_link); }
+	$correct_mas=explode("/", $correct_link);
 
-if(end($correct_mas) AND $pos===false){	header("Location:".$correct_link."/");}
+if (strpos($correct_link, 'admin/')!== false)
+{ 
+	enterAdminka($correct_link); 
+}
 
+if (end($correct_mas) AND $pos===false)
+{	
+	$redirect=$correct_link."/";
+}
+
+if (strpos($_SERVER['HTTP_HOST'], 'www.')!== false AND empty($redirect))
+{ 
+	$redirect=$correct_link;
+}
+
+if ($redirect)
+{
+	header("Location:".$site_url.$redirect, TRUE,301);
+}
 
 if(in_array($correct_mas[1], $len, true)) {	$_POST['lang']=$correct_mas[1].'/';}else{$_POST['lang']='';}
 if($_POST['lang']==''){$LANG=$len_default;}else{$LANG=substr($_POST['lang'], 0,2);}

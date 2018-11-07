@@ -22,7 +22,7 @@
 
 
 
-            <a class="link link_404 link__message" href="javascript:history.go(-1)" mce_href="javascript:history.go(-1)"><i class="icon-long-arrow-left"></i> НАЗАД</a>
+            <a class="link link_404 link__message" href="<?UrlAdd()?>" ><i class="icon-long-arrow-left"></i> НАЗАД</a>
             <a class="link link_404 link__message" href="<?UrlAdd()?>">НА ГОЛОВНУ <i class="icon-long-arrow-right"></i></a>
           </div>
         </div>

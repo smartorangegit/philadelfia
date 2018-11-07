@@ -12,23 +12,23 @@
         <div class="wrapper select_wrapper">
           <div class="main_values main_select">
             <div class="main_select__left">
-              <h1 class="select_name wow fadeIn" data-wow-duration="2s">Оберіть потрібний вам поверх
+              <h1 class="select_name wow fadeIn" data-wow-duration="2s"><?H1page()?>
                 <!-- на будинку <span class="no_mobile">праворуч</span>  -->
               </h1>
               <div class="black_line"></div>
               <ul class="select__list">
-                <li><a href="/1-kimnatni/">1-кімнатні квартири</a></li>
-                <li><a href="/2-kimnatni/">2-кімнатні квартири</a></li>
-                <li><a href="/3-kimnatni/">3-кімнатні квартири</a></li>
+                <li><a href="/1-kimnatni/"><?=$mes['1-кімнатні квартири_floor-bselect']?></a></li>
+                <li><a href="/2-kimnatni/"><?=$mes['2-кімнатні квартири_floor-bselect']?></a></li>
+                <li><a href="/3-kimnatni/"><?=$mes['3-кімнатні квартири_floor-bselect']?></a></li>
               </ul>
               <div class="main_select__infobox">
                 <div class="infobox__item">
                   <div id="floorNumber1"> 2 </div>
-                  <p class="select__italic">поверх</p>
+                  <p class="select__italic"><?=$mes['поверх']?></p>
                 </div>
                 <div class="infobox__item">
                   <div id="flatsNumber"> 5 </div>
-                  <p class="select__italic">квартир у продажі</p>
+                  <p class="select__italic"><?=$mes['квартир у продажі']?></p>
                 </div>
               </div>
               <!-- <a id="call_price" class="button20 select__link" href="#">Дізнатись ціну   <i class="icon-long-arrow-right"></i></a> -->
@@ -36,7 +36,7 @@
             <svg class="arrow_blink" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 186 36.5" style="enable-background:new 0 0 186 36.5;" xml:space="preserve">
             <style type="text/css">.st0{fill:#FFFFFF;}.st1{fill:#E4E4E4;}.st2{font-family:'HE_L';font-size:12px;}</style>
             <g><polygon class="st0" points="155,4 4,4 4,34 155,34 182,19 	"/><polygon class="st1" points="4,4 4,19 182,19 182,19 155,4 	"/></g>
-            <text transform="matrix(1 0 0 1 16 22.2998)" class="st2">Оберіть поверх тут</text>
+            <text transform="matrix(1 0 0 1 16 22.2998)" class="st2"><?=$mes['Оберіть поверх тут']?></text>
             </svg>
 
           </div>
@@ -83,9 +83,20 @@
               <path class="st0" data-level="4" data-sale="5" d="M813 868.8l185.3 51.3v-29l6.7-9.3-6.3-2-185.4-66.3H699l-16.5 19z"/>
             </a>
           </svg>
-
-
-        </div>
+<div class="super_seo_text">
+		<div class="main_text">
+		<?=$mes['Життя у престижному районі Києва формує свої звички та цінності']?>
+		</div>
+</div>
+		<style>
+.super_seo_text {		
+	width: 100%;
+	max-width: 1200px;
+	padding: 20px 10px 40px;
+	margin: 0 auto;
+}
+</style>
+</div>
         <div id="floorNumber" class="select__box"></div>
 
 

@@ -494,13 +494,31 @@ $(document).on('click', '#formclose3', function(){
       $('.js-select-level-floor-list').removeClass('select-level-floor-list_hidden').addClass('select-level-floor-list_visble');
     } else {
       visible =!visible;
-      $('.js-select-level-floor-list').removeClass('select-level-floor-list_visible').addClass('select-level-floor-list_hidden');
+      /* $('.js-select-level-floor-list').removeClass('select-level-floor-list_visible').addClass('select-level-floor-list_hidden'); */
     }
   });
 })();
 
+ jQuery(function($){
+	$(document).mouseup(function (e){ // событие клика по веб-документу
+		var div = $(".js-icon-chevron-down"); // тут указываем ID элемента
+		if (!div.is(e.target) // если клик был не по нашему блоку
+		    && div.has(e.target).length === 0) { // и не по его дочерним элементам
+			$('.js-select-level-floor-list').removeClass('select-level-floor-list_visible').addClass('select-level-floor-list_hidden'); // скрываем его
+		}
+	});
+});
 
-
+/* function globalPopupClose(block) {
+    $(document).mouseup(function (e){
+        var div = block; 
+        if (div.has(e.target).length === 0) {
+            $('.js-select-level-floor-list').removeClass('select-level-floor-list_visible').addClass('select-level-floor-list_hidden'); // скрываем его
+        }
+    });
+};
+globalPopupClose($(".select_level_left"));
+globalPopupClose($(".select_level_right")); */
 
 // var w = $(window).width();
 // if (w > 768) {

@@ -16,55 +16,42 @@
         <div class="main_values">
           <div class="name_wrap wow fadeIn" data-wow-duration="2s">
             <div class="content_name"><h1><?H1page()?></h1></div>
-            <div class="content_subname">
-              Систему цінностей PHILADELPHIA Concept House окреслює формула STEP: Security, Technologies, Emotions, Privacy
-            </div>
+
           </div>
+		    <div class="content_subname">
+              <?=$mes['Систему цінностей PHILADELPHIA Concept House окреслює формула STEP']?>
+            </div>
             <ul class="values_box">
               <li class="values_item wow fadeInDown">
                 <img src="/img/values/1.jpg" alt="values">
                 <div class="figcaption">
-                  <p class="values_name">SECURITY</p>
-                  <ul class="values_list">
-                    <li>Продумана система безпеки</li>
-                    <li>Постійний відео-нагляд за суспільними просторами та прибудинковою територією</li>
-                    <li>Система сигналізації у кожній квартирі</li>
-                  </ul>
+                  <h2 class="values_name">SECURITY</h2>
+				<?=$mes['Продумана система безпеки']?>
                 </div>
               </li>
               <li class="values_item wow fadeInRight">
                 <img src="/img/values/2.jpg" alt="values">
                 <div class="figcaption">
-                  <p class="values_name">EMOTIONS</p>
-                  <ul class="values_list">
-                    <li>Естетичне задоволення красою зовні та всередині будинку</li>
-                    <li>Вид з панорамних вікон, що надихає</li>
-                    <li>Радість від спілкування із однодумцями, які поділяють ваші цінності</li>
-                  </ul>
+                  <h2 class="values_name">EMOTIONS</h2>
+				<?=$mes['Естетичне задоволення красою зовні та всередині будинку']?>
                 </div>
               </li>
               <li class="values_item wow fadeInLeft" >
                 <img src="/img/values/3.jpg" alt="values">
                 <div class="figcaption">
-                  <p class="values_name">PRIVACY</p>
-                  <ul class="values_list">
-                    <li>Розташування у тихому центрі міста</li>
-                    <li>Невелика кількість сусідів</li>
-                    <li>Club Lounge, призначений лише для	мешканців будинку та їх гостей</li>
-                  </ul>
+                  <h2 class="values_name">PRIVACY</h2>
+				<?=$mes['Розташування у тихому центрі міста']?>
                 </div>
               </li>
               <li class="values_item wow fadeInUp" >
                 <img src="/img/values/4.jpg" alt="values">
                 <div class="figcaption">
-                  <p class="values_name">TECHNOLOGIES</p>
-                  <ul class="values_list">
-                    <li>Високотехнологічний фасад будинку</li>
-                    <li>Система «розумний дім», мета якої – забезпечення максимального рівня комфорту мешканців та енергозбереження заради економії</li>
-                  </ul>
+                  <h2 class="values_name">TECHNOLOGIES</h2>
+					<?=$mes['Високотехнологічний фасад будинку']?>
                 </div>
               </li>
             </ul>
+
         </div>
       </div>
       <style media="screen">

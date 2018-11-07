@@ -17,5 +17,7 @@ include("pdf/mpdf/mpdf.php");
  $mpdf->WriteHTML($html, 2);
 	
  $mpdf->Output("philadelphua.pdf", 'I');
- 
- ?>
+
+
+
+ ?> 

@@ -354,9 +354,10 @@
   //     sagapreloaderAnimation.init();
   // }
 
-  if(sagapreloaderAnimation.checkDate()) {
+  if(sagapreloaderAnimation.checkDate() && window.innerWidth > 768) {
     sagapreloaderAnimation.init();
   } else {
     sagapreloaderAnimation.preloaderContainer.style.display = 'none';
   }
+  
 </script>

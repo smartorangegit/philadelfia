@@ -45,16 +45,19 @@ if (strripos($s['img'], '.png') === false) {$s['img'].='.png';}
    }
     	 $sort=['floor','room','area'];
 		 
-		 function TableFlats($REZULT, $par=''){ ?>
+		 function TableFlats($REZULT, $par=''){  GLOBAL $mes;
+	
+		 
+		 ?>
 			 
 			  <table>
                 <thead>
                   <tr>
-                    <th>Поверх</th>
-                    <th>№</th>
+                    <th><h2><?=$mes['Поверх-appartments']?></h2></th>
+                    <th><h2>№</h2></th>
                 <?if (!$par)  {echo'<th>Кімнат</th>'; } ?>
 				
-                    <th>Площа, м<sup>2</sup></th>
+                    <th><h2><?=$mes['Площа-appartments']?>, м<sup>2</sup></h2></th>
                   </tr>
                 </thead>
 			
@@ -62,7 +65,7 @@ if (strripos($s['img'], '.png') === false) {$s['img'].='.png';}
 			 <?	foreach($REZULT as $key=>$s){ 
 		
 		if (!empty($par) && $s['kim']!=$par) {continue;}
-					$url="section{$s['sec']}/floor{$s['floor']}/flat{$s['number']}_{$s['id']}";
+					$url="section{$s['sec']}/floor{$s['floor']}/flat{$s['number']}-{$s['id']}";
 					$img='src="/img/app/1.png"';
 			 ?>	
 					 <tr <?if (!$par)  {  echo "data-floor='".$s['floor']."' 
@@ -93,14 +96,14 @@ if (strripos($s['img'], '.png') === false) {$s['img'].='.png';}
 		         <table>
                   <thead>
                     <tr>
-                      <th>Параметри</th>
-                      <th>Планування</th>
+                      <th><?=$mes['Параметри-appartments']?></th>
+                      <th><?=$mes['Планування-appartments']?></th>
                     </tr>
                   </thead>
 				  <tbody>
 				  	 <?	foreach($REZULT as $key=>$s){ 
 				
-					$url="section{$s['sec']}/floor{$s['floor']}/flat{$s['number']}_{$s['id']}";
+					$url="section{$s['sec']}/floor{$s['floor']}/flat{$s['number']}-{$s['id']}";
 					$img='src="/img/app/1.png"';
 					 ?>
                   
@@ -112,10 +115,10 @@ if (strripos($s['img'], '.png') === false) {$s['img'].='.png';}
 						
 						 class="wow fadeIn">
                       <td class="table__info">
-                        <p>Поверх:<span><?=$s['floor']?></span></p>
+                        <p><?=$mes['Поверх-appartments']?>:<span><?=$s['floor']?></span></p>
                         <p>№:<span><?=$s['number']?></span></p>
-                        <p>Кімнат:<span><?=$s['kim']?></span></p>
-                        <p>Площа:<span><?=$s['floor']?></span></p>
+                        <p><?=$mes['Кімнат-appartments']?>:<span><?=$s['kim']?></span></p>
+                        <p><?=$mes['Площа-appartments']?>:<span><?=$s['floor']?></span></p>
                       </td>
                       <td class="table__img">
                         <img <?img($s['img'])?> alt='flats'>

@@ -1,7 +1,32 @@
 function mapMaker(id, longt, lat) {
 	var id = id;
 	flag_item = 1;
+	//console.log(window.location.pathname.search(/ru/));
+	if(window.location.pathname.search(/ru/) !== -1) {
+		
 	var
+		contentString9 = '<div class="map__info-marker">' + '<h3>PHILADELPHIA Concept House</h3>' +
+		'<p>Адрес: Киев, Кловский спуск, 19 </p>' + '</div>',
+		contentString2 = '<div class="map__info-marker">Стоматологическая клиника</div>',
+		contentString3 = '<div class="map__info-marker">Банкомат Ощадбанк</div>',
+		contentString4 = '<div class="map__info-marker">Специализованая школа №89 с <br>углубленным изучением иностранных языков</div>',
+		contentString5 = '<div class="map__info-marker">имназия №109 им. Т. Шевченко</div>',
+		contentString6 = '<div class="map__info-marker">Детский сад №632</div>',
+		contentString7 = '<div class="map__info-marker">Ощадбанк, АО</div>',
+		contentString8 = '<div class="map__info-marker">КБ ПриватБанк, ПАО</div>';
+	} else if(window.location.pathname.search(/en/) !== -1){
+		var
+		contentString9 = '<div class="map__info-marker">' + '<h3>PHILADELPHIA Concept House</h3>' +
+		'<p>Address: Kiev, 19 Klovskyi Spusk Str. </p>' + '</div>',
+		contentString2 = '<div class="map__info-marker">Dental clinic</div>',
+		contentString3 = '<div class="map__info-marker">ATM Oschadbank</div>',
+		contentString4 = '<div class="map__info-marker">Specialized School №89 from <br> in-depth study of foreign languages</div>',
+		contentString5 = '<div class="map__info-marker">Gymnasium №10 them. T.G. Shevchenko</div>',
+		contentString6 = '<div class="map__info-marker">Preschool educational institution №632</div>',
+		contentString7 = '<div class="map__info-marker">Oschadbank, JSC</div>',
+		contentString8 = '<div class="map__info-marker">KB PrivatBank, PAO</div>';
+	} else {
+		var
 		contentString9 = '<div class="map__info-marker">' + '<h3>PHILADELPHIA Concept House</h3>' +
 		'<p>Адреса: Київ, Кловський узвіз, 19 </p>' + '</div>',
 		contentString2 = '<div class="map__info-marker">Стоматологічна клініка</div>',
@@ -11,7 +36,7 @@ function mapMaker(id, longt, lat) {
 		contentString6 = '<div class="map__info-marker">Дошкільний навчальний заклад №632</div>',
 		contentString7 = '<div class="map__info-marker">Ощадбанк, АО</div>',
 		contentString8 = '<div class="map__info-marker">КБ ПриватБанк, ПАО</div>';
-
+	}
 // 50.437010, 30.541347
 
 	var locations = [
