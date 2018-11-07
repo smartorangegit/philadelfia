@@ -2137,7 +2137,7 @@ var datetimepickerFactory = function ($) {
 
 				verticalAnchorEdge = 'top';
 				verticalPosition = (dateInputOffset.top + dateInputElem.offsetHeight) - 1;
-				left = dateInputOffset.left - 24;
+				left = dateInputOffset.left - 0;
 				position = "absolute";
 
 				windowWidth = $(options.contentWindow).width();

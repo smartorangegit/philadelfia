@@ -1,7 +1,6 @@
 <?php  HeadAdd(array('html'=>'<link rel="stylesheet" href="/css/jquery.fancybox.css">'));?>
   	<?php//  HeaderInclude(array('pageTypeMobileAll'=>true));?>
 
-    <?php include ($_SERVER['DOCUMENT_ROOT'].'modules/inc/all_preloader.php')?>
     <div id="perspective" class="perspective effect-laydown">
       <!-- menu -->
       <?php include ($_SERVER['DOCUMENT_ROOT'].'modules/inc/fixed_menu.php')?>
@@ -12,14 +11,12 @@
           <div class="name_wrap" data-wow-duration="2s">
             <div class="content_name"><h1><?H1page()?></h1></div>
             <div class="content_subname">
-              <p>Статус робіт: роботи з благоустрою фундаменту</p>
-              <p>Запланований час завершення будівництва: II квартал 2018 року</p>
+              <p><?=$mes['cтатус робіт']?></p>
+              <p><?=$mes['Запланований час завершення будівництва']?></p>
             </div>
             <a href="/webcam/#" class="webcam__wrap">
-              <!-- <a href="/webcam/#" class="webcam__link"> -->
                 <span>веб<br>камера</span>
                 <img src="/img/web.png" alt="Webcamera">
-              <!-- </a> -->
             </a>
           </div>
             <ul class="build_box">
@@ -44,18 +41,6 @@
         </div>
       </div>
 
-
-    <style media="screen">
-      /* .webcam__link{
-        position: fixed;
-        transform: rotate(90deg);
-        -webkit-transform: rotate(-90deg);
-        padding: 10px 62px;
-        left: -90px;
-        top: 270px;
-        background: url('/img/min-pattern.png');
-      } */
-    </style>
 
 	     <?php	 FooterAdd(array('html'=>'
 	        <script src="/js/jquery.fancybox.js"></script>
