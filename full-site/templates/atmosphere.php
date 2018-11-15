@@ -2,7 +2,7 @@
   	<?php// HeaderInclude(array('pageTypeMobileAll'=>2));?>
 
 
-    <?php include ($_SERVER['DOCUMENT_ROOT'].'modules/inc/preloader.php')?>
+
     <div id="perspective" class="perspective effect-laydown">
 <?//if (!$detectMob) :?>
       <!-- menu -->
@@ -218,7 +218,7 @@
               }
             }
               @media only screen and (max-width:768px){
-                .content_atmosfera .content_wrap { padding: 20px 10px 0;}
+                .content_atmosfera .content_wrap { padding: 50px 10px 0;}
                 .atmo__top{
                   flex-direction: column;
                   align-items: center;

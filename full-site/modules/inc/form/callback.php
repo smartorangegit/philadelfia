@@ -11,7 +11,7 @@
     <input type="tel" class='inputtelmask inputtelvalidation' name="tel" value="" placeholder="<?=$mes['Телефон']?> *">
     <div class="form__telephone error__text form__email-valid"><?=$mes['Невірний формат телефону']?></div>
     <textarea name="text" rows="5" placeholder="<?=$mes['Повідомлення']?>"></textarea>
-    <input type="text" id="datetimepicker_dark" required="" placeholder="Ми передзвонимо у зручний час" name="when">
+    <input type="text" id="datetimepicker_dark" required="" placeholder="<?=$mes['ми перезвоним']?>" name="when">
 
     <div class="form__requried-fields-text">* - <?=$mes['обовзкові поля']?></div>
     			<input  name="typ" class="webad" type="hidden" value="0" >

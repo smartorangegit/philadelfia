@@ -77,11 +77,15 @@ $('#show_mobilemenu').click(function(){
 		$('#show_mobilemenu').removeClass('open_click'),
 		$('.mobile_nav').removeClass('mobile_open'),
 		$('.wrapper').removeClass('wrap_opened')
+    if ($(window).width() > 768 ){
+      $('.logo-container').fadeIn(600)
+    }
 	}
 	else{
 		$(this).addClass('open_click'),
 		$('.mobile_nav').addClass('mobile_open'),
-		$('.wrapper').addClass('wrap_opened')
+		$('.wrapper').addClass('wrap_opened'),
+    $('.logo-container').fadeOut(600)
 	}
 });
 

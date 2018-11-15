@@ -1,7 +1,7 @@
 <?php  HeadAdd();?>
   	<?php HeaderInclude(array('pageTypeMobileAll'=>true));?>
 
-    <?php include ($_SERVER['DOCUMENT_ROOT'].'modules/inc/all_preloader.php')?>
+    
     <style media="screen"> body{ visibility: hidden; }</style>
 
     <div id="perspective" class="perspective effect-laydown">
