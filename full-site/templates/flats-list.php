@@ -4,7 +4,7 @@
   FormInclude('apartments_form', $kv);
 
 ?>
-  <?php include ($_SERVER['DOCUMENT_ROOT'].'modules/inc/all_preloader.php')?>
+
 
     <div id="perspective" class="perspective effect-laydown">
       <!-- menu -->
@@ -21,7 +21,7 @@
 
               <a href="<?UrlAdd('pdf')?>" target="_blank" class="select_level wow fadeInUp" data-wow-duration="0.5s">
                 <div class="select_level_box"></div>
-                <i class="icon-file-pdf"></i> 
+                <i class="icon-file-pdf"></i>
                 <p class="select_level_name">завантажити</p>
               </a>
               <!-- <a href="#" id='select-booking' class="select_level wow fadeInUp" data-wow-duration="0.7s">
@@ -44,7 +44,7 @@
 
             <div class="appart_plan">
               <div class="content_name"><h1><?/* H1page() */?>Квартира <?=$number.'-'.$id?></h1></div>
-              <div class="main_appart_img">
+              <div id="open_modalbox" class="main_appart_img">
                 <img <?img($img_flat)?>  <?AltImgAdd($mes['fl-mes1'].' '.$REZULT2['number'])?> alt="Планування <?=$s['room']?>-кімнатної квартири <?=$number.' '.$floor[0]?> поверх в ЖК PHILADELPHIA Concept House" title="Планування <?=$s['room']?>-кімнатної квартири <?=$number.' '.$floor[0]?> поверх в ЖК PHILADELPHIA Concept House">
               </div>
               <a class="button20" id="call_price" href=""><h2>Дізнатися ціну <i class="icon-long-arrow-right"></i></h2></a>
@@ -66,4 +66,31 @@
 
           <?php	 //FooterAdd(array('index'=>true,'html'=>$Form, 'head'=>true));	?>
       </div>
+
+      <!-- modalbox with flatplan-->
+      <!-- <div class="overlay_flatplan"></div> -->
+      <div class="modalbox_flatplan">
+        <div class="modalbox_close">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40"><path d="M7.05 32.85l-.684-.687 6.154-6.154 6.154-6.155-6.136-6.135-6.135-6.135.686-.686.685-.687 6.135 6.135 6.136 6.135 6.135-6.135 6.137-6.135.686.686.686.685-6.137 6.135-6.135 6.135 6.154 6.154 6.153 6.153-.684.688-.683.688-6.156-6.155-6.154-6.156-6.156 6.156-6.155 6.155z" fill="#fff"></path></svg>
+        </div>
+        <div class="modalbox_inner">
+          <div class="content_name"><h1><?/* H1page() */?>Квартира <?=$number.'-'.$id?></h1></div>
+          <div class="main_appart_img">
+            <img <?img($img_flat)?>  <?AltImgAdd($mes['fl-mes1'].' '.$REZULT2['number'])?> alt="Планування <?=$s['room']?>-кімнатної квартири <?=$number.' '.$floor[0]?> поверх в ЖК PHILADELPHIA Concept House" title="Планування <?=$s['room']?>-кімнатної квартири <?=$number.' '.$floor[0]?> поверх в ЖК PHILADELPHIA Concept House">
+          </div>
+        </div>
+      </div>
+      <!--end  modalbox with flatplan-->
+
+
       <?php	FooterAdd(array('html'=>$Form));	?>
+
+      <script type="text/javascript">
+      $('#open_modalbox').click(function(){
+        $('.modalbox_flatplan').fadeIn(300);
+      });
+      $('.modalbox_close').click(function(){
+        $('.modalbox_flatplan').fadeOut(300);
+      });
+
+      </script>

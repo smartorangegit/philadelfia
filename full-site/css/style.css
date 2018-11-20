@@ -2573,66 +2573,129 @@ a.op_ajax {
   height: 460px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
-/* line 753, ../sass/_allstyle.scss */
+/* line 754, ../sass/_allstyle.scss */
 .appart_plan img {
   max-width: 100%;
   max-height: 100%;
-  filter: invert(100%);
 }
-/* line 758, ../sass/_allstyle.scss */
+/* line 759, ../sass/_allstyle.scss */
 .appart_plan .button20 {
   padding: 2.5em 5em;
 }
 
-/* line 762, ../sass/_allstyle.scss */
+/* line 763, ../sass/_allstyle.scss */
 .level_info a.select_level {
   height: 100px;
   margin: 60px auto 10px;
 }
 
-/* line 766, ../sass/_allstyle.scss */
+/* line 767, ../sass/_allstyle.scss */
 .select_level i {
   width: 100%;
   margin: 0 auto;
 }
 
-/* line 770, ../sass/_allstyle.scss */
+/* line 771, ../sass/_allstyle.scss */
 a.select_level p {
   margin-left: -1px;
   letter-spacing: normal;
   font-size: 12px;
 }
 
-/* line 775, ../sass/_allstyle.scss */
+/* line 776, ../sass/_allstyle.scss */
 a.select_level svg {
   max-width: 24px;
 }
 
-/* line 777, ../sass/_allstyle.scss */
+/* line 778, ../sass/_allstyle.scss */
 .mini_plan svg > g {
   fill: #ffffff;
 }
 
-/* line 780, ../sass/_allstyle.scss */
+/* line 781, ../sass/_allstyle.scss */
 .mini_plan a path:not(.st-on) {
   fill: none;
 }
 
 /* line 784, ../sass/_allstyle.scss */
+.modalbox_flatplan {
+  display: none;
+  position: fixed;
+  width: 90%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  background: rgba(0, 0, 0, 0.92);
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  padding: 42px;
+}
+/* line 795, ../sass/_allstyle.scss */
+.modalbox_flatplan .modalbox_inner {
+  width: 100%;
+  height: 100%;
+}
+/* line 799, ../sass/_allstyle.scss */
+.modalbox_flatplan .content_name {
+  font-size: 38px;
+  height: 40px;
+}
+/* line 803, ../sass/_allstyle.scss */
+.modalbox_flatplan .main_appart_img {
+  width: 100%;
+  height: calc(100% - 40px);
+}
+/* line 806, ../sass/_allstyle.scss */
+.modalbox_flatplan .main_appart_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* line 813, ../sass/_allstyle.scss */
+.modal_for_commerc {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  z-index: 11;
+}
+/* line 820, ../sass/_allstyle.scss */
+.modal_for_commerc h2, .modal_for_commerc .main_text, .modal_for_commerc .content_name {
+  display: inline-block;
+}
+
+/* line 824, ../sass/_allstyle.scss */
+.modal_for_commerc.opened {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* line 828, ../sass/_allstyle.scss */
+.modalbox_close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+/* line 835, ../sass/_allstyle.scss */
 .main_params {
   padding-left: 10px;
   display: flex;
   display: -webkit-flex;
 }
 
-/* line 789, ../sass/_allstyle.scss */
+/* line 840, ../sass/_allstyle.scss */
 .name_params {
   font-size: 40px;
   left: -130px;
 }
 
-/* line 793, ../sass/_allstyle.scss */
+/* line 844, ../sass/_allstyle.scss */
 .box-img {
   display: none;
   position: absolute;
@@ -2647,41 +2710,41 @@ a.select_level svg {
   top: 48px;
   z-index: 1;
 }
-/* line 806, ../sass/_allstyle.scss */
+/* line 857, ../sass/_allstyle.scss */
 .box-img img {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 811, ../sass/_allstyle.scss */
+/* line 862, ../sass/_allstyle.scss */
 .close {
   position: absolute;
   top: 0;
   right: 0;
 }
-/* line 815, ../sass/_allstyle.scss */
+/* line 866, ../sass/_allstyle.scss */
 .close i {
   font-size: 36px;
 }
 
-/* line 818, ../sass/_allstyle.scss */
+/* line 869, ../sass/_allstyle.scss */
 .location_box {
   display: flex;
   display: -webkit-flex;
   justify-content: space-between;
   -webkit-justify-content: space-between;
 }
-/* line 823, ../sass/_allstyle.scss */
+/* line 874, ../sass/_allstyle.scss */
 .location_box .location_form button[type="submit"] {
   color: white;
 }
-/* line 826, ../sass/_allstyle.scss */
+/* line 877, ../sass/_allstyle.scss */
 .location_box .location_form input,
 .location_box .location_form textarea {
   color: white;
 }
 
-/* line 831, ../sass/_allstyle.scss */
+/* line 882, ../sass/_allstyle.scss */
 .location_info {
   width: 35%;
   display: flex;
@@ -2691,81 +2754,81 @@ a.select_level svg {
   -webkit-flex-direction: column;
   -webkit-justify-content: space-between;
 }
-/* line 839, ../sass/_allstyle.scss */
+/* line 890, ../sass/_allstyle.scss */
 .location_info p {
   margin: 0 auto 30px;
   line-height: 1.6;
 }
 
-/* line 843, ../sass/_allstyle.scss */
+/* line 894, ../sass/_allstyle.scss */
 .location_block {
   padding: 20px;
   border: 1px solid #b2b2b2;
 }
-/* line 846, ../sass/_allstyle.scss */
+/* line 897, ../sass/_allstyle.scss */
 .location_block i {
   margin-right: 16px;
 }
-/* line 849, ../sass/_allstyle.scss */
+/* line 900, ../sass/_allstyle.scss */
 .location_block li {
   line-height: 40px;
   white-space: nowrap;
 }
 
-/* line 855, ../sass/_allstyle.scss */
+/* line 906, ../sass/_allstyle.scss */
 .develop_name {
   text-align: center;
   margin-bottom: 36px;
 }
 
-/* line 859, ../sass/_allstyle.scss */
+/* line 910, ../sass/_allstyle.scss */
 .riverside {
   text-align: center;
   padding: 25px 30px 30px;
   border: 4px solid #b2b2b2;
   margin-bottom: 40px;
 }
-/* line 864, ../sass/_allstyle.scss */
+/* line 915, ../sass/_allstyle.scss */
 .riverside img {
   max-width: 220px;
   margin-top: 10px;
 }
-/* line 868, ../sass/_allstyle.scss */
+/* line 919, ../sass/_allstyle.scss */
 .riverside p {
   margin: 12px auto;
 }
 
-/* line 872, ../sass/_allstyle.scss */
+/* line 923, ../sass/_allstyle.scss */
 .projects {
   text-align: center;
 }
 
-/* line 875, ../sass/_allstyle.scss */
+/* line 926, ../sass/_allstyle.scss */
 .proj_slider {
   display: flex;
   display: -webkit-flex;
   align-items: center;
 }
 
-/* line 881, ../sass/_allstyle.scss */
+/* line 932, ../sass/_allstyle.scss */
 .logo_proj {
   width: 19%;
   display: inline-block;
   padding: 10px;
 }
-/* line 885, ../sass/_allstyle.scss */
+/* line 936, ../sass/_allstyle.scss */
 .logo_proj a {
   display: flex;
   display: -webkit-flex;
 }
-/* line 889, ../sass/_allstyle.scss */
+/* line 940, ../sass/_allstyle.scss */
 .logo_proj img {
   max-width: 100%;
   max-height: 160px;
   vertical-align: middle;
 }
 
-/* line 898, ../sass/_allstyle.scss */
+/* line 949, ../sass/_allstyle.scss */
 .select_wrapper {
   background: #2D292A;
   overflow: hidden;
@@ -2773,7 +2836,7 @@ a.select_level svg {
   padding-top: 35px;
 }
 
-/* line 904, ../sass/_allstyle.scss */
+/* line 955, ../sass/_allstyle.scss */
 .floorselect__img {
   height: auto;
   min-height: 300px;
@@ -2786,12 +2849,12 @@ a.select_level svg {
   right: -10%;
 }
 
-/* line 915, ../sass/_allstyle.scss */
+/* line 966, ../sass/_allstyle.scss */
 .floorselect__img a {
   display: block;
 }
 
-/* line 918, ../sass/_allstyle.scss */
+/* line 969, ../sass/_allstyle.scss */
 .main_select {
   position: absolute;
   width: 100%;
@@ -2804,26 +2867,26 @@ a.select_level svg {
   z-index: 1;
 }
 
-/* line 929, ../sass/_allstyle.scss */
+/* line 980, ../sass/_allstyle.scss */
 .main_select__left {
   width: 270px;
   padding-top: 10%;
 }
 
-/* line 933, ../sass/_allstyle.scss */
+/* line 984, ../sass/_allstyle.scss */
 .select_name {
   font-size: 40px;
   text-align: left;
 }
 
-/* line 937, ../sass/_allstyle.scss */
+/* line 988, ../sass/_allstyle.scss */
 .select_text {
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 1.4;
 }
 
-/* line 942, ../sass/_allstyle.scss */
+/* line 993, ../sass/_allstyle.scss */
 .select__list li {
   line-height: 1.4;
   pointer-events: all;
@@ -2832,7 +2895,7 @@ a.select_level svg {
   margin-bottom: 14px;
 }
 
-/* line 949, ../sass/_allstyle.scss */
+/* line 1000, ../sass/_allstyle.scss */
 .select__link {
   margin: 20px 0;
   text-align: center;
@@ -2840,7 +2903,7 @@ a.select_level svg {
   pointer-events: all;
 }
 
-/* line 955, ../sass/_allstyle.scss */
+/* line 1006, ../sass/_allstyle.scss */
 .black_line {
   width: 100%;
   height: 1px;
@@ -2895,7 +2958,7 @@ a.select_level svg {
     opacity: 0;
   }
 }
-/* line 984, ../sass/_allstyle.scss */
+/* line 1035, ../sass/_allstyle.scss */
 .arrow_blink {
   width: 260px;
   height: 60px;
@@ -2908,7 +2971,7 @@ a.select_level svg {
   animation: migal 1.4s infinite;
 }
 
-/* line 995, ../sass/_allstyle.scss */
+/* line 1046, ../sass/_allstyle.scss */
 .infobox__item {
   width: 42%;
   text-align: center;
@@ -2918,34 +2981,34 @@ a.select_level svg {
   vertical-align: top;
   min-height: 110px;
 }
-/* line 1003, ../sass/_allstyle.scss */
+/* line 1054, ../sass/_allstyle.scss */
 .infobox__item > div {
   font-size: 48px;
 }
 
-/* line 1007, ../sass/_allstyle.scss */
+/* line 1058, ../sass/_allstyle.scss */
 .infobox__item:first-child {
   margin-right: 30px;
 }
 
-/* line 1010, ../sass/_allstyle.scss */
+/* line 1061, ../sass/_allstyle.scss */
 .main_select__infobox {
   margin-top: 26px;
 }
 
-/* line 1013, ../sass/_allstyle.scss */
+/* line 1064, ../sass/_allstyle.scss */
 .floorselect__img .st0 {
   opacity: .2;
   fill: #000;
   cursor: pointer;
 }
 
-/* line 1019, ../sass/_allstyle.scss */
+/* line 1070, ../sass/_allstyle.scss */
 .floorselect__img .st0:hover {
   opacity: .5;
 }
 
-/* line 1022, ../sass/_allstyle.scss */
+/* line 1073, ../sass/_allstyle.scss */
 .select__box {
   padding: 4px 8px;
   background: url("/img/min-pattern.png");
@@ -2958,39 +3021,169 @@ a.select_level svg {
   left: 0px;
 }
 
-/* line 1033, ../sass/_allstyle.scss */
+/* line 1084, ../sass/_allstyle.scss */
 .infobox__item.hidden_desktop {
   display: none;
 }
 
+/* line 1087, ../sass/_allstyle.scss */
+sup {
+  position: relative;
+  font-size: .7em;
+  top: -4px;
+}
+
+/* line 1092, ../sass/_allstyle.scss */
+.commerce_section {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0px auto;
+  padding: 110px 10px 10px;
+}
+/* line 1097, ../sass/_allstyle.scss */
+.commerce_section * {
+  box-sizing: border-box;
+}
+/* line 1100, ../sass/_allstyle.scss */
+.commerce_section figure {
+  position: relative;
+  overflow: hidden;
+  width: 48%;
+  cursor: pointer;
+  height: 325px;
+  margin-bottom: 36px;
+}
+/* line 1107, ../sass/_allstyle.scss */
+.commerce_section figure img {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -webkit-transition: -webkit-transform 1.2s;
+  transition: transform 1.2s;
+}
+/* line 1120, ../sass/_allstyle.scss */
+.commerce_section figcaption {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 2em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+/* line 1129, ../sass/_allstyle.scss */
+.commerce_section figcaption:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(top, rgba(0, 0, 10, 0) 0%, rgba(0, 0, 10, 0.65) 75%);
+  background: linear-gradient(to bottom, rgba(0, 0, 10, 0) 0%, rgba(0, 0, 10, 0.65) 75%);
+  opacity: 0;
+  -webkit-transform: translate3d(0, 50%, 0);
+  transform: translate3d(0, 50%, 0);
+  -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+  transition: opacity 0.35s, transform 0.35s;
+}
+/* line 1145, ../sass/_allstyle.scss */
+.commerce_section .main_project__logo {
+  width: 65%;
+  max-width: 180px;
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  text-align: center;
+  line-height: 2;
+  left: 50%;
+  opacity: 0;
+  -webkit-transition: -webkit-transform 0.8s, opacity 0.9s;
+  transition: transform 0.8s, opacity 0.9s;
+  -webkit-transform: translate3d(-50%, -50%, 0);
+  transform: translate3d(-50%, -50%, 0);
+}
+/* line 1160, ../sass/_allstyle.scss */
+.commerce_section .main_name {
+  font-size: 36px;
+  width: 100%;
+  max-width: 760px;
+  margin: 30px auto;
+  line-height: 1.4;
+}
+/* line 1167, ../sass/_allstyle.scss */
+.commerce_section .main_text {
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
+}
+/* line 1172, ../sass/_allstyle.scss */
+.commerce_section li {
+  margin: 10px 0;
+  text-indent: 20px;
+}
+/* line 1178, ../sass/_allstyle.scss */
+.commerce_section figure:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+/* line 1182, ../sass/_allstyle.scss */
+.commerce_section figure:hover figcaption:before {
+  opacity: 1;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+/* line 1187, ../sass/_allstyle.scss */
+.commerce_section figure:hover .main_project__logo {
+  opacity: 1;
+  -webkit-transform: translate3d(-50%, -50%, 0) translate3d(0, -40px, 0);
+  transform: translate3d(-50%, -50%, 0) translate3d(0, -40px, 0);
+}
+
+/* line 1195, ../sass/_allstyle.scss */
+.commerce__box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  -webkit-justify-content: space-between;
+}
+
 @media only screen and (max-width: 1300px) {
-  /* line 1038, ../sass/_allstyle.scss */
+  /* line 1204, ../sass/_allstyle.scss */
   .location_left {
     padding: 150px 30px 80px;
   }
 }
 @media only screen and (max-width: 1024px) {
-  /* line 1044, ../sass/_allstyle.scss */
+  /* line 1210, ../sass/_allstyle.scss */
   .level_info ul {
     padding: 16px 10px;
   }
 
-  /* line 1047, ../sass/_allstyle.scss */
+  /* line 1213, ../sass/_allstyle.scss */
   .level_info {
     width: 140px;
   }
 
-  /* line 1050, ../sass/_allstyle.scss */
+  /* line 1216, ../sass/_allstyle.scss */
   .appart_info {
     padding: 18px 2px;
   }
 
-  /* line 1053, ../sass/_allstyle.scss */
+  /* line 1219, ../sass/_allstyle.scss */
   .level_plan {
     width: 70%;
   }
 
-  /* line 1056, ../sass/_allstyle.scss */
+  /* line 1222, ../sass/_allstyle.scss */
   .level_info a.obrat_poverh {
     display: flex;
     display: -webkit-flex;
@@ -2998,49 +3191,49 @@ a.select_level svg {
     -webkit-align-items: center;
   }
 
-  /* line 1064, ../sass/_allstyle.scss */
+  /* line 1230, ../sass/_allstyle.scss */
   .main_name {
     font-size: 36px;
   }
 
-  /* line 1067, ../sass/_allstyle.scss */
+  /* line 1233, ../sass/_allstyle.scss */
   .location_left {
     padding: 110px 10px 80px;
   }
 
-  /* line 1070, ../sass/_allstyle.scss */
+  /* line 1236, ../sass/_allstyle.scss */
   .table_time {
     flex-direction: column;
     -webkit-flex-direction: column;
   }
 
-  /* line 1074, ../sass/_allstyle.scss */
+  /* line 1240, ../sass/_allstyle.scss */
   .table_time table .minute {
     width: 50px;
   }
 
-  /* line 1077, ../sass/_allstyle.scss */
+  /* line 1243, ../sass/_allstyle.scss */
   .table_time table {
     width: auto;
   }
 
-  /* line 1080, ../sass/_allstyle.scss */
+  /* line 1246, ../sass/_allstyle.scss */
   .table_time table td {
     font-size: 12px;
   }
 
-  /* line 1084, ../sass/_allstyle.scss */
+  /* line 1250, ../sass/_allstyle.scss */
   .section_house .main_two_right {
     padding: 110px 20px 30px;
   }
 
-  /* line 1087, ../sass/_allstyle.scss */
+  /* line 1253, ../sass/_allstyle.scss */
   .arrow_blink {
     width: 190px;
     height: 40px;
   }
 
-  /* line 1091, ../sass/_allstyle.scss */
+  /* line 1257, ../sass/_allstyle.scss */
   .main_select__left {
     width: 220px;
     padding-top: 1%;
@@ -3049,159 +3242,159 @@ a.select_level svg {
     display: -webkit-flex;
     -webkit-flex-direction: column;
   }
-  /* line 1098, ../sass/_allstyle.scss */
+  /* line 1264, ../sass/_allstyle.scss */
   .main_select__left .select__list {
     order: 3;
   }
 
-  /* line 1102, ../sass/_allstyle.scss */
+  /* line 1268, ../sass/_allstyle.scss */
   .black_line {
     margin: 20px 0 10px;
   }
 
-  /* line 1105, ../sass/_allstyle.scss */
+  /* line 1271, ../sass/_allstyle.scss */
   .main_select__infobox {
     margin: 20px auto;
     order: 2;
   }
 
-  /* line 1109, ../sass/_allstyle.scss */
+  /* line 1275, ../sass/_allstyle.scss */
   .infobox__item {
     width: 65%;
     margin-bottom: 10px;
     min-height: 94px;
   }
 
-  /* line 1114, ../sass/_allstyle.scss */
+  /* line 1280, ../sass/_allstyle.scss */
   .infobox__item.hidden_desktop {
     display: block;
     pointer-events: all;
   }
 
-  /* line 1118, ../sass/_allstyle.scss */
+  /* line 1284, ../sass/_allstyle.scss */
   .floorselect__img {
     max-height: none;
   }
 }
 @media only screen and (max-width: 767px) {
-  /* line 1131, ../sass/_allstyle.scss */
+  /* line 1297, ../sass/_allstyle.scss */
   .content_subname {
     font-size: 18px;
   }
 
-  /* line 1134, ../sass/_allstyle.scss */
+  /* line 1300, ../sass/_allstyle.scss */
   .section_house .main_two_right {
     padding: 70px 20px 30px;
   }
 
-  /* line 1138, ../sass/_allstyle.scss */
+  /* line 1304, ../sass/_allstyle.scss */
   .architecturepage .wrapper {
     padding-top: 50px;
   }
 
-  /* line 1141, ../sass/_allstyle.scss */
+  /* line 1307, ../sass/_allstyle.scss */
   .ar__text {
     padding: 20px;
   }
 
-  /* line 1144, ../sass/_allstyle.scss */
+  /* line 1310, ../sass/_allstyle.scss */
   .ar_section {
     flex-direction: column;
     -webkit-flex-direction: column;
   }
 
-  /* line 1148, ../sass/_allstyle.scss */
+  /* line 1314, ../sass/_allstyle.scss */
   .ar__text, .ar__img {
     width: 100%;
   }
 
-  /* line 1152, ../sass/_allstyle.scss */
+  /* line 1318, ../sass/_allstyle.scss */
   .main_advant {
     padding: 50px 0px 40px;
     margin: 0 auto;
   }
 
-  /* line 1156, ../sass/_allstyle.scss */
+  /* line 1322, ../sass/_allstyle.scss */
   .advant_item {
     width: 100%;
   }
 
-  /* line 1159, ../sass/_allstyle.scss */
+  /* line 1325, ../sass/_allstyle.scss */
   .advant_item::after {
     font-size: 46px;
   }
 
-  /* line 1162, ../sass/_allstyle.scss */
+  /* line 1328, ../sass/_allstyle.scss */
   .advant_item .figcaption {
     font-size: 10px;
     padding: 10px;
     min-height: 0;
   }
 
-  /* line 1168, ../sass/_allstyle.scss */
+  /* line 1334, ../sass/_allstyle.scss */
   .section_location {
     flex-direction: column;
     -webkit-flex-direction: column;
   }
 
-  /* line 1172, ../sass/_allstyle.scss */
+  /* line 1338, ../sass/_allstyle.scss */
   .location_left {
     width: 100%;
     padding: 70px 10px 20px;
   }
 
-  /* line 1176, ../sass/_allstyle.scss */
+  /* line 1342, ../sass/_allstyle.scss */
   .location_right {
     height: 500px;
     width: 100%;
   }
 
-  /* line 1180, ../sass/_allstyle.scss */
+  /* line 1346, ../sass/_allstyle.scss */
   .table_time table {
     width: 100%;
   }
 
-  /* line 1183, ../sass/_allstyle.scss */
+  /* line 1349, ../sass/_allstyle.scss */
   .table_time table .minute {
     width: 60px;
   }
 
-  /* line 1187, ../sass/_allstyle.scss */
+  /* line 1353, ../sass/_allstyle.scss */
   .main_build, .main_news, .main_values {
     padding: 60px 10px 10px;
   }
 
-  /* line 1190, ../sass/_allstyle.scss */
+  /* line 1356, ../sass/_allstyle.scss */
   .name_wrap {
     flex-direction: column;
   }
-  /* line 1192, ../sass/_allstyle.scss */
+  /* line 1358, ../sass/_allstyle.scss */
   .name_wrap > * {
     width: 100% !important;
   }
 
-  /* line 1196, ../sass/_allstyle.scss */
+  /* line 1362, ../sass/_allstyle.scss */
   .name_wrap .content_subname {
     text-align: left;
   }
 
-  /* line 1199, ../sass/_allstyle.scss */
+  /* line 1365, ../sass/_allstyle.scss */
   .main_news {
     max-width: 350px;
   }
 
-  /* line 1203, ../sass/_allstyle.scss */
+  /* line 1369, ../sass/_allstyle.scss */
   .all_right_res {
     display: block;
   }
 
-  /* line 1207, ../sass/_allstyle.scss */
+  /* line 1373, ../sass/_allstyle.scss */
   .location_box {
     padding: 0;
     flex-direction: column;
     -webkit-flex-direction: column;
   }
-  /* line 1211, ../sass/_allstyle.scss */
+  /* line 1377, ../sass/_allstyle.scss */
   .location_box .location_form {
     padding: 10px 10px;
     width: 100%;
@@ -3209,41 +3402,41 @@ a.select_level svg {
     max-width: 380px;
   }
 
-  /* line 1218, ../sass/_allstyle.scss */
+  /* line 1384, ../sass/_allstyle.scss */
   .location_info {
     width: 100%;
   }
 
-  /* line 1221, ../sass/_allstyle.scss */
+  /* line 1387, ../sass/_allstyle.scss */
   .location_block {
     width: 100%;
     padding: 8px;
     max-width: 380px;
     margin: 2px auto;
   }
-  /* line 1226, ../sass/_allstyle.scss */
+  /* line 1392, ../sass/_allstyle.scss */
   .location_block li {
     line-height: 34px;
   }
 
-  /* line 1230, ../sass/_allstyle.scss */
+  /* line 1396, ../sass/_allstyle.scss */
   .li_sales_department {
     text-align: center;
     font-size: 20px;
   }
 
-  /* line 1235, ../sass/_allstyle.scss */
+  /* line 1401, ../sass/_allstyle.scss */
   .kimnatni {
     padding: 80px 16px 26px;
     flex-direction: column;
     -webkit-flex-direction: column;
   }
-  /* line 1239, ../sass/_allstyle.scss */
+  /* line 1405, ../sass/_allstyle.scss */
   .kimnatni > * {
     width: 100%;
   }
 
-  /* line 1243, ../sass/_allstyle.scss */
+  /* line 1409, ../sass/_allstyle.scss */
   .kim__left .button20 {
     margin: 16px auto;
     display: block;
@@ -3251,65 +3444,65 @@ a.select_level svg {
     text-align: center;
   }
 
-  /* line 1249, ../sass/_allstyle.scss */
+  /* line 1415, ../sass/_allstyle.scss */
   .kim__center {
     height: 250px;
   }
 
-  /* line 1252, ../sass/_allstyle.scss */
+  /* line 1418, ../sass/_allstyle.scss */
   .kim__left .main_text {
     line-height: 1.6;
     margin: 0px 0px 16px 0;
   }
 
-  /* line 1256, ../sass/_allstyle.scss */
+  /* line 1422, ../sass/_allstyle.scss */
   .kim__right {
     max-width: 500px;
     padding-left: 0px;
     margin: 0 auto;
   }
 
-  /* line 1261, ../sass/_allstyle.scss */
+  /* line 1427, ../sass/_allstyle.scss */
   .footer_wrap {
     text-align: center;
   }
-  /* line 1263, ../sass/_allstyle.scss */
+  /* line 1429, ../sass/_allstyle.scss */
   .footer_wrap .copyr, .footer_wrap .smart {
     margin: 0;
     float: none;
     display: block;
   }
 
-  /* line 1269, ../sass/_allstyle.scss */
+  /* line 1435, ../sass/_allstyle.scss */
   .location_form {
     padding: 10px 10px;
   }
 
-  /* line 1272, ../sass/_allstyle.scss */
+  /* line 1438, ../sass/_allstyle.scss */
   .mini-logo {
     position: absolute;
     left: 50%;
     margin-left: -50px;
   }
 
-  /* line 1277, ../sass/_allstyle.scss */
+  /* line 1443, ../sass/_allstyle.scss */
   .mini-logo img {
     width: 100px;
   }
 
-  /* line 1280, ../sass/_allstyle.scss */
+  /* line 1446, ../sass/_allstyle.scss */
   .menu_wrap {
     height: 50px;
     position: fixed;
     background: rgba(0, 0, 0, 0.7) !important;
   }
 
-  /* line 1285, ../sass/_allstyle.scss */
+  /* line 1451, ../sass/_allstyle.scss */
   .right_nav .lang {
     margin-right: 0;
   }
 
-  /* line 1288, ../sass/_allstyle.scss */
+  /* line 1454, ../sass/_allstyle.scss */
   .main_values .content_name,
   .main_build .content_name,
   .content_name, .location_name,
@@ -3317,14 +3510,14 @@ a.select_level svg {
     font-size: 30px;
   }
 
-  /* line 1295, ../sass/_allstyle.scss */
+  /* line 1461, ../sass/_allstyle.scss */
   .main_appart {
     margin-left: 0;
     flex-direction: column;
     padding-bottom: 20px;
   }
 
-  /* line 1300, ../sass/_allstyle.scss */
+  /* line 1466, ../sass/_allstyle.scss */
   .level_info {
     order: 1;
     -webkit-order: 1;
@@ -3332,28 +3525,28 @@ a.select_level svg {
     display: flex;
   }
 
-  /* line 1306, ../sass/_allstyle.scss */
+  /* line 1472, ../sass/_allstyle.scss */
   .level_info.level_info__second {
     order: 3;
     -webkit-order: 3;
     display: block;
   }
 
-  /* line 1312, ../sass/_allstyle.scss */
+  /* line 1478, ../sass/_allstyle.scss */
   .level_plan {
     order: 0;
     -webkit-order: 0;
     width: 100%;
   }
 
-  /* line 1313, ../sass/_allstyle.scss */
+  /* line 1479, ../sass/_allstyle.scss */
   .appart_info {
     order: 2;
     -webkit-order: 2;
     width: 100%;
   }
 
-  /* line 1314, ../sass/_allstyle.scss */
+  /* line 1480, ../sass/_allstyle.scss */
   .level_info a {
     display: block;
     width: 50%;
@@ -3362,24 +3555,24 @@ a.select_level svg {
     font-size: 12px;
   }
 
-  /* line 1320, ../sass/_allstyle.scss */
+  /* line 1486, ../sass/_allstyle.scss */
   .level_info li {
     margin: 5px 5px auto;
     display: inline-block;
   }
 
-  /* line 1324, ../sass/_allstyle.scss */
+  /* line 1490, ../sass/_allstyle.scss */
   a.select_level p {
     margin-left: 0px;
     letter-spacing: normal;
   }
 
-  /* line 1328, ../sass/_allstyle.scss */
+  /* line 1494, ../sass/_allstyle.scss */
   .level_info ul:before {
     content: none;
   }
 
-  /* line 1331, ../sass/_allstyle.scss */
+  /* line 1497, ../sass/_allstyle.scss */
   .level_info ul {
     float: none;
     margin: 0px auto 30px;
@@ -3388,62 +3581,62 @@ a.select_level svg {
     max-width: 150px;
   }
 
-  /* line 1338, ../sass/_allstyle.scss */
+  /* line 1504, ../sass/_allstyle.scss */
   .level_info .compas {
     display: none;
   }
 
-  /* line 1341, ../sass/_allstyle.scss */
+  /* line 1507, ../sass/_allstyle.scss */
   .level_info .select_level {
     float: none;
     margin: 26px 40px 0 0;
   }
 
-  /* line 1345, ../sass/_allstyle.scss */
+  /* line 1511, ../sass/_allstyle.scss */
   .appart_info {
     padding: 10px;
   }
 
-  /* line 1348, ../sass/_allstyle.scss */
+  /* line 1514, ../sass/_allstyle.scss */
   .param_number {
     font-size: 16px;
   }
 
-  /* line 1351, ../sass/_allstyle.scss */
+  /* line 1517, ../sass/_allstyle.scss */
   .appart_info li {
     width: 30.3%;
     display: inline-block;
     vertical-align: bottom;
   }
 
-  /* line 1356, ../sass/_allstyle.scss */
+  /* line 1522, ../sass/_allstyle.scss */
   .content_name.name_appart {
     font-size: 24px;
   }
 
-  /* line 1359, ../sass/_allstyle.scss */
+  /* line 1525, ../sass/_allstyle.scss */
   .main_build .webcam__wrap {
     font-size: 13px;
     margin-top: 20px;
     max-width: 200px;
     margin: 0 auto;
   }
-  /* line 1364, ../sass/_allstyle.scss */
+  /* line 1530, ../sass/_allstyle.scss */
   .main_build .webcam__wrap img {
     width: 20px;
   }
 
-  /* line 1368, ../sass/_allstyle.scss */
+  /* line 1534, ../sass/_allstyle.scss */
   .build_item, .news_item, .values_item {
     width: 100%;
   }
 
-  /* line 1371, ../sass/_allstyle.scss */
+  /* line 1537, ../sass/_allstyle.scss */
   .values_name {
     font-size: 32px;
   }
 
-  /* line 1375, ../sass/_allstyle.scss */
+  /* line 1541, ../sass/_allstyle.scss */
   .webcam_box {
     width: 100%;
     margin: 0 2px;
@@ -3451,41 +3644,41 @@ a.select_level svg {
     padding: 16px 5px;
   }
 
-  /* line 1381, ../sass/_allstyle.scss */
+  /* line 1547, ../sass/_allstyle.scss */
   .webcam_box:before {
     width: 105%;
     top: 0px;
   }
 
-  /* line 1387, ../sass/_allstyle.scss */
+  /* line 1553, ../sass/_allstyle.scss */
   .developer_box {
     margin-left: 0;
   }
 
-  /* line 1390, ../sass/_allstyle.scss */
+  /* line 1556, ../sass/_allstyle.scss */
   .riverside {
     padding: 0px 14px 24px;
     margin: 5px auto;
   }
-  /* line 1393, ../sass/_allstyle.scss */
+  /* line 1559, ../sass/_allstyle.scss */
   .riverside a {
     display: block;
     margin: 15px auto 24px;
     width: 140px;
   }
-  /* line 1398, ../sass/_allstyle.scss */
+  /* line 1564, ../sass/_allstyle.scss */
   .riverside img {
     width: 100%;
   }
 
-  /* line 1402, ../sass/_allstyle.scss */
+  /* line 1568, ../sass/_allstyle.scss */
   .riverside p {
     font-size: 14px;
     margin: 0;
     line-height: 1.5;
   }
 
-  /* line 1408, ../sass/_allstyle.scss */
+  /* line 1574, ../sass/_allstyle.scss */
   .news_date {
     font-size: 16px;
     padding: 6px 6px;
@@ -3493,50 +3686,50 @@ a.select_level svg {
     margin-right: 12px;
   }
 
-  /* line 1414, ../sass/_allstyle.scss */
+  /* line 1580, ../sass/_allstyle.scss */
   .news__inner {
     height: 280px;
   }
 
-  /* line 1417, ../sass/_allstyle.scss */
+  /* line 1583, ../sass/_allstyle.scss */
   .news_name {
     padding: 10px;
     line-height: 1.5;
   }
 
-  /* line 1421, ../sass/_allstyle.scss */
+  /* line 1587, ../sass/_allstyle.scss */
   .news_subname {
     font-size: 16px;
   }
 
-  /* line 1424, ../sass/_allstyle.scss */
+  /* line 1590, ../sass/_allstyle.scss */
   .news_text {
     margin-top: 14px;
     line-height: 1.5;
   }
 
-  /* line 1428, ../sass/_allstyle.scss */
+  /* line 1594, ../sass/_allstyle.scss */
   .pagination li {
     margin: 0 2px;
   }
 
-  /* line 1432, ../sass/_allstyle.scss */
+  /* line 1598, ../sass/_allstyle.scss */
   .appages .wrapper {
     padding-top: 80px;
   }
 
-  /* line 1436, ../sass/_allstyle.scss */
+  /* line 1602, ../sass/_allstyle.scss */
   .appartments .level_info .select_level {
     height: 70px;
     float: left;
     margin: 10px 30px 24px;
   }
-  /* line 1441, ../sass/_allstyle.scss */
+  /* line 1607, ../sass/_allstyle.scss */
   .appartments .level_info .compas {
     display: none;
   }
 
-  /* line 1445, ../sass/_allstyle.scss */
+  /* line 1611, ../sass/_allstyle.scss */
   .appart_plan {
     order: 0;
     -webkit-order: 0;
@@ -3544,39 +3737,39 @@ a.select_level svg {
     margin-bottom: 20px;
   }
 
-  /* line 1451, ../sass/_allstyle.scss */
+  /* line 1617, ../sass/_allstyle.scss */
   .appart_plan_more img {
     margin-right: 10px;
     margin-left: 16px;
   }
 
-  /* line 1455, ../sass/_allstyle.scss */
+  /* line 1621, ../sass/_allstyle.scss */
   .appart_plan .main_appart_img {
     height: auto;
   }
 
-  /* line 1458, ../sass/_allstyle.scss */
+  /* line 1624, ../sass/_allstyle.scss */
   .level_info a.select_level {
     height: 70px;
   }
 
-  /* line 1461, ../sass/_allstyle.scss */
+  /* line 1627, ../sass/_allstyle.scss */
   .appart_info_up, .appart_info_down {
     left: 0;
     margin-left: 0;
   }
 
-  /* line 1465, ../sass/_allstyle.scss */
+  /* line 1631, ../sass/_allstyle.scss */
   .appart_info_up {
     top: 0px;
   }
 
-  /* line 1466, ../sass/_allstyle.scss */
+  /* line 1632, ../sass/_allstyle.scss */
   .appart_info_down {
     bottom: 0px;
   }
 
-  /* line 1467, ../sass/_allstyle.scss */
+  /* line 1633, ../sass/_allstyle.scss */
   .arrow_blink {
     /* display: none; */
     top: 100px;
@@ -3585,20 +3778,46 @@ a.select_level svg {
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
   }
+
+  /* line 1642, ../sass/_allstyle.scss */
+  .commerce_section {
+    padding: 50px 10px 10px;
+  }
+  /* line 1644, ../sass/_allstyle.scss */
+  .commerce_section .main_name {
+    font-size: 26px;
+  }
+  /* line 1647, ../sass/_allstyle.scss */
+  .commerce_section figure {
+    width: 100%;
+    height: 230px;
+    margin-bottom: 16px;
+  }
+  /* line 1652, ../sass/_allstyle.scss */
+  .commerce_section figcaption:before {
+    opacity: 1;
+    transform: none;
+    -webkit-transform: none;
+  }
+  /* line 1657, ../sass/_allstyle.scss */
+  .commerce_section .main_project__logo {
+    opacity: 1;
+    font-size: 24px;
+  }
 }
-/* line 1480, ../sass/_allstyle.scss */
+/* line 1666, ../sass/_allstyle.scss */
 ::-webkit-scrollbar {
   width: 5px;
   border-left: 0;
   background-color: #f6f6f6;
 }
 
-/* line 1485, ../sass/_allstyle.scss */
+/* line 1671, ../sass/_allstyle.scss */
 ::-webkit-scrollbar-thumb {
   background-color: #B2B2B2;
 }
 
-/* line 1488, ../sass/_allstyle.scss */
+/* line 1674, ../sass/_allstyle.scss */
 .not_found {
   text-align: center;
   font-style: italic;
@@ -3607,71 +3826,71 @@ a.select_level svg {
   display: none;
 }
 
-/* line 1495, ../sass/_allstyle.scss */
+/* line 1681, ../sass/_allstyle.scss */
 .st0:hover, .st1:hover, .saled:hover, .room1:hover, .room2:hover, .room3:hover {
   opacity: 0.6;
 }
 
-/* line 1496, ../sass/_allstyle.scss */
+/* line 1682, ../sass/_allstyle.scss */
 .st-on {
   fill: #2a5c6c !important;
   cursor: pointer;
   opacity: 0.8 !important;
 }
 
-/* line 1501, ../sass/_allstyle.scss */
+/* line 1687, ../sass/_allstyle.scss */
 .mini_plan {
   max-width: 300px;
 }
-/* line 1503, ../sass/_allstyle.scss */
+/* line 1689, ../sass/_allstyle.scss */
 .mini_plan svg {
   width: 100%;
   height: 100%;
 }
 
-/* line 1508, ../sass/_allstyle.scss */
+/* line 1694, ../sass/_allstyle.scss */
 .error {
   border: 1px solid red !important;
 }
 
-/* line 1511, ../sass/_allstyle.scss */
+/* line 1697, ../sass/_allstyle.scss */
 .succses__form_info {
   display: none;
   width: 100%;
 }
 
-/* line 1515, ../sass/_allstyle.scss */
+/* line 1701, ../sass/_allstyle.scss */
 .succses__form_text {
   font-size: 16px;
   text-align: center;
   color: #CB4335;
 }
 
-/* line 1520, ../sass/_allstyle.scss */
+/* line 1706, ../sass/_allstyle.scss */
 .form__requried-fields-text {
   color: #666666;
   font-size: 12px;
   text-align: left;
 }
 
-/* line 1522, ../sass/_allstyle.scss */
+/* line 1708, ../sass/_allstyle.scss */
 .form__email-invalid {
   display: block;
 }
 
-/* line 1523, ../sass/_allstyle.scss */
+/* line 1709, ../sass/_allstyle.scss */
 .form__email-valid {
   display: none;
 }
 
-/* line 1524, ../sass/_allstyle.scss */
+/* line 1710, ../sass/_allstyle.scss */
 .error__text {
   text-align: left;
   color: red;
   font-size: 12px;
 }
 
-/* line 1527, ../sass/_allstyle.scss */
+/* line 1713, ../sass/_allstyle.scss */
 .overlay {
   display: none;
   position: fixed;
@@ -3683,7 +3902,7 @@ a.select_level svg {
   background: rgba(0, 0, 0, 0.8);
 }
 
-/* line 1528, ../sass/_allstyle.scss */
+/* line 1714, ../sass/_allstyle.scss */
 #callform, #callprice, #callback1, #booking {
   position: fixed;
   left: 50%;
@@ -3698,13 +3917,13 @@ a.select_level svg {
   -webkit-transform: translate(-50%, -50%);
 }
 
-/* line 1529, ../sass/_allstyle.scss */
+/* line 1715, ../sass/_allstyle.scss */
 #callform, #callprice, #callback1, #booking {
   display: none;
   opacity: 0;
 }
 
-/* line 1530, ../sass/_allstyle.scss */
+/* line 1716, ../sass/_allstyle.scss */
 #formclose, #formclose1, #formclose2, #formclose3 {
   position: absolute;
   color: #b2b2b2;
@@ -3715,24 +3934,24 @@ a.select_level svg {
   cursor: pointer;
 }
 
-/* line 1531, ../sass/_allstyle.scss */
+/* line 1717, ../sass/_allstyle.scss */
 #callform p, #callprice p, #callback1 p, #booking p {
   color: #666666;
 }
 
-/* line 1532, ../sass/_allstyle.scss */
+/* line 1718, ../sass/_allstyle.scss */
 #call_on_bot {
   margin-left: 60px;
 }
 
 @media only screen and (max-width: 767px) {
-  /* line 1534, ../sass/_allstyle.scss */
+  /* line 1720, ../sass/_allstyle.scss */
   #callform, #callprice, #callback1, #booking {
     max-width: 300px;
     width: 100%;
   }
 
-  /* line 1535, ../sass/_allstyle.scss */
+  /* line 1721, ../sass/_allstyle.scss */
   #call_on_bot {
     position: absolute;
     margin-left: 60px;
@@ -3742,12 +3961,12 @@ a.select_level svg {
   }
 }
 @media only screen and (max-width: 768px) {
-  /* line 1540, ../sass/_allstyle.scss */
+  /* line 1726, ../sass/_allstyle.scss */
   .nav_logo {
     top: 0px;
   }
 
-  /* line 1543, ../sass/_allstyle.scss */
+  /* line 1729, ../sass/_allstyle.scss */
   .main_select {
     position: static;
     transform: none;
@@ -3755,91 +3974,91 @@ a.select_level svg {
     min-height: auto;
   }
 
-  /* line 1549, ../sass/_allstyle.scss */
+  /* line 1735, ../sass/_allstyle.scss */
   .floorselect__img .st0 {
     animation: 2.8s blink infinite;
     -webkit-animation: 2.8s blink infinite;
   }
 
-  /* line 1553, ../sass/_allstyle.scss */
+  /* line 1739, ../sass/_allstyle.scss */
   .floorselect__img a:nth-child(1) .st0 {
     animation-delay: 0.1s;
     -webkit-animation-delay: 0.1s;
   }
 
-  /* line 1554, ../sass/_allstyle.scss */
+  /* line 1740, ../sass/_allstyle.scss */
   .floorselect__img a:nth-child(2) .st0 {
     animation-delay: 0.2s;
     -webkit-animation-delay: 0.2s;
   }
 
-  /* line 1555, ../sass/_allstyle.scss */
+  /* line 1741, ../sass/_allstyle.scss */
   .floorselect__img a:nth-child(3) .st0 {
     animation-delay: 0.3s;
     -webkit-animation-delay: 0.3s;
   }
 
-  /* line 1556, ../sass/_allstyle.scss */
+  /* line 1742, ../sass/_allstyle.scss */
   .floorselect__img a:nth-child(4) .st0 {
     animation-delay: 0.4s;
     -webkit-animation-delay: 0.4s;
   }
 
-  /* line 1557, ../sass/_allstyle.scss */
+  /* line 1743, ../sass/_allstyle.scss */
   .floorselect__img a:nth-child(5) .st0 {
     animation-delay: 0.5s;
     -webkit-animation-delay: 0.5s;
   }
 
-  /* line 1558, ../sass/_allstyle.scss */
+  /* line 1744, ../sass/_allstyle.scss */
   .floorselect__img a:nth-child(6) .st0 {
     animation-delay: 0.6s;
     -webkit-animation-delay: 0.6s;
   }
 
-  /* line 1559, ../sass/_allstyle.scss */
+  /* line 1745, ../sass/_allstyle.scss */
   .floorselect__img a:nth-child(7) .st0 {
     animation-delay: 0.7s;
     -webkit-animation-delay: 0.7s;
   }
 
-  /* line 1560, ../sass/_allstyle.scss */
+  /* line 1746, ../sass/_allstyle.scss */
   .floorselect__img a:nth-child(8) .st0 {
     animation-delay: 0.8s;
     -webkit-animation-delay: 0.8s;
   }
 
-  /* line 1561, ../sass/_allstyle.scss */
+  /* line 1747, ../sass/_allstyle.scss */
   .floorselect__img a:nth-child(9) .st0 {
     animation-delay: 0.9s;
     -webkit-animation-delay: 0.9s;
   }
 
-  /* line 1562, ../sass/_allstyle.scss */
+  /* line 1748, ../sass/_allstyle.scss */
   .floorselect__img a:nth-child(10) .st0 {
     animation-delay: 1s;
     -webkit-animation-delay: 1s;
   }
 
-  /* line 1563, ../sass/_allstyle.scss */
+  /* line 1749, ../sass/_allstyle.scss */
   .floorselect__img a:nth-child(11) .st0 {
     animation-delay: 1.1s;
     -webkit-animation-delay: 1.1s;
   }
 
-  /* line 1564, ../sass/_allstyle.scss */
+  /* line 1750, ../sass/_allstyle.scss */
   .floorselect__img a:nth-child(12) .st0 {
     animation-delay: 1.2s;
     -webkit-animation-delay: 1.2s;
   }
 
-  /* line 1565, ../sass/_allstyle.scss */
+  /* line 1751, ../sass/_allstyle.scss */
   .floorselect__img a:nth-child(13) .st0 {
     animation-delay: 1.3s;
     -webkit-animation-delay: 1.3s;
   }
 
-  /* line 1566, ../sass/_allstyle.scss */
+  /* line 1752, ../sass/_allstyle.scss */
   .floorselect__img a:nth-child(14) .st0 {
     animation-delay: 1.3s;
     -webkit-animation-delay: 1.4s;
@@ -3867,17 +4086,17 @@ a.select_level svg {
       opacity: .2;
     }
   }
-  /* line 1591, ../sass/_allstyle.scss */
+  /* line 1777, ../sass/_allstyle.scss */
   .select_name {
     font-size: 30px;
   }
 
-  /* line 1594, ../sass/_allstyle.scss */
+  /* line 1780, ../sass/_allstyle.scss */
   .select__list li {
     line-height: 1.6;
   }
 
-  /* line 1597, ../sass/_allstyle.scss */
+  /* line 1783, ../sass/_allstyle.scss */
   .floorselect__img {
     position: static;
     padding: 0;
@@ -3887,7 +4106,7 @@ a.select_level svg {
     margin: 112px 0 10px;
   }
 
-  /* line 1605, ../sass/_allstyle.scss */
+  /* line 1791, ../sass/_allstyle.scss */
   .main_select__left {
     width: 180px;
     position: absolute;
@@ -3896,29 +4115,29 @@ a.select_level svg {
     margin: 0 auto;
   }
 
-  /* line 1612, ../sass/_allstyle.scss */
+  /* line 1798, ../sass/_allstyle.scss */
   .infobox__item {
     width: 100px;
     font-size: 12px;
     min-height: 80px;
   }
-  /* line 1616, ../sass/_allstyle.scss */
+  /* line 1802, ../sass/_allstyle.scss */
   .infobox__item span {
     font-size: 12px;
   }
 
-  /* line 1621, ../sass/_allstyle.scss */
+  /* line 1807, ../sass/_allstyle.scss */
   .iti-mobile .intl-tel-input.iti-container {
     z-index: 100000;
   }
 }
 @media only screen and (max-width: 400px) {
-  /* line 1625, ../sass/_allstyle.scss */
+  /* line 1811, ../sass/_allstyle.scss */
   .floorselect__img {
     margin: 112px 0 100px;
   }
 }
-/* line 1631, ../sass/_allstyle.scss */
+/* line 1817, ../sass/_allstyle.scss */
 .intl-tel-input {
   position: relative;
   display: inline-block;
@@ -3926,23 +4145,23 @@ a.select_level svg {
   padding-bottom: 15px;
 }
 
-/* line 1636, ../sass/_allstyle.scss */
+/* line 1822, ../sass/_allstyle.scss */
 .intl-tel-input * {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
 
-/* line 1639, ../sass/_allstyle.scss */
+/* line 1825, ../sass/_allstyle.scss */
 .intl-tel-input .hide {
   display: none;
 }
 
-/* line 1641, ../sass/_allstyle.scss */
+/* line 1827, ../sass/_allstyle.scss */
 .intl-tel-input .v-hide {
   visibility: hidden;
 }
 
-/* line 1643, ../sass/_allstyle.scss */
+/* line 1829, ../sass/_allstyle.scss */
 .intl-tel-input input, .intl-tel-input input[type=text], .intl-tel-input input[type=tel] {
   position: relative;
   z-index: 0;
@@ -3952,7 +4171,7 @@ a.select_level svg {
   margin-right: 0;
 }
 
-/* line 1650, ../sass/_allstyle.scss */
+/* line 1836, ../sass/_allstyle.scss */
 .intl-tel-input .flag-container {
   position: absolute;
   top: 0;
@@ -3961,7 +4180,7 @@ a.select_level svg {
   padding: 1px;
 }
 
-/* line 1656, ../sass/_allstyle.scss */
+/* line 1842, ../sass/_allstyle.scss */
 .intl-tel-input .selected-flag {
   z-index: 1;
   position: relative;
@@ -3971,7 +4190,7 @@ a.select_level svg {
   top: -7px;
 }
 
-/* line 1663, ../sass/_allstyle.scss */
+/* line 1849, ../sass/_allstyle.scss */
 .intl-tel-input .selected-flag .iti-flag {
   position: absolute;
   top: 0;
@@ -3979,7 +4198,7 @@ a.select_level svg {
   margin: auto;
 }
 
-/* line 1668, ../sass/_allstyle.scss */
+/* line 1854, ../sass/_allstyle.scss */
 .intl-tel-input .selected-flag .iti-arrow {
   position: absolute;
   top: 50%;
@@ -3992,13 +4211,13 @@ a.select_level svg {
   border-top: 4px solid #555;
 }
 
-/* line 1678, ../sass/_allstyle.scss */
+/* line 1864, ../sass/_allstyle.scss */
 .intl-tel-input .selected-flag .iti-arrow.up {
   border-top: none;
   border-bottom: 4px solid #555;
 }
 
-/* line 1681, ../sass/_allstyle.scss */
+/* line 1867, ../sass/_allstyle.scss */
 .intl-tel-input .country-list {
   position: absolute;
   z-index: 2;
@@ -4014,189 +4233,189 @@ a.select_level svg {
   overflow-y: scroll;
 }
 
-/* line 1694, ../sass/_allstyle.scss */
+/* line 1880, ../sass/_allstyle.scss */
 .intl-tel-input .country-list.dropup {
   bottom: 100%;
   margin-bottom: -1px;
 }
 
-/* line 1697, ../sass/_allstyle.scss */
+/* line 1883, ../sass/_allstyle.scss */
 .intl-tel-input .country-list .flag-box {
   display: inline-block;
   width: 20px;
 }
 
 @media (max-width: 500px) {
-  /* line 1701, ../sass/_allstyle.scss */
+  /* line 1887, ../sass/_allstyle.scss */
   .intl-tel-input .country-list {
     white-space: normal;
   }
 }
-/* line 1703, ../sass/_allstyle.scss */
+/* line 1889, ../sass/_allstyle.scss */
 .intl-tel-input .country-list .divider {
   padding-bottom: 5px;
   margin-bottom: 5px;
   border-bottom: 1px solid #CCC;
 }
 
-/* line 1707, ../sass/_allstyle.scss */
+/* line 1893, ../sass/_allstyle.scss */
 .intl-tel-input .country-list .country {
   padding: 5px 10px;
 }
 
-/* line 1709, ../sass/_allstyle.scss */
+/* line 1895, ../sass/_allstyle.scss */
 .intl-tel-input .country-list .country .dial-code {
   color: #999;
 }
 
-/* line 1711, ../sass/_allstyle.scss */
+/* line 1897, ../sass/_allstyle.scss */
 .intl-tel-input .country-list .country.highlight {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-/* line 1713, ../sass/_allstyle.scss */
+/* line 1899, ../sass/_allstyle.scss */
 .intl-tel-input .country-list .flag-box, .intl-tel-input .country-list .country-name, .intl-tel-input .country-list .dial-code {
   vertical-align: middle;
 }
 
-/* line 1715, ../sass/_allstyle.scss */
+/* line 1901, ../sass/_allstyle.scss */
 .intl-tel-input .country-list .flag-box, .intl-tel-input .country-list .country-name {
   margin-right: 6px;
   color: #999;
 }
 
-/* line 1717, ../sass/_allstyle.scss */
+/* line 1903, ../sass/_allstyle.scss */
 .intl-tel-input.allow-dropdown input, .intl-tel-input.allow-dropdown input[type=text], .intl-tel-input.allow-dropdown input[type=tel], .intl-tel-input.separate-dial-code input, .intl-tel-input.separate-dial-code input[type=text], .intl-tel-input.separate-dial-code input[type=tel] {
   padding-right: 6px;
   padding-left: 52px;
   margin-left: 0;
 }
 
-/* line 1721, ../sass/_allstyle.scss */
+/* line 1907, ../sass/_allstyle.scss */
 .intl-tel-input.allow-dropdown .flag-container, .intl-tel-input.separate-dial-code .flag-container {
   right: auto;
   left: 0;
 }
 
-/* line 1724, ../sass/_allstyle.scss */
+/* line 1910, ../sass/_allstyle.scss */
 .intl-tel-input.allow-dropdown .selected-flag, .intl-tel-input.separate-dial-code .selected-flag {
   width: 46px;
 }
 
-/* line 1726, ../sass/_allstyle.scss */
+/* line 1912, ../sass/_allstyle.scss */
 .intl-tel-input.allow-dropdown .flag-container:hover {
   cursor: pointer;
 }
 
-/* line 1728, ../sass/_allstyle.scss */
+/* line 1914, ../sass/_allstyle.scss */
 .intl-tel-input.allow-dropdown .flag-container:hover .selected-flag {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
-/* line 1730, ../sass/_allstyle.scss */
+/* line 1916, ../sass/_allstyle.scss */
 .intl-tel-input.allow-dropdown input[disabled] + .flag-container:hover, .intl-tel-input.allow-dropdown input[readonly] + .flag-container:hover {
   cursor: default;
 }
 
-/* line 1732, ../sass/_allstyle.scss */
+/* line 1918, ../sass/_allstyle.scss */
 .intl-tel-input.allow-dropdown input[disabled] + .flag-container:hover .selected-flag, .intl-tel-input.allow-dropdown input[readonly] + .flag-container:hover .selected-flag {
   background-color: transparent;
 }
 
-/* line 1734, ../sass/_allstyle.scss */
+/* line 1920, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code .selected-flag {
   background-color: rgba(0, 0, 0, 0.05);
   display: table;
 }
 
-/* line 1737, ../sass/_allstyle.scss */
+/* line 1923, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code .selected-dial-code {
   display: table-cell;
   vertical-align: middle;
   padding-left: 28px;
 }
 
-/* line 1741, ../sass/_allstyle.scss */
+/* line 1927, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.iti-sdc-2 input, .intl-tel-input.separate-dial-code.iti-sdc-2 input[type=text], .intl-tel-input.separate-dial-code.iti-sdc-2 input[type=tel] {
   padding-left: 66px;
 }
 
-/* line 1743, ../sass/_allstyle.scss */
+/* line 1929, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.iti-sdc-2 .selected-flag {
   width: 60px;
 }
 
-/* line 1745, ../sass/_allstyle.scss */
+/* line 1931, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-2 input, .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-2 input[type=text], .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-2 input[type=tel] {
   padding-left: 76px;
 }
 
-/* line 1747, ../sass/_allstyle.scss */
+/* line 1933, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-2 .selected-flag {
   width: 70px;
 }
 
-/* line 1749, ../sass/_allstyle.scss */
+/* line 1935, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.iti-sdc-3 input, .intl-tel-input.separate-dial-code.iti-sdc-3 input[type=text], .intl-tel-input.separate-dial-code.iti-sdc-3 input[type=tel] {
   padding-left: 74px;
 }
 
-/* line 1751, ../sass/_allstyle.scss */
+/* line 1937, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.iti-sdc-3 .selected-flag {
   width: 68px;
 }
 
-/* line 1753, ../sass/_allstyle.scss */
+/* line 1939, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input, .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input[type=text], .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 input[type=tel] {
   padding-left: 84px;
 }
 
-/* line 1755, ../sass/_allstyle.scss */
+/* line 1941, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-3 .selected-flag {
   width: 78px;
 }
 
-/* line 1757, ../sass/_allstyle.scss */
+/* line 1943, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.iti-sdc-4 input, .intl-tel-input.separate-dial-code.iti-sdc-4 input[type=text], .intl-tel-input.separate-dial-code.iti-sdc-4 input[type=tel] {
   padding-left: 82px;
 }
 
-/* line 1759, ../sass/_allstyle.scss */
+/* line 1945, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.iti-sdc-4 .selected-flag {
   width: 76px;
 }
 
-/* line 1761, ../sass/_allstyle.scss */
+/* line 1947, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input, .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=text], .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 input[type=tel] {
   padding-left: 92px;
 }
 
-/* line 1763, ../sass/_allstyle.scss */
+/* line 1949, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-4 .selected-flag {
   width: 86px;
 }
 
-/* line 1765, ../sass/_allstyle.scss */
+/* line 1951, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.iti-sdc-5 input, .intl-tel-input.separate-dial-code.iti-sdc-5 input[type=text], .intl-tel-input.separate-dial-code.iti-sdc-5 input[type=tel] {
   padding-left: 90px;
 }
 
-/* line 1767, ../sass/_allstyle.scss */
+/* line 1953, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.iti-sdc-5 .selected-flag {
   width: 84px;
 }
 
-/* line 1769, ../sass/_allstyle.scss */
+/* line 1955, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-5 input, .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-5 input[type=text], .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-5 input[type=tel] {
   padding-left: 100px;
 }
 
-/* line 1771, ../sass/_allstyle.scss */
+/* line 1957, ../sass/_allstyle.scss */
 .intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-5 .selected-flag {
   width: 94px;
 }
 
-/* line 1773, ../sass/_allstyle.scss */
+/* line 1959, ../sass/_allstyle.scss */
 .intl-tel-input.iti-container {
   position: absolute;
   top: -1000px;
@@ -4205,12 +4424,12 @@ a.select_level svg {
   padding: 1px;
 }
 
-/* line 1779, ../sass/_allstyle.scss */
+/* line 1965, ../sass/_allstyle.scss */
 .intl-tel-input.iti-container:hover {
   cursor: pointer;
 }
 
-/* line 1782, ../sass/_allstyle.scss */
+/* line 1968, ../sass/_allstyle.scss */
 .iti-mobile .intl-tel-input.iti-container {
   top: 30px;
   bottom: 30px;
@@ -4219,1602 +4438,1602 @@ a.select_level svg {
   position: fixed;
 }
 
-/* line 1789, ../sass/_allstyle.scss */
+/* line 1975, ../sass/_allstyle.scss */
 .iti-mobile .intl-tel-input .country-list {
   max-height: 100%;
   width: 100%;
 }
 
-/* line 1792, ../sass/_allstyle.scss */
+/* line 1978, ../sass/_allstyle.scss */
 .iti-mobile .intl-tel-input .country-list .country {
   padding: 10px 10px;
   line-height: 1.5em;
 }
 
-/* line 1796, ../sass/_allstyle.scss */
+/* line 1982, ../sass/_allstyle.scss */
 .iti-flag {
   width: 20px;
 }
 
-/* line 1797, ../sass/_allstyle.scss */
+/* line 1983, ../sass/_allstyle.scss */
 .iti-flag.be {
   width: 18px;
 }
 
-/* line 1798, ../sass/_allstyle.scss */
+/* line 1984, ../sass/_allstyle.scss */
 .iti-flag.ch {
   width: 15px;
 }
 
-/* line 1799, ../sass/_allstyle.scss */
+/* line 1985, ../sass/_allstyle.scss */
 .iti-flag.mc {
   width: 19px;
 }
 
-/* line 1800, ../sass/_allstyle.scss */
+/* line 1986, ../sass/_allstyle.scss */
 .iti-flag.ne {
   width: 18px;
 }
 
-/* line 1801, ../sass/_allstyle.scss */
+/* line 1987, ../sass/_allstyle.scss */
 .iti-flag.np {
   width: 13px;
 }
 
-/* line 1802, ../sass/_allstyle.scss */
+/* line 1988, ../sass/_allstyle.scss */
 .iti-flag.va {
   width: 15px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 1804, ../sass/_allstyle.scss */
+  /* line 1990, ../sass/_allstyle.scss */
   .iti-flag {
     background-size: 5630px 15px;
   }
 }
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ac {
   height: 10px;
   background-position: 0 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ad {
   height: 14px;
   background-position: -22px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ae {
   height: 10px;
   background-position: -44px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.af {
   height: 14px;
   background-position: -66px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ag {
   height: 14px;
   background-position: -88px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ai {
   height: 10px;
   background-position: -110px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.al {
   height: 15px;
   background-position: -132px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.am {
   height: 10px;
   background-position: -154px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ao {
   height: 14px;
   background-position: -176px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.aq {
   height: 14px;
   background-position: -198px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ar {
   height: 13px;
   background-position: -220px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.as {
   height: 10px;
   background-position: -242px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.at {
   height: 14px;
   background-position: -264px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.au {
   height: 10px;
   background-position: -286px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.aw {
   height: 14px;
   background-position: -308px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ax {
   height: 13px;
   background-position: -330px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.az {
   height: 10px;
   background-position: -352px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ba {
   height: 10px;
   background-position: -374px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bb {
   height: 14px;
   background-position: -396px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bd {
   height: 12px;
   background-position: -418px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.be {
   height: 15px;
   background-position: -440px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bf {
   height: 14px;
   background-position: -460px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bg {
   height: 12px;
   background-position: -482px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bh {
   height: 12px;
   background-position: -504px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bi {
   height: 12px;
   background-position: -526px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bj {
   height: 14px;
   background-position: -548px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bl {
   height: 14px;
   background-position: -570px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bm {
   height: 10px;
   background-position: -592px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bn {
   height: 10px;
   background-position: -614px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bo {
   height: 14px;
   background-position: -636px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bq {
   height: 14px;
   background-position: -658px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.br {
   height: 14px;
   background-position: -680px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bs {
   height: 10px;
   background-position: -702px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bt {
   height: 14px;
   background-position: -724px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bv {
   height: 15px;
   background-position: -746px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bw {
   height: 14px;
   background-position: -768px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.by {
   height: 10px;
   background-position: -790px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.bz {
   height: 14px;
   background-position: -812px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ca {
   height: 10px;
   background-position: -834px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.cc {
   height: 10px;
   background-position: -856px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.cd {
   height: 15px;
   background-position: -878px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.cf {
   height: 14px;
   background-position: -900px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.cg {
   height: 14px;
   background-position: -922px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ch {
   height: 15px;
   background-position: -944px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ci {
   height: 14px;
   background-position: -961px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ck {
   height: 10px;
   background-position: -983px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.cl {
   height: 14px;
   background-position: -1005px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.cm {
   height: 14px;
   background-position: -1027px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.cn {
   height: 14px;
   background-position: -1049px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.co {
   height: 14px;
   background-position: -1071px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.cp {
   height: 14px;
   background-position: -1093px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.cr {
   height: 12px;
   background-position: -1115px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.cu {
   height: 10px;
   background-position: -1137px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.cv {
   height: 12px;
   background-position: -1159px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.cw {
   height: 14px;
   background-position: -1181px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.cx {
   height: 10px;
   background-position: -1203px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.cy {
   height: 13px;
   background-position: -1225px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.cz {
   height: 14px;
   background-position: -1247px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.de {
   height: 12px;
   background-position: -1269px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.dg {
   height: 10px;
   background-position: -1291px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.dj {
   height: 14px;
   background-position: -1313px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.dk {
   height: 15px;
   background-position: -1335px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.dm {
   height: 10px;
   background-position: -1357px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.do {
   height: 13px;
   background-position: -1379px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.dz {
   height: 14px;
   background-position: -1401px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ea {
   height: 14px;
   background-position: -1423px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ec {
   height: 14px;
   background-position: -1445px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ee {
   height: 13px;
   background-position: -1467px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.eg {
   height: 14px;
   background-position: -1489px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.eh {
   height: 10px;
   background-position: -1511px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.er {
   height: 10px;
   background-position: -1533px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.es {
   height: 14px;
   background-position: -1555px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.et {
   height: 10px;
   background-position: -1577px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.eu {
   height: 14px;
   background-position: -1599px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.fi {
   height: 12px;
   background-position: -1621px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.fj {
   height: 10px;
   background-position: -1643px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.fk {
   height: 10px;
   background-position: -1665px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.fm {
   height: 11px;
   background-position: -1687px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.fo {
   height: 15px;
   background-position: -1709px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.fr {
   height: 14px;
   background-position: -1731px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ga {
   height: 15px;
   background-position: -1753px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gb {
   height: 10px;
   background-position: -1775px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gd {
   height: 12px;
   background-position: -1797px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ge {
   height: 14px;
   background-position: -1819px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gf {
   height: 14px;
   background-position: -1841px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gg {
   height: 14px;
   background-position: -1863px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gh {
   height: 14px;
   background-position: -1885px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gi {
   height: 10px;
   background-position: -1907px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gl {
   height: 14px;
   background-position: -1929px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gm {
   height: 14px;
   background-position: -1951px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gn {
   height: 14px;
   background-position: -1973px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gp {
   height: 14px;
   background-position: -1995px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gq {
   height: 14px;
   background-position: -2017px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gr {
   height: 14px;
   background-position: -2039px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gs {
   height: 10px;
   background-position: -2061px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gt {
   height: 13px;
   background-position: -2083px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gu {
   height: 11px;
   background-position: -2105px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gw {
   height: 10px;
   background-position: -2127px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.gy {
   height: 12px;
   background-position: -2149px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.hk {
   height: 14px;
   background-position: -2171px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.hm {
   height: 10px;
   background-position: -2193px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.hn {
   height: 10px;
   background-position: -2215px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.hr {
   height: 10px;
   background-position: -2237px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ht {
   height: 12px;
   background-position: -2259px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.hu {
   height: 10px;
   background-position: -2281px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ic {
   height: 14px;
   background-position: -2303px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.id {
   height: 14px;
   background-position: -2325px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ie {
   height: 10px;
   background-position: -2347px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.il {
   height: 15px;
   background-position: -2369px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.im {
   height: 10px;
   background-position: -2391px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.in {
   height: 14px;
   background-position: -2413px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.io {
   height: 10px;
   background-position: -2435px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.iq {
   height: 14px;
   background-position: -2457px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ir {
   height: 12px;
   background-position: -2479px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.is {
   height: 15px;
   background-position: -2501px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.it {
   height: 14px;
   background-position: -2523px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.je {
   height: 12px;
   background-position: -2545px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.jm {
   height: 10px;
   background-position: -2567px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.jo {
   height: 10px;
   background-position: -2589px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.jp {
   height: 14px;
   background-position: -2611px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ke {
   height: 14px;
   background-position: -2633px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.kg {
   height: 12px;
   background-position: -2655px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.kh {
   height: 13px;
   background-position: -2677px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ki {
   height: 10px;
   background-position: -2699px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.km {
   height: 12px;
   background-position: -2721px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.kn {
   height: 14px;
   background-position: -2743px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.kp {
   height: 10px;
   background-position: -2765px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.kr {
   height: 14px;
   background-position: -2787px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.kw {
   height: 10px;
   background-position: -2809px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ky {
   height: 10px;
   background-position: -2831px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.kz {
   height: 10px;
   background-position: -2853px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.la {
   height: 14px;
   background-position: -2875px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.lb {
   height: 14px;
   background-position: -2897px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.lc {
   height: 10px;
   background-position: -2919px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.li {
   height: 12px;
   background-position: -2941px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.lk {
   height: 10px;
   background-position: -2963px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.lr {
   height: 11px;
   background-position: -2985px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ls {
   height: 14px;
   background-position: -3007px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.lt {
   height: 12px;
   background-position: -3029px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.lu {
   height: 12px;
   background-position: -3051px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.lv {
   height: 10px;
   background-position: -3073px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ly {
   height: 10px;
   background-position: -3095px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ma {
   height: 14px;
   background-position: -3117px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mc {
   height: 15px;
   background-position: -3139px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.md {
   height: 10px;
   background-position: -3160px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.me {
   height: 10px;
   background-position: -3182px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mf {
   height: 14px;
   background-position: -3204px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mg {
   height: 14px;
   background-position: -3226px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mh {
   height: 11px;
   background-position: -3248px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mk {
   height: 10px;
   background-position: -3270px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ml {
   height: 14px;
   background-position: -3292px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mm {
   height: 14px;
   background-position: -3314px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mn {
   height: 10px;
   background-position: -3336px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mo {
   height: 14px;
   background-position: -3358px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mp {
   height: 10px;
   background-position: -3380px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mq {
   height: 14px;
   background-position: -3402px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mr {
   height: 14px;
   background-position: -3424px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ms {
   height: 10px;
   background-position: -3446px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mt {
   height: 14px;
   background-position: -3468px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mu {
   height: 14px;
   background-position: -3490px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mv {
   height: 14px;
   background-position: -3512px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mw {
   height: 14px;
   background-position: -3534px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mx {
   height: 12px;
   background-position: -3556px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.my {
   height: 10px;
   background-position: -3578px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.mz {
   height: 14px;
   background-position: -3600px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.na {
   height: 14px;
   background-position: -3622px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.nc {
   height: 10px;
   background-position: -3644px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ne {
   height: 15px;
   background-position: -3666px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.nf {
   height: 10px;
   background-position: -3686px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ng {
   height: 10px;
   background-position: -3708px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ni {
   height: 12px;
   background-position: -3730px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.nl {
   height: 14px;
   background-position: -3752px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.no {
   height: 15px;
   background-position: -3774px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.np {
   height: 15px;
   background-position: -3796px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.nr {
   height: 10px;
   background-position: -3811px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.nu {
   height: 10px;
   background-position: -3833px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.nz {
   height: 10px;
   background-position: -3855px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.om {
   height: 10px;
   background-position: -3877px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.pa {
   height: 14px;
   background-position: -3899px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.pe {
   height: 14px;
   background-position: -3921px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.pf {
   height: 14px;
   background-position: -3943px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.pg {
   height: 15px;
   background-position: -3965px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ph {
   height: 10px;
   background-position: -3987px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.pk {
   height: 14px;
   background-position: -4009px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.pl {
   height: 13px;
   background-position: -4031px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.pm {
   height: 14px;
   background-position: -4053px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.pn {
   height: 10px;
   background-position: -4075px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.pr {
   height: 14px;
   background-position: -4097px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ps {
   height: 10px;
   background-position: -4119px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.pt {
   height: 14px;
   background-position: -4141px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.pw {
   height: 13px;
   background-position: -4163px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.py {
   height: 11px;
   background-position: -4185px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.qa {
   height: 8px;
   background-position: -4207px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.re {
   height: 14px;
   background-position: -4229px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ro {
   height: 14px;
   background-position: -4251px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.rs {
   height: 14px;
   background-position: -4273px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ru {
   height: 14px;
   background-position: -4295px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.rw {
   height: 14px;
   background-position: -4317px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sa {
   height: 14px;
   background-position: -4339px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sb {
   height: 10px;
   background-position: -4361px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sc {
   height: 10px;
   background-position: -4383px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sd {
   height: 10px;
   background-position: -4405px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.se {
   height: 13px;
   background-position: -4427px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sg {
   height: 14px;
   background-position: -4449px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sh {
   height: 10px;
   background-position: -4471px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.si {
   height: 10px;
   background-position: -4493px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sj {
   height: 15px;
   background-position: -4515px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sk {
   height: 14px;
   background-position: -4537px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sl {
   height: 14px;
   background-position: -4559px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sm {
   height: 15px;
   background-position: -4581px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sn {
   height: 14px;
   background-position: -4603px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.so {
   height: 14px;
   background-position: -4625px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sr {
   height: 14px;
   background-position: -4647px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ss {
   height: 10px;
   background-position: -4669px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.st {
   height: 10px;
   background-position: -4691px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sv {
   height: 12px;
   background-position: -4713px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sx {
   height: 14px;
   background-position: -4735px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sy {
   height: 14px;
   background-position: -4757px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.sz {
   height: 14px;
   background-position: -4779px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ta {
   height: 10px;
   background-position: -4801px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.tc {
   height: 10px;
   background-position: -4823px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.td {
   height: 14px;
   background-position: -4845px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.tf {
   height: 14px;
   background-position: -4867px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.tg {
   height: 13px;
   background-position: -4889px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.th {
   height: 14px;
   background-position: -4911px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.tj {
   height: 10px;
   background-position: -4933px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.tk {
   height: 10px;
   background-position: -4955px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.tl {
   height: 10px;
   background-position: -4977px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.tm {
   height: 14px;
   background-position: -4999px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.tn {
   height: 14px;
   background-position: -5021px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.to {
   height: 10px;
   background-position: -5043px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.tr {
   height: 14px;
   background-position: -5065px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.tt {
   height: 12px;
   background-position: -5087px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.tv {
   height: 10px;
   background-position: -5109px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.tw {
   height: 14px;
   background-position: -5131px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.tz {
   height: 14px;
   background-position: -5153px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ua {
   height: 14px;
   background-position: -5175px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ug {
   height: 14px;
   background-position: -5197px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.um {
   height: 11px;
   background-position: -5219px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.us {
   height: 11px;
   background-position: -5241px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.uy {
   height: 14px;
   background-position: -5263px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.uz {
   height: 10px;
   background-position: -5285px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.va {
   height: 15px;
   background-position: -5307px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.vc {
   height: 14px;
   background-position: -5324px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ve {
   height: 14px;
   background-position: -5346px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.vg {
   height: 10px;
   background-position: -5368px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.vi {
   height: 14px;
   background-position: -5390px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.vn {
   height: 14px;
   background-position: -5412px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.vu {
   height: 12px;
   background-position: -5434px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.wf {
   height: 14px;
   background-position: -5456px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ws {
   height: 10px;
   background-position: -5478px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.xk {
   height: 15px;
   background-position: -5500px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.ye {
   height: 14px;
   background-position: -5522px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.yt {
   height: 14px;
   background-position: -5544px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.za {
   height: 14px;
   background-position: -5566px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.zm {
   height: 14px;
   background-position: -5588px 0;
 }
 
-/* line 1806, ../sass/_allstyle.scss */
+/* line 1992, ../sass/_allstyle.scss */
 .iti-flag.zw {
   height: 10px;
   background-position: -5610px 0;
 }
 
-/* line 1808, ../sass/_allstyle.scss */
+/* line 1994, ../sass/_allstyle.scss */
 .iti-flag {
   width: 20px;
   height: 15px;
@@ -5826,18 +6045,18 @@ a.select_level svg {
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
-  /* line 1817, ../sass/_allstyle.scss */
+  /* line 2003, ../sass/_allstyle.scss */
   .iti-flag {
     background-image: url("../img/flags@2x.png");
   }
 }
-/* line 1820, ../sass/_allstyle.scss */
+/* line 2006, ../sass/_allstyle.scss */
 .iti-flag.np {
   background-color: transparent;
 }
 
 /* Preloader saga start */
-/* line 1824, ../sass/_allstyle.scss */
+/* line 2010, ../sass/_allstyle.scss */
 .preloader-container {
   position: fixed;
   top: 0;
@@ -5848,13 +6067,13 @@ a.select_level svg {
   z-index: 100000;
 }
 
-/* line 1834, ../sass/_allstyle.scss */
+/* line 2020, ../sass/_allstyle.scss */
 .preloader-svg {
   width: 100%;
   height: 100%;
 }
 
-/* line 1839, ../sass/_allstyle.scss */
+/* line 2025, ../sass/_allstyle.scss */
 .saga {
   position: absolute;
   width: 30%;
@@ -5863,7 +6082,7 @@ a.select_level svg {
   transform: translateY(-50%);
 }
 
-/* line 1847, ../sass/_allstyle.scss */
+/* line 2033, ../sass/_allstyle.scss */
 .loading {
   position: absolute;
   top: 50%;
@@ -5874,7 +6093,7 @@ a.select_level svg {
   height: 75px;
 }
 
-/* line 1857, ../sass/_allstyle.scss */
+/* line 2043, ../sass/_allstyle.scss */
 .precent-block {
   position: absolute;
   top: 50%;
@@ -5893,7 +6112,7 @@ a.select_level svg {
     transform: translate(0, 0);
   }
 }
-/* line 1870, ../sass/_allstyle.scss */
+/* line 2056, ../sass/_allstyle.scss */
 .svg-circle {
   stroke: #ffffff;
   fill: #fff;
@@ -5906,7 +6125,7 @@ a.select_level svg {
 
 /* Circle end */
 /* Letters start */
-/* line 1882, ../sass/_allstyle.scss */
+/* line 2068, ../sass/_allstyle.scss */
 .svg-letters {
   fill: #405174;
 }
@@ -5919,7 +6138,7 @@ a.select_level svg {
     opacity: 1;
   }
 }
-/* line 1890, ../sass/_allstyle.scss */
+/* line 2076, ../sass/_allstyle.scss */
 .svg-letters_upper path {
   opacity: 0;
   animation-name: svg-letters_upper;
@@ -5929,27 +6148,27 @@ a.select_level svg {
   fill: #405174;
 }
 
-/* line 1899, ../sass/_allstyle.scss */
+/* line 2085, ../sass/_allstyle.scss */
 .svg-Saga {
   animation-delay: 1.3s;
 }
 
-/* line 1900, ../sass/_allstyle.scss */
+/* line 2086, ../sass/_allstyle.scss */
 .svg-sAga {
   animation-delay: 1.5s;
 }
 
-/* line 1901, ../sass/_allstyle.scss */
+/* line 2087, ../sass/_allstyle.scss */
 .svg-saGa {
   animation-delay: 1.7s;
 }
 
-/* line 1902, ../sass/_allstyle.scss */
+/* line 2088, ../sass/_allstyle.scss */
 .svg-sagA {
   animation-delay: 1.9s;
 }
 
-/* line 1904, ../sass/_allstyle.scss */
+/* line 2090, ../sass/_allstyle.scss */
 .svg-letters_lower {
   opacity: 0;
   animation-name: svg-letters_upper;
@@ -5969,7 +6188,7 @@ a.select_level svg {
     stroke-dashoffset: 0;
   }
 }
-/* line 1920, ../sass/_allstyle.scss */
+/* line 2106, ../sass/_allstyle.scss */
 .svg-loading-circle {
   stroke: #b5b5b5;
   stroke-width: 2px;
@@ -5979,7 +6198,7 @@ a.select_level svg {
   stroke-dashoffset: 236;
 }
 
-/* line 1932, ../sass/_allstyle.scss */
+/* line 2118, ../sass/_allstyle.scss */
 .svg-loading-circle__text {
   font-family: sans-serif;
   font-size: 16px;
@@ -6000,7 +6219,7 @@ a.select_level svg {
     opacity: 0;
   }
 }
-/* line 1945, ../sass/_allstyle.scss */
+/* line 2131, ../sass/_allstyle.scss */
 .svg-outer-lines path {
   stroke: #ffffff;
   stroke-width: 2;
@@ -6013,32 +6232,32 @@ a.select_level svg {
   position: relative;
 }
 
-/* line 1956, ../sass/_allstyle.scss */
+/* line 2142, ../sass/_allstyle.scss */
 path.svg-outer_s {
   animation-delay: 1.6s;
 }
 
-/* line 1957, ../sass/_allstyle.scss */
+/* line 2143, ../sass/_allstyle.scss */
 path.svg-outer_a_1_3 {
   animation-delay: 1.7s;
 }
 
-/* line 1958, ../sass/_allstyle.scss */
+/* line 2144, ../sass/_allstyle.scss */
 path.svg-outer_a_2 {
   animation-delay: 1.8s;
 }
 
-/* line 1959, ../sass/_allstyle.scss */
+/* line 2145, ../sass/_allstyle.scss */
 path.svg-outer_a_1_1 {
   animation-delay: 1.9s;
 }
 
-/* line 1960, ../sass/_allstyle.scss */
+/* line 2146, ../sass/_allstyle.scss */
 path.svg-outer_g {
   animation-delay: 2s;
 }
 
-/* line 1961, ../sass/_allstyle.scss */
+/* line 2147, ../sass/_allstyle.scss */
 path.svg-outer_a_1_2 {
   animation-delay: 2.1s;
 }
@@ -6053,7 +6272,7 @@ path.svg-outer_a_1_2 {
     stroke-dashoffset: 0;
   }
 }
-/* line 1970, ../sass/_allstyle.scss */
+/* line 2156, ../sass/_allstyle.scss */
 .svg-inner-lines path {
   stroke: #405174;
   /*stroke:#000;*/
@@ -6066,32 +6285,32 @@ path.svg-outer_a_1_2 {
   animation-fill-mode: forwards;
 }
 
-/* line 1982, ../sass/_allstyle.scss */
+/* line 2168, ../sass/_allstyle.scss */
 path.svg-inner_s {
   animation-delay: 1.8s;
 }
 
-/* line 1983, ../sass/_allstyle.scss */
+/* line 2169, ../sass/_allstyle.scss */
 path.svg-inner_a_1_3 {
   animation-delay: 1.9s;
 }
 
-/* line 1984, ../sass/_allstyle.scss */
+/* line 2170, ../sass/_allstyle.scss */
 path.svg-inner_a_2 {
   animation-delay: 2s;
 }
 
-/* line 1985, ../sass/_allstyle.scss */
+/* line 2171, ../sass/_allstyle.scss */
 path.svg-inner_a_1_1 {
   animation-delay: 2.1s;
 }
 
-/* line 1986, ../sass/_allstyle.scss */
+/* line 2172, ../sass/_allstyle.scss */
 path.svg-inner_g {
   animation-delay: 2.2s;
 }
 
-/* line 1987, ../sass/_allstyle.scss */
+/* line 2173, ../sass/_allstyle.scss */
 path.svg-inner_a_1_2 {
   animation-delay: 2.3s;
 }
@@ -6108,7 +6327,7 @@ path.svg-inner_a_1_2 {
     opacity: 0;
   }
 }
-/* line 1997, ../sass/_allstyle.scss */
+/* line 2183, ../sass/_allstyle.scss */
 .remove-svg .svg-circle {
   animation-name: removeCircle;
   animation-duration: 1s;
@@ -6116,7 +6335,7 @@ path.svg-inner_a_1_2 {
   animation-fill-mode: forwards;
 }
 
-/* line 2003, ../sass/_allstyle.scss */
+/* line 2189, ../sass/_allstyle.scss */
 .remove-svg .svg-letters_lower {
   animation-name: removeCircle;
   animation-duration: 1s;
@@ -6124,7 +6343,7 @@ path.svg-inner_a_1_2 {
   animation-fill-mode: forwards;
 }
 
-/* line 2009, ../sass/_allstyle.scss */
+/* line 2195, ../sass/_allstyle.scss */
 .remove-svg .svg-letters_upper {
   animation-name: removeCircle;
   animation-duration: 1s;
@@ -6132,7 +6351,7 @@ path.svg-inner_a_1_2 {
   animation-fill-mode: forwards;
 }
 
-/* line 2015, ../sass/_allstyle.scss */
+/* line 2201, ../sass/_allstyle.scss */
 .remove-svg .svg-inner-lines {
   animation-name: removeCircle;
   animation-duration: 1s;
@@ -6140,7 +6359,7 @@ path.svg-inner_a_1_2 {
   animation-fill-mode: forwards;
 }
 
-/* line 2021, ../sass/_allstyle.scss */
+/* line 2207, ../sass/_allstyle.scss */
 .remove-svg .svg-loading-circle-container {
   animation-name: removeCircle;
   animation-duration: 1s;
@@ -6148,12 +6367,12 @@ path.svg-inner_a_1_2 {
   animation-fill-mode: forwards;
 }
 
-/* line 2028, ../sass/_allstyle.scss */
+/* line 2214, ../sass/_allstyle.scss */
 .preloader-container {
   transition: all 1s 0.5s;
 }
 
-/* line 2032, ../sass/_allstyle.scss */
+/* line 2218, ../sass/_allstyle.scss */
 .remove-svg.preloader-container {
   opacity: 0;
   transform: translateY(-150%);
@@ -6161,7 +6380,7 @@ path.svg-inner_a_1_2 {
 
 /* Svg remove content end */
 /*perfect svg*/
-/* line 2040, ../sass/_allstyle.scss */
+/* line 2226, ../sass/_allstyle.scss */
 .perfect {
   position: absolute;
   bottom: 50%;
@@ -6170,80 +6389,80 @@ path.svg-inner_a_1_2 {
   right: 8%;
 }
 
-/* line 2048, ../sass/_allstyle.scss */
+/* line 2234, ../sass/_allstyle.scss */
 .perfect_white {
   stroke: #fff;
   fill: #fff;
 }
 
-/* line 2052, ../sass/_allstyle.scss */
+/* line 2238, ../sass/_allstyle.scss */
 .perfect-letter {
   animation: perfectGropFade 1s forwards;
   opacity: 0;
 }
 
-/* line 2056, ../sass/_allstyle.scss */
+/* line 2242, ../sass/_allstyle.scss */
 .perfect-letter_p {
   animation-delay: 0.3s;
 }
 
-/* line 2059, ../sass/_allstyle.scss */
+/* line 2245, ../sass/_allstyle.scss */
 .perfect-letter_e1 {
   animation-delay: 0.4s;
 }
 
-/* line 2062, ../sass/_allstyle.scss */
+/* line 2248, ../sass/_allstyle.scss */
 .perfect-letter_r {
   animation-delay: 0.5s;
 }
 
-/* line 2065, ../sass/_allstyle.scss */
+/* line 2251, ../sass/_allstyle.scss */
 .perfect-letter_f {
   animation-delay: 0.6s;
 }
 
-/* line 2068, ../sass/_allstyle.scss */
+/* line 2254, ../sass/_allstyle.scss */
 .perfect-letter_e2 {
   animation-delay: 0.7s;
 }
 
-/* line 2071, ../sass/_allstyle.scss */
+/* line 2257, ../sass/_allstyle.scss */
 .perfect-letter_c {
   animation-delay: 0.8s;
 }
 
-/* line 2074, ../sass/_allstyle.scss */
+/* line 2260, ../sass/_allstyle.scss */
 .perfect-letter_t {
   animation-delay: 0.9s;
 }
 
-/* line 2078, ../sass/_allstyle.scss */
+/* line 2264, ../sass/_allstyle.scss */
 .group-letter {
   animation: perfectGropFade 1s forwards;
   opacity: 0;
 }
 
-/* line 2082, ../sass/_allstyle.scss */
+/* line 2268, ../sass/_allstyle.scss */
 .group-letter_g {
   animation-delay: 1s;
 }
 
-/* line 2085, ../sass/_allstyle.scss */
+/* line 2271, ../sass/_allstyle.scss */
 .group-letter_r {
   animation-delay: 1.2s;
 }
 
-/* line 2088, ../sass/_allstyle.scss */
+/* line 2274, ../sass/_allstyle.scss */
 .group-letter_o {
   animation-delay: 1.3s;
 }
 
-/* line 2091, ../sass/_allstyle.scss */
+/* line 2277, ../sass/_allstyle.scss */
 .group-letter_u {
   animation-delay: 1.4s;
 }
 
-/* line 2094, ../sass/_allstyle.scss */
+/* line 2280, ../sass/_allstyle.scss */
 .group-letter_p {
   animation-delay: 1.5s;
 }
@@ -6256,7 +6475,7 @@ path.svg-inner_a_1_2 {
     opacity: 1;
   }
 }
-/* line 2108, ../sass/_allstyle.scss */
+/* line 2294, ../sass/_allstyle.scss */
 .crown {
   animation: perfectGropSlideTop 1s 2s forwards;
   opacity: 0;
@@ -6272,7 +6491,7 @@ path.svg-inner_a_1_2 {
     transform: translateY(0%);
   }
 }
-/* line 2124, ../sass/_allstyle.scss */
+/* line 2310, ../sass/_allstyle.scss */
 .perfect_small-letter {
   animation: perfectGropSlideBottom 1s 2s forwards;
   opacity: 0;
@@ -6299,12 +6518,12 @@ path.svg-inner_a_1_2 {
 /*end__perfect svg*/
 /* Responsive svg start */
 @media only screen and (max-width: 870px) {
-  /* line 2154, ../sass/_allstyle.scss */
+  /* line 2340, ../sass/_allstyle.scss */
   .svg-all-content {
     transform: translate(-20%, 35%) scale(1.5);
   }
 
-  /* line 2158, ../sass/_allstyle.scss */
+  /* line 2344, ../sass/_allstyle.scss */
   .saga {
     top: 5%;
     width: 80%;
@@ -6312,7 +6531,7 @@ path.svg-inner_a_1_2 {
     transform: translateX(-50%);
   }
 
-  /* line 2165, ../sass/_allstyle.scss */
+  /* line 2351, ../sass/_allstyle.scss */
   .perfect {
     bottom: 10%;
     width: 70%;
@@ -6321,14 +6540,14 @@ path.svg-inner_a_1_2 {
   }
 }
 @media only screen and (max-width: 500px) {
-  /* line 2173, ../sass/_allstyle.scss */
+  /* line 2359, ../sass/_allstyle.scss */
   .svg-all-content {
     transform: translate(-45%, 35%) scale(2);
   }
 }
 /* Responsive svg end */
 /* Preloader saga end */
-/* line 2180, ../sass/_allstyle.scss */
+/* line 2366, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker {
   border-bottom: 1px solid #bbb;
   border-left: 1px solid #ccc;
@@ -6346,17 +6565,17 @@ path.svg-inner_a_1_2 {
   display: none;
 }
 
-/* line 2197, ../sass/_allstyle.scss */
+/* line 2383, ../sass/_allstyle.scss */
 .contact_form input {
   color: white;
 }
 
-/* line 2200, ../sass/_allstyle.scss */
+/* line 2386, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_rtl {
   padding: 8px 0 8px 8px;
 }
 
-/* line 2204, ../sass/_allstyle.scss */
+/* line 2390, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker iframe {
   position: absolute;
   left: 0;
@@ -6368,12 +6587,12 @@ path.svg-inner_a_1_2 {
 }
 
 /*For IE8 or lower*/
-/* line 2215, ../sass/_allstyle.scss */
+/* line 2401, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker button {
   border: none !important;
 }
 
-/* line 2219, ../sass/_allstyle.scss */
+/* line 2405, ../sass/_allstyle.scss */
 .xdsoft_noselect {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -6384,24 +6603,24 @@ path.svg-inner_a_1_2 {
   user-select: none;
 }
 
-/* line 2229, ../sass/_allstyle.scss */
+/* line 2415, ../sass/_allstyle.scss */
 .xdsoft_noselect::selection {
   background: transparent;
 }
 
-/* line 2230, ../sass/_allstyle.scss */
+/* line 2416, ../sass/_allstyle.scss */
 .xdsoft_noselect::-moz-selection {
   background: transparent;
 }
 
-/* line 2232, ../sass/_allstyle.scss */
+/* line 2418, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_inline {
   display: inline-block;
   position: static;
   box-shadow: none;
 }
 
-/* line 2238, ../sass/_allstyle.scss */
+/* line 2424, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker * {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -6409,36 +6628,36 @@ path.svg-inner_a_1_2 {
   margin: 0;
 }
 
-/* line 2245, ../sass/_allstyle.scss */
+/* line 2431, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_datepicker, .xdsoft_datetimepicker .xdsoft_timepicker {
   display: none;
 }
 
-/* line 2249, ../sass/_allstyle.scss */
+/* line 2435, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_datepicker.active, .xdsoft_datetimepicker .xdsoft_timepicker.active {
   display: block;
 }
 
-/* line 2253, ../sass/_allstyle.scss */
+/* line 2439, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_datepicker {
   width: 224px;
   float: left;
   margin-left: 8px;
 }
 
-/* line 2258, ../sass/_allstyle.scss */
+/* line 2444, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_rtl .xdsoft_datepicker {
   float: right;
   margin-right: 8px;
   margin-left: 0;
 }
 
-/* line 2264, ../sass/_allstyle.scss */
+/* line 2450, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_showweeks .xdsoft_datepicker {
   width: 256px;
 }
 
-/* line 2268, ../sass/_allstyle.scss */
+/* line 2454, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker {
   width: 58px;
   float: left;
@@ -6447,26 +6666,26 @@ path.svg-inner_a_1_2 {
   margin-top: 0;
 }
 
-/* line 2275, ../sass/_allstyle.scss */
+/* line 2461, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_rtl .xdsoft_timepicker {
   float: right;
   margin-right: 8px;
   margin-left: 0;
 }
 
-/* line 2281, ../sass/_allstyle.scss */
+/* line 2467, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_datepicker.active + .xdsoft_timepicker {
   margin-top: 8px;
   margin-bottom: 3px;
 }
 
-/* line 2286, ../sass/_allstyle.scss */
+/* line 2472, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_monthpicker {
   position: relative;
   text-align: center;
 }
 
-/* line 2291, ../sass/_allstyle.scss */
+/* line 2477, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_label i,
 .xdsoft_datetimepicker .xdsoft_prev,
 .xdsoft_datetimepicker .xdsoft_next
@@ -6474,7 +6693,7 @@ path.svg-inner_a_1_2 {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAYAAADaW7vzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6Q0NBRjI1NjM0M0UwMTFFNDk4NkFGMzJFQkQzQjEwRUIiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6Q0NBRjI1NjQ0M0UwMTFFNDk4NkFGMzJFQkQzQjEwRUIiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpDQ0FGMjU2MTQzRTAxMUU0OTg2QUYzMkVCRDNCMTBFQiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpDQ0FGMjU2MjQzRTAxMUU0OTg2QUYzMkVCRDNCMTBFQiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PoNEP54AAAIOSURBVHja7Jq9TsMwEMcxrZD4WpBYeKUCe+kTMCACHZh4BFfHO/AAIHZGFhYkBBsSEqxsLCAgXKhbXYOTxh9pfJVP+qutnZ5s/5Lz2Y5I03QhWji2GIcgAokWgfCxNvcOCCGKqiSqhUp0laHOne05vdEyGMfkdxJDVjgwDlEQgYQBgx+ULJaWSXXS6r/ER5FBVR8VfGftTKcITNs+a1XpcFoExREIDF14AVIFxgQUS+h520cdud6wNkC0UBw6BCO/HoCYwBhD8QCkQ/x1mwDyD4plh4D6DDV0TAGyo4HcawLIBBSLDkHeH0Mg2yVP3l4TQMZQDDsEOl/MgHQqhMNuE0D+oBh0CIr8MAKyazBH9WyBuKxDWgbXfjNf32TZ1KWm/Ap1oSk/R53UtQ5xTh3LUlMmT8gt6g51Q9p+SobxgJQ/qmsfZhWywGFSl0yBjCLJCMgXail3b7+rumdVJ2YRss4cN+r6qAHDkPWjPjdJCF4n9RmAD/V9A/Wp4NQassDjwlB6XBiCxcJQWmZZb8THFilfy/lfrTvLghq2TqTHrRMTKNJ0sIhdo15RT+RpyWwFdY96UZ/LdQKBGjcXpcc1AlSFEfLmouD+1knuxBDUVrvOBmoOC/rEcN7OQxKVeJTCiAdUzUJhA2Oez9QTkp72OTVcxDcXY8iKNkxGAJXmJCOQwOa6dhyXsOa6XwEGAKdeb5ET3rQdAAAAAElFTkSuQmCC);
 }
 
-/* line 2299, ../sass/_allstyle.scss */
+/* line 2485, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_label i {
   opacity: 0.5;
   background-position: -92px -19px;
@@ -6484,19 +6703,19 @@ path.svg-inner_a_1_2 {
   vertical-align: middle;
 }
 
-/* line 2308, ../sass/_allstyle.scss */
+/* line 2494, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_prev {
   float: left;
   background-position: -20px 0;
 }
 
-/* line 2312, ../sass/_allstyle.scss */
+/* line 2498, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_next {
   float: right;
   background-position: 0 0;
 }
 
-/* line 2317, ../sass/_allstyle.scss */
+/* line 2503, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_next,
 .xdsoft_datetimepicker .xdsoft_prev {
   background-color: transparent;
@@ -6516,7 +6735,7 @@ path.svg-inner_a_1_2 {
   min-width: 0;
 }
 
-/* line 2336, ../sass/_allstyle.scss */
+/* line 2522, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_prev,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_next {
   float: none;
@@ -6528,7 +6747,7 @@ path.svg-inner_a_1_2 {
   margin-top: 7px;
 }
 
-/* line 2346, ../sass/_allstyle.scss */
+/* line 2532, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_rtl .xdsoft_timepicker .xdsoft_prev,
 .xdsoft_datetimepicker.xdsoft_rtl .xdsoft_timepicker .xdsoft_next {
   float: none;
@@ -6536,21 +6755,21 @@ path.svg-inner_a_1_2 {
   margin-right: 14px;
 }
 
-/* line 2353, ../sass/_allstyle.scss */
+/* line 2539, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_prev {
   background-position: -40px 0;
   margin-bottom: 7px;
   margin-top: 0;
 }
 
-/* line 2359, ../sass/_allstyle.scss */
+/* line 2545, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
   height: 151px;
   overflow: hidden;
   border-bottom: 1px solid #ddd;
 }
 
-/* line 2365, ../sass/_allstyle.scss */
+/* line 2551, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div {
   background: #f5f5f5;
   border-top: 1px solid #ddd;
@@ -6564,19 +6783,19 @@ path.svg-inner_a_1_2 {
   line-height: 25px;
 }
 
-/* line 2378, ../sass/_allstyle.scss */
+/* line 2564, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:first-child {
   border-top-width: 0;
 }
 
 /* .xdsoft_datetimepicker .xdsoft_today_button:hover, */
-/* line 2383, ../sass/_allstyle.scss */
+/* line 2569, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_next:hover,
 .xdsoft_datetimepicker .xdsoft_prev:hover {
   opacity: 1;
 }
 
-/* line 2388, ../sass/_allstyle.scss */
+/* line 2574, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_label {
   display: inline;
   position: relative;
@@ -6593,17 +6812,17 @@ path.svg-inner_a_1_2 {
   cursor: pointer;
 }
 
-/* line 2404, ../sass/_allstyle.scss */
+/* line 2590, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_label:hover > span {
   text-decoration: underline;
 }
 
-/* line 2408, ../sass/_allstyle.scss */
+/* line 2594, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_label:hover i {
   opacity: 1.0;
 }
 
-/* line 2412, ../sass/_allstyle.scss */
+/* line 2598, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select {
   border: 1px solid #ccc;
   position: absolute;
@@ -6616,69 +6835,69 @@ path.svg-inner_a_1_2 {
   overflow-y: hidden;
 }
 
-/* line 2424, ../sass/_allstyle.scss */
+/* line 2610, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select.xdsoft_monthselect {
   right: -7px;
 }
 
-/* line 2425, ../sass/_allstyle.scss */
+/* line 2611, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select.xdsoft_yearselect {
   right: 2px;
 }
 
-/* line 2426, ../sass/_allstyle.scss */
+/* line 2612, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover {
   color: #fff;
   background: #242122;
 }
 
-/* line 2431, ../sass/_allstyle.scss */
+/* line 2617, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option {
   padding: 2px 10px 2px 5px;
   text-decoration: none !important;
 }
 
-/* line 2436, ../sass/_allstyle.scss */
+/* line 2622, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current {
   background: #3A3839;
   color: #fff;
   font-weight: 700;
 }
 
-/* line 2442, ../sass/_allstyle.scss */
+/* line 2628, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_month {
   width: 100px;
   text-align: right;
 }
 
-/* line 2447, ../sass/_allstyle.scss */
+/* line 2633, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar {
   clear: both;
 }
 
-/* line 2451, ../sass/_allstyle.scss */
+/* line 2637, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_year {
   width: 48px;
   margin-left: 5px;
 }
 
-/* line 2456, ../sass/_allstyle.scss */
+/* line 2642, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar table {
   border-collapse: collapse;
   width: 100%;
 }
 
-/* line 2462, ../sass/_allstyle.scss */
+/* line 2648, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td > div {
   padding-right: 5px;
 }
 
-/* line 2466, ../sass/_allstyle.scss */
+/* line 2652, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar th {
   height: 25px;
 }
 
-/* line 2470, ../sass/_allstyle.scss */
+/* line 2656, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td, .xdsoft_datetimepicker .xdsoft_calendar th {
   width: 14.2857142%;
   background: #f5f5f5;
@@ -6693,34 +6912,34 @@ path.svg-inner_a_1_2 {
   height: 25px;
 }
 
-/* line 2483, ../sass/_allstyle.scss */
+/* line 2669, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_showweeks .xdsoft_calendar td, .xdsoft_datetimepicker.xdsoft_showweeks .xdsoft_calendar th {
   width: 12.5%;
 }
 
-/* line 2487, ../sass/_allstyle.scss */
+/* line 2673, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar th {
   background: #f1f1f1;
 }
 
-/* line 2491, ../sass/_allstyle.scss */
+/* line 2677, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_today {
   color: #3A3839;
 }
 
-/* line 2495, ../sass/_allstyle.scss */
+/* line 2681, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_highlighted_default {
   background: #3A3839;
   color: #000;
 }
 
-/* line 2499, ../sass/_allstyle.scss */
+/* line 2685, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_highlighted_mint {
   background: #c1c1c1;
   color: #000;
 }
 
-/* line 2504, ../sass/_allstyle.scss */
+/* line 2690, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_default,
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
@@ -6729,7 +6948,7 @@ path.svg-inner_a_1_2 {
   font-weight: 700;
 }
 
-/* line 2512, ../sass/_allstyle.scss */
+/* line 2698, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_other_month,
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_disabled,
 .xdsoft_datetimepicker .xdsoft_time_box > div > div.xdsoft_disabled {
@@ -6737,12 +6956,12 @@ path.svg-inner_a_1_2 {
   cursor: default;
 }
 
-/* line 2519, ../sass/_allstyle.scss */
+/* line 2705, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_other_month.xdsoft_disabled {
   opacity: 0.2;
 }
 
-/* line 2523, ../sass/_allstyle.scss */
+/* line 2709, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td:hover,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
   color: #fff !important;
@@ -6750,14 +6969,14 @@ path.svg-inner_a_1_2 {
   box-shadow: none !important;
 }
 
-/* line 2530, ../sass/_allstyle.scss */
+/* line 2716, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_current.xdsoft_disabled:hover,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current.xdsoft_disabled:hover {
   background: #000000 !important;
   color: #fff !important;
 }
 
-/* line 2536, ../sass/_allstyle.scss */
+/* line 2722, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar td.xdsoft_disabled:hover,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_disabled:hover {
   color: inherit	!important;
@@ -6765,7 +6984,7 @@ path.svg-inner_a_1_2 {
   box-shadow: inherit !important;
 }
 
-/* line 2543, ../sass/_allstyle.scss */
+/* line 2729, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_calendar th {
   font-weight: 700;
   text-align: center;
@@ -6773,7 +6992,7 @@ path.svg-inner_a_1_2 {
   cursor: default;
 }
 
-/* line 2550, ../sass/_allstyle.scss */
+/* line 2736, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_copyright {
   color: #ccc !important;
   font-size: 10px;
@@ -6782,30 +7001,30 @@ path.svg-inner_a_1_2 {
   margin-left: 8px;
 }
 
-/* line 2558, ../sass/_allstyle.scss */
+/* line 2744, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_copyright a {
   color: #eee !important;
 }
 
-/* line 2559, ../sass/_allstyle.scss */
+/* line 2745, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_copyright a:hover {
   color: #aaa !important;
 }
 
-/* line 2561, ../sass/_allstyle.scss */
+/* line 2747, ../sass/_allstyle.scss */
 .xdsoft_time_box {
   position: relative;
   border: 1px solid #ccc;
 }
 
-/* line 2565, ../sass/_allstyle.scss */
+/* line 2751, ../sass/_allstyle.scss */
 .xdsoft_scrollbar > .xdsoft_scroller {
   background: #ccc !important;
   height: 20px;
   border-radius: 3px;
 }
 
-/* line 2570, ../sass/_allstyle.scss */
+/* line 2756, ../sass/_allstyle.scss */
 .xdsoft_scrollbar {
   position: absolute;
   width: 7px;
@@ -6815,18 +7034,18 @@ path.svg-inner_a_1_2 {
   cursor: pointer;
 }
 
-/* line 2578, ../sass/_allstyle.scss */
+/* line 2764, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_rtl .xdsoft_scrollbar {
   left: 0;
   right: auto;
 }
 
-/* line 2582, ../sass/_allstyle.scss */
+/* line 2768, ../sass/_allstyle.scss */
 .xdsoft_scroller_box {
   position: relative;
 }
 
-/* line 2586, ../sass/_allstyle.scss */
+/* line 2772, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark {
   box-shadow: 0 5px 15px -5px rgba(255, 255, 255, 0.506);
   background: #000;
@@ -6837,42 +7056,42 @@ path.svg-inner_a_1_2 {
   color: #ccc;
 }
 
-/* line 2596, ../sass/_allstyle.scss */
+/* line 2782, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_timepicker .xdsoft_time_box {
   border-bottom: 1px solid #222;
 }
 
-/* line 2599, ../sass/_allstyle.scss */
+/* line 2785, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_timepicker .xdsoft_time_box > div > div {
   background: #0a0a0a;
   border-top: 1px solid #222;
   color: #999;
 }
 
-/* line 2605, ../sass/_allstyle.scss */
+/* line 2791, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_label {
   background-color: #000;
 }
 
-/* line 2608, ../sass/_allstyle.scss */
+/* line 2794, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_label > .xdsoft_select {
   border: 1px solid #333;
   background: #000;
 }
 
-/* line 2613, ../sass/_allstyle.scss */
+/* line 2799, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_label > .xdsoft_select > div > .xdsoft_option:hover {
   color: #000;
   background: #ffffff;
 }
 
-/* line 2618, ../sass/_allstyle.scss */
+/* line 2804, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_label > .xdsoft_select > div > .xdsoft_option.xdsoft_current {
   background: #cc5500;
   color: #000;
 }
 
-/* line 2623, ../sass/_allstyle.scss */
+/* line 2809, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_label i,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_prev,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_next
@@ -6880,7 +7099,7 @@ path.svg-inner_a_1_2 {
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAAAeCAYAAADaW7vzAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoV2luZG93cykiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6QUExQUUzOTA0M0UyMTFFNDlBM0FFQTJENTExRDVBODYiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6QUExQUUzOTE0M0UyMTFFNDlBM0FFQTJENTExRDVBODYiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDpBQTFBRTM4RTQzRTIxMUU0OUEzQUVBMkQ1MTFENUE4NiIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDpBQTFBRTM4RjQzRTIxMUU0OUEzQUVBMkQ1MTFENUE4NiIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Pp0VxGEAAAIASURBVHja7JrNSgMxEMebtgh+3MSLr1T1Xn2CHoSKB08+QmR8Bx9A8e7RixdB9CKCoNdexIugxFlJa7rNZneTbLIpM/CnNLsdMvNjM8l0mRCiQ9Ye61IKCAgZAUnH+mU3MMZaHYChBnJUDzWOFZdVfc5+ZFLbrWDeXPwbxIqrLLfaeS0hEBVGIRQCEiZoHQwtlGSByCCdYBl8g8egTTAWoKQMRBRBcZxYlhzhKegqMOageErsCHVkk3hXIFooDgHB1KkHIHVgzKB4ADJQ/A1jAFmAYhkQqA5TOBtocrKrgXwQA8gcFIuAIO8sQSA7hidvPwaQGZSaAYHOUWJABhWWw2EMIH9QagQERU4SArJXo0ZZL18uvaxejXt/Em8xjVBXmvFr1KVm/AJ10tRe2XnraNqaJvKE3KHuUbfK1E+VHB0q40/y3sdQSxY4FHWeKJCunP8UyDdqJZenT3ntVV5jIYCAh20vT7ioP8tpf6E2lfEMwERe+whV1MHjwZB7PBiCxcGQWwKZKD62lfGNnP/1poFAA60T7rF1UgcKd2id3KDeUS+oLWV8DfWAepOfq00CgQabi9zjcgJVYVD7PVzQUAUGAQkbNJTBICDhgwYTjDYD6XeW08ZKh+A4pYkzenOxXUbvZcWz7E8ykRMnIHGX1XPl+1m2vPYpL+2qdb8CDAARlKFEz/ZVkAAAAABJRU5ErkJggg==);
 }
 
-/* line 2631, ../sass/_allstyle.scss */
+/* line 2817, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar th {
   background: #0a0a0a;
@@ -6888,29 +7107,29 @@ path.svg-inner_a_1_2 {
   color: #999;
 }
 
-/* line 2638, ../sass/_allstyle.scss */
+/* line 2824, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar th {
   background: #0e0e0e;
 }
 
-/* line 2642, ../sass/_allstyle.scss */
+/* line 2828, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td.xdsoft_today {
   color: #ccc;
 }
 
-/* line 2646, ../sass/_allstyle.scss */
+/* line 2832, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td.xdsoft_highlighted_default {
   background: #3A3839;
   color: #000;
 }
 
-/* line 2650, ../sass/_allstyle.scss */
+/* line 2836, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td.xdsoft_highlighted_mint {
   background: #3A3839;
   color: #000;
 }
 
-/* line 2655, ../sass/_allstyle.scss */
+/* line 2841, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td.xdsoft_default,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td.xdsoft_current,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_timepicker .xdsoft_time_box > div > div.xdsoft_current {
@@ -6918,44 +7137,44 @@ path.svg-inner_a_1_2 {
   color: #000;
 }
 
-/* line 2662, ../sass/_allstyle.scss */
+/* line 2848, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar td:hover,
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_timepicker .xdsoft_time_box > div > div:hover {
   color: #000 !important;
   background: #ffffff !important;
 }
 
-/* line 2668, ../sass/_allstyle.scss */
+/* line 2854, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_calendar th {
   color: #666;
 }
 
-/* line 2672, ../sass/_allstyle.scss */
+/* line 2858, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_copyright {
   color: #333 !important;
 }
 
-/* line 2673, ../sass/_allstyle.scss */
+/* line 2859, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_copyright a {
   color: #111 !important;
 }
 
-/* line 2674, ../sass/_allstyle.scss */
+/* line 2860, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker.xdsoft_dark .xdsoft_copyright a:hover {
   color: #555 !important;
 }
 
-/* line 2676, ../sass/_allstyle.scss */
+/* line 2862, ../sass/_allstyle.scss */
 .xdsoft_dark .xdsoft_time_box {
   border: 1px solid #333;
 }
 
-/* line 2680, ../sass/_allstyle.scss */
+/* line 2866, ../sass/_allstyle.scss */
 .xdsoft_dark .xdsoft_scrollbar > .xdsoft_scroller {
   background: #333 !important;
 }
 
-/* line 2683, ../sass/_allstyle.scss */
+/* line 2869, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .xdsoft_save_selected {
   display: block;
   border: 1px solid #dddddd !important;
@@ -6965,7 +7184,7 @@ path.svg-inner_a_1_2 {
   font-size: 13px;
 }
 
-/* line 2691, ../sass/_allstyle.scss */
+/* line 2877, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .blue-gradient-button {
   font-family: sans-serif;
   font-size: 12px;
@@ -6991,7 +7210,7 @@ path.svg-inner_a_1_2 {
   /* IE6-9 */
 }
 
-/* line 2715, ../sass/_allstyle.scss */
+/* line 2901, ../sass/_allstyle.scss */
 .xdsoft_datetimepicker .blue-gradient-button:hover, .xdsoft_datetimepicker .blue-gradient-button:focus, .xdsoft_datetimepicker .blue-gradient-button:hover span, .xdsoft_datetimepicker .blue-gradient-button:focus span {
   color: #454551;
   background: -moz-linear-gradient(top, #f4f8fa 0%, #FFF 73%);

@@ -1,6 +1,6 @@
 <?php  HeadAdd(array('pageType'=>'class="otherpages appages"','head'=>true, 'title'=>"План $floor[0] $sec секції》 ЖК PHILADELPHIA Concept House", 'description'=>"【План $floor[0] $sec секції】✅ PHILADELPHIA Concept House - унікальний будинок для тих, хто цінує високу естетику, приватність та безпеку ✅【ЖК PHILADELPHIA】 адреса: Київ, Кловський узвіз, 19"));?>
 
-<?php include ($_SERVER['DOCUMENT_ROOT'].'modules/inc/all_preloader.php')?>
+
 
     <div id="perspective" class="perspective effect-laydown">
       <!-- menu -->
@@ -17,7 +17,7 @@
             <?/* <a href="#" class="obrat_poverh"><i class="icon-keyboard_backspace"></i> Обрати поверх</a>*/?>
             <!-- <a href="/appartments/" class="params"> <i class="icon-equalizer"></i>Підбір за параметрами</a> -->
             <ul class="wow fadeInLeft">
-              <li><span class="round round_1"></span><span class="content_text">Куплено</span></li>
+              <!--<li><span class="round round_1"></span><span class="content_text">Куплено</span></li>-->
               <li><a href="<?UrlAdd('1-kimnatni')?>" class="li-link"><span class="round round_2"></span><span class="content_text">1 кімната</span></a></li>
               <li><a href="<?UrlAdd('2-kimnatni')?>" class="li-link"><span class="round round_3"></span><span class="content_text">2 кімнати</span></a></li>
               <li><a href="<?UrlAdd('3-kimnatni')?>" class="li-link"><span class="round round_4"></span><span class="content_text">3 кімнати</span></a></li>
