@@ -2,7 +2,7 @@
   	<?php// HeaderInclude(array('pageTypeMobileAll'=>2));?>
 
 
-    <?php include ($_SERVER['DOCUMENT_ROOT'].'modules/inc/preloader.php')?>
+
     <?php include ($_SERVER['DOCUMENT_ROOT'].'modules/inc/form/apartments_form.php')?>
     <div id="perspective" class="perspective effect-laydown">
 <?//if (!$detectMob) :?>
@@ -20,8 +20,8 @@
 				<div class="list_appart">		
 				<ul class="select__list">
 					<li><?=$mes['1-кімнатні квартири']?></li>
-					<li><a href="/2-kimnatni/"><?=$mes['2-кімнатні квартири']?></a></li>
-					<li><a href="/3-kimnatni/"><?=$mes['3-кімнатні квартири']?></a></li>
+					<li><a href="<?UrlAdd('2-kimnatni')?>"><?=$mes['2-кімнатні квартири']?></a></li>
+					<li><a href="<?UrlAdd('3-kimnatni')?>"><?=$mes['3-кімнатні квартири']?></a></li>
                 </ul>
 				<style>
 				.list_appart .select__list li {

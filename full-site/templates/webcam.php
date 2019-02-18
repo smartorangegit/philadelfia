@@ -29,7 +29,7 @@
           <div class="content_subname">
             <?=$mes['Запланований час завершення будівництва']?>
           </div>
-          <a class="link web_link" href="/building/"><?=$mes['хід будівництва']?> <i class="icon-long-arrow-right"></i></a>
+          <a class="link web_link" href="<?UrlAdd('building')?>"><?=$mes['хід будівництва']?> <i class="icon-long-arrow-right"></i></a>
 
         </div>
       </div>

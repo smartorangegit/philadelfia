@@ -1,4 +1,4 @@
-<?php  HeadAdd(array('pageType'=>'class="otherpages appages"','head'=>true, 'title'=>"Планування $s[room]-кімнатної квартири $number-$id $floor[0] поверх 》 ЖК PHILADELPHIA Concept House", 'description'=>"【Планування $s[room]-кімнатної квартири $number-$id $floor[0] поверх】✅ PHILADELPHIA Concept House - унікальний будинок для тих, хто цінує високу естетику, приватність та безпеку ✅【ЖК PHILADELPHIA】 адреса: Київ, Кловський узвіз, 19"));?>
+<?php  HeadAdd(array('pageType'=>'class="otherpages appages"','head'=>true, 'robots'=>'noindex, nofollow', 'title'=>$mes['flats-title-1']." $s[room]".$mes['flats-title-2']."$number-$id $floor[0]".$mes['flats-title-3'], 'description'=>"【".$mes['flats-title-1']." $s[room]".$mes['flats-title-2']."$number-$id $floor[0]".$mes['flats-description']));?>
 <?php //HeaderInclude(array('pageTypeMobileAll'=>true));?>
 <?php
   FormInclude('apartments_form', $kv);
@@ -15,14 +15,14 @@
 
           <div class="main_appart">
             <div class="level_info level_info__second wow fadeInUp" data-wow-duration="0.9s" >
-              <a href="<?UrlAdd("section$sec/floor$floor[0]")?>" class="obrat_poverh wow fadeInUp" data-wow-duration="0.3s"><i class="icon-keyboard_backspace"></i> Обрати інше планування</a>
-              <a href="<?UrlAdd('floor-bselect')?>" class="obrat_poverh wow fadeInUp" data-wow-duration="0.3s"><i class="icon-keyboard_backspace"></i> Обрати інший поверх</a>
+              <a href="<?UrlAdd("section$sec/floor$floor[0]")?>" class="obrat_poverh wow fadeInUp" data-wow-duration="0.3s"><i class="icon-keyboard_backspace"></i> <?=$mes['Обрати інше планування-flats']?></a>
+              <a href="<?UrlAdd('floor-bselect')?>" class="obrat_poverh wow fadeInUp" data-wow-duration="0.3s"><i class="icon-keyboard_backspace"></i> <?=$mes['Обрати інший поверх-flats']?></a>
               <!-- <a href="<?UrlAdd('appartments')?>" class="params wow fadeInUp" data-wow-duration="0.4s"> <i class="icon-equalizer"></i>Підбір за параметрами</a> -->
 
               <a href="<?UrlAdd('pdf')?>" target="_blank" class="select_level wow fadeInUp" data-wow-duration="0.5s">
                 <div class="select_level_box"></div>
                 <i class="icon-file-pdf"></i>
-                <p class="select_level_name">завантажити</p>
+                <p class="select_level_name"><?=$mes['завантажити-flats']?></p>
               </a>
               <!-- <a href="#" id='select-booking' class="select_level wow fadeInUp" data-wow-duration="0.7s">
                 <div class="select_level_box"></div>
@@ -35,7 +35,7 @@
               		?>
               <div class="mini_plan">
                 <?include($_SERVER['DOCUMENT_ROOT'].'/'.svg_plan($si['img']));?>
-                <span>План поверху</span>
+                <span><?=$mes['План поверху-flats']?></span>
               </div>
                 <style media="screen">
                   .select_level {display: none;}
@@ -43,20 +43,20 @@
             </div>
 
             <div class="appart_plan">
-              <div class="content_name"><h1><?/* H1page() */?>Квартира <?=$number.'-'.$id?></h1></div>
+              <div class="content_name"><h1><?/* H1page() */?><?=$mes['Квартира-floor']?> <?=$number.'-'.$id?></h1></div>
               <div id="open_modalbox" class="main_appart_img">
-                <img <?img($img_flat)?>  <?AltImgAdd($mes['fl-mes1'].' '.$REZULT2['number'])?> alt="Планування <?=$s['room']?>-кімнатної квартири <?=$number.' '.$floor[0]?> поверх в ЖК PHILADELPHIA Concept House" title="Планування <?=$s['room']?>-кімнатної квартири <?=$number.' '.$floor[0]?> поверх в ЖК PHILADELPHIA Concept House">
+                <img <?img($img_flat)?>  <?AltImgAdd($mes['fl-mes1'].' '.$REZULT2['number'])?> alt="<?=$mes['flats-title-1']." $s[room]".$mes['flats-title-2']."$number-$id $floor[0]".$mes['flats-title-3']?>" title="<?=$mes['flats-title-1']." $s[room]".$mes['flats-title-2']."$number-$id $floor[0]".$mes['flats-title-3']?>">
               </div>
-              <a class="button20" id="call_price" href=""><h2>Дізнатися ціну <i class="icon-long-arrow-right"></i></h2></a>
+              <a class="button20" id="call_price" href=""><h2><?=$mes['Дізнатися ціну_1-kimnatni']?> <i class="icon-long-arrow-right"></i></h2></a>
             </div>
 
             <div class="appart_info wow fadeInRight" data-wow-duration="1.1s">
-              <h2 style="margin-bottom:10px;">Параметри квартири</h2>
+              <h2 style="margin-bottom:10px;"><?=$mes['Параметри квартири']?></h2>
               <ul>
-                <li><span class="param_number"><?=$floor[0]?></span><h2 class="param_name">Поверх</h2></li>
-                <li><span class="param_number"><?=$sec?></span><h2 class="param_name">Секція</h2></li>
-                <li><span class="param_number"><?=$number?></span><h2 class="param_name">Квартира</h2></li>
-                <li><span class="param_number"><?=$s['room']?></span><h2 class="param_name">Кіл-ть кімнат</h2></li>
+                <li><span class="param_number"><?=$floor[0]?></span><h2 class="param_name"><?=$mes['Поверх-floor']?></h2></li>
+                <li><span class="param_number"><?=$sec?></span><h2 class="param_name"><?=$mes['Секція-floor']?></h2></li>
+                <li><span class="param_number"><?=$number?></span><h2 class="param_name"><?=$mes['Квартира-floor']?></h2></li>
+                <li><span class="param_number"><?=$s['room']?></span><h2 class="param_name"><?=$mes['Кількість кімнат-floor']?></h2></li>
                  <?foreach($mas2 as $k=>$s){  if($s){ ?>
                    <li><span class="param_number"><?=$s?> м<sup>2</sup></span><h2 class="param_name"><?=$mas1[$k]?></h2></li>
                  <?}}?>
@@ -74,9 +74,9 @@
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40"><path d="M7.05 32.85l-.684-.687 6.154-6.154 6.154-6.155-6.136-6.135-6.135-6.135.686-.686.685-.687 6.135 6.135 6.136 6.135 6.135-6.135 6.137-6.135.686.686.686.685-6.137 6.135-6.135 6.135 6.154 6.154 6.153 6.153-.684.688-.683.688-6.156-6.155-6.154-6.156-6.156 6.156-6.155 6.155z" fill="#fff"></path></svg>
         </div>
         <div class="modalbox_inner">
-          <div class="content_name"><h1><?/* H1page() */?>Квартира <?=$number.'-'.$id?></h1></div>
+          <div class="content_name"><h1><?/* H1page() */?><?=$mes['Квартира-floor']?> <?=$number.'-'.$id?></h1></div>
           <div class="main_appart_img">
-            <img <?img($img_flat)?>  <?AltImgAdd($mes['fl-mes1'].' '.$REZULT2['number'])?> alt="Планування <?=$s['room']?>-кімнатної квартири <?=$number.' '.$floor[0]?> поверх в ЖК PHILADELPHIA Concept House" title="Планування <?=$s['room']?>-кімнатної квартири <?=$number.' '.$floor[0]?> поверх в ЖК PHILADELPHIA Concept House">
+            <img <?img($img_flat)?>  <?AltImgAdd($mes['fl-mes1'].' '.$REZULT2['number'])?> alt="<?=$mes['flats-title-1']." $s[room]".$mes['flats-title-2']."$number-$id $floor[0]".$mes['flats-title-3']?>" title="<?=$mes['flats-title-1']." $s[room]".$mes['flats-title-2']."$number-$id $floor[0]".$mes['flats-title-3']?>">
           </div>
         </div>
       </div>

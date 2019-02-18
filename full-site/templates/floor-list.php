@@ -1,4 +1,4 @@
-<?php  HeadAdd(array('pageType'=>'class="otherpages appages"','head'=>true, 'title'=>"План $floor[0] $sec секції》 ЖК PHILADELPHIA Concept House", 'description'=>"【План $floor[0] $sec секції】✅ PHILADELPHIA Concept House - унікальний будинок для тих, хто цінує високу естетику, приватність та безпеку ✅【ЖК PHILADELPHIA】 адреса: Київ, Кловський узвіз, 19"));?>
+<?php  HeadAdd(array('pageType'=>'class="otherpages appages"','head'=>true, 'robots'=>'noindex, nofollow', 'title'=>$mes['floor-h1']." $floor[0] $sec".$mes['floor-title'], 'description'=>"【".$mes['floor-h1']." $floor[0] $sec".$mes['floor-description']));?>
 
 
 
@@ -18,9 +18,9 @@
             <!-- <a href="/appartments/" class="params"> <i class="icon-equalizer"></i>Підбір за параметрами</a> -->
             <ul class="wow fadeInLeft">
               <!--<li><span class="round round_1"></span><span class="content_text">Куплено</span></li>-->
-              <li><a href="<?UrlAdd('1-kimnatni')?>" class="li-link"><span class="round round_2"></span><span class="content_text">1 кімната</span></a></li>
-              <li><a href="<?UrlAdd('2-kimnatni')?>" class="li-link"><span class="round round_3"></span><span class="content_text">2 кімнати</span></a></li>
-              <li><a href="<?UrlAdd('3-kimnatni')?>" class="li-link"><span class="round round_4"></span><span class="content_text">3 кімнати</span></a></li>
+              <li><a href="<?UrlAdd('1-kimnatni')?>" class="li-link"><span class="round round_2"></span><span class="content_text">1 <?=$mes['кімната-floor']?></span></a></li>
+              <li><a href="<?UrlAdd('2-kimnatni')?>" class="li-link"><span class="round round_3"></span><span class="content_text">2 <?=$mes['кімнати-floor']?></span></a></li>
+              <li><a href="<?UrlAdd('3-kimnatni')?>" class="li-link"><span class="round round_4"></span><span class="content_text">3 <?=$mes['кімнати-floor']?></span></a></li>
             </ul>
             <img class="compas" src="/img/plan/compas.png"  alt="compas">
             <?
@@ -29,17 +29,17 @@
           </div>
 
             <div class="level_plan">
-              <h1 class="content_name name_appart"><?/* H1page() */?>План <?=$floor[0]?> поверху</h1>
+              <h1 class="content_name name_appart"><?/* H1page() */?><?=$mes['floor-h1']?> <?=$floor[0]?> <?=$mes['floor-h1-2']?></h1>
               <!-- <img src="/img/plan/1.png" alt="plan"> -->
 		            <?include(svg_plan($svg=$si['img']));?>
             </div>
 
             <!--всплывающий блок с информацией -->
       <div id="appInfo">
-      <p>Кількість кімнат: <strong><span id="appInfoRooms">3</span></strong></p>
-      <p>Загальна площа: <strong><span id="appInfoSquare">112,9</span> м<span class="m2">2</span></strong></p>
-      <p>Житлова площа: <strong><span id="appInfoLivingSquare">46,5</span> м<span class="m2">2</span></strong></p>
-      <p style="margin-bottom:0px;">Поверх: <strong><span id="appInfoFloor">3-21</span></strong></p>
+      <p><?=$mes['Кількість кімнат-floor']?>: <strong><span id="appInfoRooms">3</span></strong></p>
+      <p><?=$mes['Загальна площа-floor']?>: <strong><span id="appInfoSquare">112,9</span> м<span class="m2">2</span></strong></p>
+      <p><?=$mes['Житлова площа-floor']?>: <strong><span id="appInfoLivingSquare">46,5</span> м<span class="m2">2</span></strong></p>
+      <p style="margin-bottom:0px;"><?=$mes['Поверх-floor']?>: <strong><span id="appInfoFloor">3-21</span></strong></p>
       </div>
         <!--конец всплывающий блок с информацией -->
 
@@ -47,14 +47,14 @@
 
 
             <div class="appart_info wow fadeInRight">
-              <p>Параметри квартири</p>
+              <p><?=$mes['Параметри квартири']?></p>
               <ul style="overflow-y: hidden;">
-                <li><span class="param_number"><?=$floor[0]?></span><span class="param_name">Поверх</span></li>
-                <li><span class="param_number"><?=$sec?></span><span class="param_name">Секція</span></li>
-                <li><span class="param_number" id="number_s">-</span><span class="param_name">Квартира</span></li>
-                <li><span class="param_number" id="room_s">-</span><span class="param_name">Кіл-ть кімнат</span></li>
-                <li><span class="param_number" id="all_room_s">- м<sup>2</sup></span><span class="param_name">Загальна площа</span></li>
-                <li><span class="param_number" id="life_room_s">- м<sup>2</sup></span><span class="param_name">Житлова площа</span></li>
+                <li><span class="param_number"><?=$floor[0]?></span><span class="param_name"><?=$mes['Поверх-floor']?></span></li>
+                <li><span class="param_number"><?=$sec?></span><span class="param_name"><?=$mes['Секція-floor']?></span></li>
+                <li><span class="param_number" id="number_s">-</span><span class="param_name"><?=$mes['Квартира-floor']?></span></li>
+                <li><span class="param_number" id="room_s">-</span><span class="param_name"><?=$mes['Кількість кімнат-floor']?></span></li>
+                <li><span class="param_number" id="all_room_s">- м<sup>2</sup></span><span class="param_name"><?=$mes['Загальна площа-floor']?></span></li>
+                <li><span class="param_number" id="life_room_s">- м<sup>2</sup></span><span class="param_name"><?=$mes['Житлова площа-floor']?></span></li>
               </ul>
             </div>
           </div>

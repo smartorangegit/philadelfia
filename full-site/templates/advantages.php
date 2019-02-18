@@ -2,7 +2,7 @@
   	<?php// HeaderInclude(array('pageTypeMobileAll'=>2));?>
 
 
-    <?php include ($_SERVER['DOCUMENT_ROOT'].'modules/inc/preloader.php')?>
+   
     <div id="perspective" class="perspective effect-laydown">
 <?//if (!$detectMob) :?>
       <!-- menu -->
@@ -54,7 +54,7 @@
               </li>
               <li class="advant_item wow fadeInUp" >
                 <img src="/img/advant/3.jpg" alt="Насичена високоякісна інфраструктура навколо будинку" title="Насичена високоякісна інфраструктура навколо будинку" >
-                <a href="/location/">
+                <a href="<?UrlAdd('location')?>">
                   <div class="figcaption"><span class="italic"><?=$mes['Насичена високоякісна інфраструктура навколо будинку_advantages']?></div>
                 </a>
               </li>

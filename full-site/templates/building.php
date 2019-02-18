@@ -14,7 +14,7 @@
               <p><?=$mes['cтатус робіт']?></p>
               <p><?=$mes['Запланований час завершення будівництва']?></p>
             </div>
-            <a href="/webcam/#" class="webcam__wrap">
+            <a href="<?UrlAdd('webcam')?>" class="webcam__wrap">
                 <span>веб<br>камера</span>
                 <img src="/img/web.png" alt="Webcamera">
             </a>

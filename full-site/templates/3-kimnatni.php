@@ -2,7 +2,7 @@
   	<?php// HeaderInclude(array('pageTypeMobileAll'=>2));?>
 
 
-    <?php include ($_SERVER['DOCUMENT_ROOT'].'modules/inc/preloader.php')?>
+   
     <?php include ($_SERVER['DOCUMENT_ROOT'].'modules/inc/form/apartments_form.php')?>
     <div id="perspective" class="perspective effect-laydown">
 <?//if (!$detectMob) :?>
@@ -19,8 +19,8 @@
 					<?=$mes['Різниця у вартості 3-кімнатних та 2-кімнатних квартир незначна']?>
 				<div class="list_appart">		
 				<ul class="select__list">
-					<li><a href="/1-kimnatni/"><?=$mes['1-кімнатні квартири']?></a></li>
-					<li><a href="/2-kimnatni/"><?=$mes['2-кімнатні квартири']?></a></li>
+					<li><a href="<?UrlAdd('1-kimnatni')?>"><?=$mes['1-кімнатні квартири']?></a></li>
+					<li><a href="<?UrlAdd('2-kimnatni')?>"><?=$mes['2-кімнатні квартири']?></a></li>
 					<li><?=$mes['3-кімнатні квартири']?></a></li>
                 </ul>
 				<style>
